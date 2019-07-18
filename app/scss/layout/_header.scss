@@ -1,0 +1,48 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+.header {
+	background-color: $bg-dark;
+	color: $text-color-white;
+	padding: 25px 0 18px;
+}
+
+.menu {
+	margin-top: 26px;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 16px;
+		line-height: 19px;
+		> li {
+			a {
+				display: inline-block;
+				position: relative;
+				color: $color-top-menu;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1199.8px) {
+}
+
+@media screen and (max-width: 991.8px) {
+}
+
+@media screen and (max-width: 767.8px) {
+}
+
+@media screen and (max-width: 575.8px) {
+}
+
+@media screen and (min-width: 1350px) {
+	header {
+		.container {
+			max-width: 1320px;
+		}
+	}
+}
