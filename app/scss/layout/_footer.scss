@@ -3,7 +3,63 @@
 |                                     FOOTER                                   |
 ================================================================================
 */
-footer {
+.footer {
+    background-color: $bg-dark;
+    padding: 93px 0 42px;
+
+}
+
+.call-us {
+    color: $text-color-white;
+    margin-bottom: 94px;
+    &__meneger {
+        font-weight: 100;
+        text-align: center;
+    }
+    &__img {
+        display: block;
+        width: 159px;
+        height: 159px;
+        @include radius(50%);
+        overflow: hidden;
+        margin-bottom: 20px;
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 8px;
+    }
+    &__info {
+        .phone{
+            margin-bottom: 20px;
+            &__number {
+                font-size: 60px;
+                line-height: 72px;
+            }
+            .arrow-down {
+                position: relative;
+                top: -20px;
+                margin-left: 9px;
+                width: 34px
+        }
+        }
+    }
+    &__form {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn-red {
+            min-width: 255px;
+            margin-left: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 1199.8px) {

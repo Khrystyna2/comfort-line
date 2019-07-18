@@ -1,0 +1,71 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-border {
+    color: $gray;
+    border: 0.75px solid $gray;
+    width: 130px;
+    height: 30px;
+    @include radius(0);
+    padding: 0;
+    font-weight: 100;
+}
+
+.btn-red {
+    height: 75px;
+    width: 350px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $text-color-white;
+    background-color: $btn-red;
+    box-shadow: 0px 10px 35px $shodow-red;
+    @include radius(0);
+}
+
+.social-networks {
+    display: flex;
+    >li{
+        &:first-child{
+            margin-right: 17px;
+        }
+        >a{
+            display: flex;
+            width: 25px;
+        }
+    }
+}
+
+.title-section{
+    @include font( $font-size-h1, $line-height-h1, $title-color, 900);
+}
+
+.title-white{
+    @include font( $font-size-h1, $line-height-h1, $title-color-wite, 900);
+}
+
+.input-barck {
+    height: 55px;
+    width: 100%;
+    background-color: $bg-color-input;
+    border: none;
+    padding: 0 21px;
+    @include radius(0);
+    box-shadow: none;
+    color: $text-color-white;
+    &::placeholder {
+        color: $white;
+        opacity: 0.5;
+        font-weight: 100;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1110px;
+    }
+}

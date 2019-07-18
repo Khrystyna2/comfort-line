@@ -11,7 +11,6 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	<!-- fonts -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" />
 	<!-- style bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 
@@ -22,16 +21,46 @@
 
 	<header class="header">
 		<div class="container">
+			<div class="header__top">
+				<div class="header__logo">
+					<a href="index.html"><img src="image/logo.svg" alt="Comfort-line"></a>
+					<span>Роллеты, ворота и автоматика с доставкой по всей Украине</span>
+				</div>
+				<div class="language">
+					<a href="#" class="active">рус</a>
+					<a href="#">укр</a>
+				</div>
+				<p class="header__address">г. Киев,<br/> ул. Констанитновская 72</p>
+				<a href="#" class="btn btn-border">Другие офисы</a>
+				<ul class="social-networks">
+					<li><a href="#"><img src="image/icons/telegram.svg" alt="telegram"></a></li>
+					<li><a href="#"><img src="image/icons/facebook.svg" alt="facebook"></a></li>
+				</ul>
+				<div class="phone">
+					<span class="phone__number"><img src="image/icons/phone.svg" alt="phone"> +30 044  332 77 72</span>
+					<img src="image/icons/arrow-down.svg" alt="arrow-down" class="arrow-down">
+					<ul class="phone__list">
+						<li><span class="phone__number"><img src="image/icons/phone.svg" alt="phone"> +30 044  332 77 72</span></li>
+						<li><span class="phone__number"><img src="image/icons/phone.svg" alt="phone"> +30 044  332 77 72</span></li>
+					</ul>
+				</div>
+			</div>
 			<nav class="menu">
 				<ul class="menu__list">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Кто мы?</a></li>
 					<li><a href="#">Роллеты</a></li>
 					<li><a href="#">Ассортимент</a></li>
-					<li><a href="#">База знаний</a></li>
+					<li>
+						<a href="#">База знаний</a>
+						<span class="counter">10</span>
+					</li>
 					<li><a href="#">Стать диллером</a></li>
 					<li><a href="#">Калькулятор стоимости</a></li>
-					<li><a href="#">Акции</a></li>
+					<li>
+						<a href="#">Акции</a>
+						<span class="counter">5</span>
+					</li>
 					<li><a href="#">Оплата и доставка</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
@@ -40,14 +69,92 @@
 	</header>
 
 	<main>
+		<section class="first-screen">
+			<img src="image/icons/line.png" alt="" class="first-screen__line">
+				<div class="slider">
+						<div class="slider__item">
+							<img src="image/home.png" alt="">
+							<div class="container">
+								<h1 class="first-screen__title title-white">Производим и продаём защитные роллеты</h1>
+								<p class="first-screen__text">Режем профиль и собираем роллеты на собственном производстве, чтобы обеспечить высокую скорость
+										и лучший сервис для Украины.</p>
+								<a href="#" class="btn btn-red">Узнать подробнее</a>
+			
+							</div>
+						</div>
+						<div class="slider__item">
+							<img src="image/home.png" alt="">
+							<div class="container">
+								<h1 class="first-screen__title title-white">Производим и продаём защитные роллеты</h1>
+								<p class="first-screen__text">Режем профиль и собираем роллеты на собственном производстве, чтобы обеспечить высокую скорость
+										и лучший сервис для Украины.</p>
+								<a href="#" class="btn btn-red">Узнать подробнее</a>
+			
+							</div>
+						</div>
+						<div class="container slider__box-arrow">
+							<button class="slider__prev"></button>
+							<div class="slick-counter"><span class="current"></span><span class="total"></span></div>
+							<button class="slider__next"></button>
+						</div>
+					</div>
+		</section>
+
+		<section class="our-account">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-5">
+						<h2 class="our-account__title title-section">На нашем счету</h2>
+						<div class="our-account__image text-center">
+							<img src="image/golden-penny.png" alt="">
+							<span>Золотой партнер<br/> Алютех</span>
+							<small>с 2012 года.</small>
+						</div>
+					</div>
+					<div class="col-12 col-lg-7">
+						<p class="our-account__text">34 795<span>Защитных
+								роллет</span></p>
+						<p class="our-account__text">9 569<span>Алюминиевых
+								отливов</span></p>
+						<p class="our-account__text">3 868<span>Секционных
+								ворот</span></p>
+						<p class="our-account__text">886<span>Въездных
+								ворот</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</main>
 
-	<footer>
-
+	<footer class="footer">
+		<div class="container">
+			<div class="row call-us">
+				<div class="col-12 col-lg-2 offset-lg-1 call-us__meneger">
+					<span class="call-us__img"><img src="image/image-1.png" alt=""></span>
+					<p>Менеджер Александра</p>
+				</div>
+				<div class="col-12 col-lg-7 call-us__info">
+					<h4 class="call-us__title">Звоните или пишите прямо сейчас</h4>
+					<div class="phone">
+						<span class="phone__number">+30 044  332 77 72</span>
+						<img src="image/icons/arrow-down.svg" alt="arrow-down" class="arrow-down">
+						<ul class="phone__list">
+							<li><span class="phone__number">+30 044  332 77 72</span></li>
+							<li><span class="phone__number">+30 044  332 77 72</span></li>
+						</ul>
+					</div>
+					<p>Или оставьте номер и я перезвоню</p>
+						<form class="call-us__form">
+							<input type="text" placeholder="Введите ваш телефон" class="input-barck">
+							<input type="submit" class="btn btn-red" placeholder="Жду звонка">
+						</form>
+				</div>
+			</div>
+		</div>
 	</footer>
 
-	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
