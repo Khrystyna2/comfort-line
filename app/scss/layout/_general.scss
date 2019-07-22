@@ -1,139 +1,222 @@
 .btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	&:focus {
-		box-shadow: none;
-	}
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:focus {
+        box-shadow: none;
+    }
 }
 
 .btn-border {
-	color: $gray;
-	border: 0.75px solid $gray;
-	width: 130px;
-	height: 30px;
-	@include radius(0);
-	padding: 0;
-	font-weight: 100;
+    color: $gray;
+    border: 0.75px solid $gray;
+    width: 130px;
+    height: 30px;
+    @include radius(0);
+    padding: 0;
+    font-weight: 100;
 }
 
 .btn-red {
-	height: 75px;
-	width: 350px;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 29px;
-	color: $text-color-white;
-	background-color: $btn-red;
-	box-shadow: 0px 10px 35px $shadow-red;
-	@include radius(0);
+    height: 75px;
+    width: 350px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $text-color-white;
+    background-color: $btn-red;
+    box-shadow: 0px 10px 35px $shadow-red;
+    @include radius(0);
+
+    &:hover {
+        background: $btn-red-hover;
+        box-shadow: 0px 10px 35px $shadow-red-hover;
+    }
 }
 
 .social-networks {
-	display: flex;
-	> li {
-		&:first-child {
-			margin-right: 17px;
-		}
-		> a {
-			display: flex;
-			width: 25px;
-		}
-	}
+    display: flex;
+
+    >li {
+        &:first-child {
+            margin-right: 17px;
+        }
+
+        >a {
+            display: flex;
+            width: 25px;
+        }
+    }
 }
 
 .title-section {
-	@include font($font-size-h1, $line-height-h1, $title-color, 900);
+    @include font($font-size-h1, $line-height-h1, $title-color, 900);
 }
 
 .title-white {
-	@include font($font-size-h1, $line-height-h1, $title-color-wite, 900);
+    @include font($font-size-h1, $line-height-h1, $title-color-wite, 900);
 }
 
 .title-text-border {
-	color: $text-color-white;
-	font-weight: 900;
-	font-size: 144px;
-	line-height: 173px;
-	text-shadow: -1px -1px 0 $shadow-light-text, 1px -1px 0 $shadow-light-text, -1px 1px 0 $shadow-light-text,
-		1px 1px 0 $shadow-light-text;
-	text-align: center;
-	margin-bottom: -38px;
-	position: relative;
-	z-index: -1;
+    color: $text-color-white;
+    font-weight: 900;
+    font-size: 144px;
+    line-height: 173px;
+    text-shadow: -1px -1px 0 $shadow-light-text, 1px -1px 0 $shadow-light-text, -1px 1px 0 $shadow-light-text,
+        1px 1px 0 $shadow-light-text;
+    text-align: center;
+    margin-bottom: -38px;
+    position: relative;
+    z-index: -1;
+}
+
+%input-style {
+    height: 55px;
+    width: 100%;
+    border: none;
+    padding: 0 21px;
+    @include radius(0);
+    box-shadow: none;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 }
 
 .input-bark {
-	height: 55px;
-	width: 100%;
-	background-color: $bg-color-input;
-	border: none;
-	padding: 0 21px;
-	@include radius(0);
-	box-shadow: none;
-	color: $text-color-white;
-	&::placeholder {
-		color: $white;
-		opacity: 0.5;
-		font-weight: 100;
-	}
+    @extend %input-style;
+    background-color: $bg-color-input;
+    color: $text-color-white;
+
+    &::placeholder {
+        color: $white;
+        opacity: 0.5;
+        font-weight: 100;
+    }
+}
+
+.input-light {
+    @extend %input-style;
+    background-color: $bg-color-input-light;
+    margin-bottom: 10px;
+
+    &::placeholder {
+        color: #797979;
+        font-weight: 100;
+    }
 }
 
 .cards-dark {
-	background-color: $bg-dark;
-	color: $text-color-white;
-	box-shadow: 0px 70px 100px $shadow-dark;
-	padding: 37px 95px 97px;
+    background-color: $bg-dark;
+    color: $text-color-white;
+    box-shadow: 0px 70px 100px $shadow-dark;
+    padding: 37px 95px 97px;
+}
+
+.box-shadow {
+    box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08);
 }
 
 // style input type="number"
 .spinner {
-	width: 255px;
-	position: relative;
-	text-align: center;
-	input[type="number"] {
-		-moz-appearance: textfield;
-		&::-webkit-inner-spin-button,
-		&::-webkit-outer-spin-button {
-			-webkit-appearance: none;
-			margin: 0;
-		}
-	}
-	input {
-		width: 100%;
-		height: 55px;
-		background: $bg-spinner;
-		border: none;
-		text-align: center;
-		font-size: 18px;
-		line-height: 22px;
-		font-weight: 300;
-	}
-	&__nav {
-		position: relative;
-	}
-	&__btn {
-		height: 55px;
-		width: 55px;
-		cursor: pointer;
-		font-size: 24px;
-		line-height: 29px;
-		color: $text-color-white;
-		background-color: $btn-red;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		user-select: none;
-		&.spinner-up,
-		&.spinner-down {
-			bottom: 0;
-			position: absolute;
-		}
-		&.spinner-up {
-			right: 0;
-		}
-		&.spinner-down {
-			left: 0;
-		}
-	}
+    width: 255px;
+    position: relative;
+    text-align: center;
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    input {
+        width: 100%;
+        height: 55px;
+        background: $bg-spinner;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+
+    &__nav {
+        position: relative;
+    }
+
+    &__btn {
+        height: 55px;
+        width: 55px;
+        cursor: pointer;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-color-white;
+        background-color: $btn-red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+
+        &.spinner-up,
+        &.spinner-down {
+            bottom: 0;
+            position: absolute;
+        }
+
+        &.spinner-up {
+            right: 0;
+        }
+
+        &.spinner-down {
+            left: 0;
+        }
+    }
+}
+
+/*style for checkbox*/
+.label-checkbox {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    >input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked~.checkmark:after {
+            display: block;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 15px;
+        width: 15px;
+        background-color: transparent;
+        border: 1px solid $border-checkbox;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 0;
+            top: -1px;
+            width: 15px;
+            height: 15px;
+            background: url(../image/icons/checked.svg) no-repeat center center;
+        }
+    }
 }

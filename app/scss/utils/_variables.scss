@@ -15,14 +15,15 @@ $title-color-wite: #fff;
 
 $font-size-h1: 60px;
 $line-height-h1: 72px;
-$font-size-h2: 32px;
-$line-height-h2: 37px;
+$font-size-h2: 36px;
+$line-height-h2: 43px;
 $font-size-h3: 28px;
 $line-height-h3: 32px;
 
 // color
 $bg-dark: #25282a;
 $bg-color-input: #4b4b4b;
+$bg-color-input-light: #F1F1F1;
 $bg-spinner: #f7f7f7;
 
 $gray: #979797;
@@ -30,12 +31,19 @@ $red: #ff1b1b;
 $black: #000;
 $white: #fff;
 $dark: #25282a;
+$light-gray: #B1B1B1;
+$dark-gray: #454545;
+$yellow: #FF9300;
+$red-active: #FA4616;
 
 $border-gray: #d8d8d8;
+$border-checkbox: #B1B1B1;
 
 $btn-red: #fa4616;
+$btn-red-hover: #DA2E00;
 
 $shadow-red: rgba(250, 70, 22, 0.3);
+$shadow-red-hover: rgba(216, 48, 3, 0.4);
 $shadow-dark: rgba(0, 0, 0, 0.3);
 $shadow-light-text: #d3d3d3;
 $shadow-dark-text: #707070;

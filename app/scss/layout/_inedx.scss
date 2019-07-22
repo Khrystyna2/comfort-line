@@ -1,198 +1,343 @@
 .first-screen {
-	margin-top: -2px;
-	height: 640;
-	background-color: $bg-dark;
-	position: relative;
-	color: $text-color-white;
-	&__line {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 16%;
-	}
-	&__title {
-		max-width: 800px;
-		margin: 86px 0 17px;
-	}
-	&__text {
-		max-width: 458px;
-		font-size: 18px;
-		line-height: 22px;
-		margin-bottom: 67px;
-	}
+    margin-top: -2px;
+    height: 640px;
+    background-color: $bg-dark;
+    position: relative;
+    color: $text-color-white;
+    overflow: hidden;
+
+    &__line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 16%;
+    }
+
+    &__title {
+        max-width: 800px;
+        margin: 86px 0 17px;
+    }
+
+    &__text {
+        max-width: 458px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 67px;
+    }
 }
 
 .slider {
-	height: 640px;
-	position: relative;
-	&__item {
-		position: relative;
-		width: 100%;
-		height: 640px;
-		> img {
-			width: 52%;
-			object-fit: cover;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			z-index: -1;
-		}
-	}
-	&__box-arrow {
-		position: absolute;
-		bottom: 66px;
-		left: 0;
-		right: 0;
-		display: flex;
-		align-items: center;
-		color: $text-color-white;
-		.slick-counter {
-			color: $gray;
-			font-size: 18px;
-			line-height: 22px;
-			font-weight: 100;
-			bottom: 0;
-			right: 0;
-			.total {
-				&::before {
-					content: "/";
-					font-size: 36px;
-					line-height: 43px;
-					margin-left: 6px;
-				}
-			}
-			.current {
-				font-size: 36px;
-				line-height: 43px;
-				color: $text-color-white;
-			}
-		}
-	}
-	&__next,
-	&__prev {
-		padding: 0;
-		width: 20px;
-		height: 10px;
-		@include transition(width 0.4s ease);
-	}
-	&__next {
-		background: url(../image/icons/arrow-left.svg) no-repeat center center;
-		@include transform(rotate(180deg));
-		margin-left: 16px;
-		&:focus,
-		&:hover {
-			width: 52px;
-			background: url(../image/icons/arrow-right.svg) no-repeat center center;
-			@include transform(rotate(0));
-		}
-	}
-	&__prev {
-		background: url(../image/icons/arrow-left.svg) no-repeat center center;
-		margin-right: 16px;
-		&:focus,
-		&:hover {
-			width: 52px;
-			background: url(../image/icons/arrow-right.svg) no-repeat center center;
-			@include transform(rotate(180deg));
-		}
-	}
+    position: relative;
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 640px;
+
+        >img {
+            width: 52%;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &__box-arrow {
+        position: absolute;
+        bottom: 66px;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        color: $text-color-white;
+
+        .slick-counter {
+            color: $gray;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 100;
+            bottom: 0;
+            right: 0;
+
+            .total {
+                &::before {
+                    content: "/";
+                    font-size: 36px;
+                    line-height: 43px;
+                    margin-left: 6px;
+                }
+            }
+
+            .current {
+                font-size: 36px;
+                line-height: 43px;
+                color: $text-color-white;
+            }
+        }
+    }
+
+    &__next,
+    &__prev {
+        padding: 0;
+        width: 20px;
+        height: 10px;
+        @include transition(width 0.4s ease);
+    }
+
+    &__next {
+        background: url(../image/icons/arrow-left.svg) no-repeat center center;
+        @include transform(rotate(180deg));
+        margin-left: 16px;
+
+        &:focus,
+        &:hover {
+            width: 52px;
+            background: url(../image/icons/arrow-right.svg) no-repeat center center;
+            @include transform(rotate(0));
+        }
+    }
+
+    &__prev {
+        background: url(../image/icons/arrow-left.svg) no-repeat center center;
+        margin-right: 16px;
+
+        &:focus,
+        &:hover {
+            width: 52px;
+            background: url(../image/icons/arrow-right.svg) no-repeat center center;
+            @include transform(rotate(180deg));
+        }
+    }
 }
 
 .our-account {
-	padding: 110px 0 88px;
-	&__image {
-		position: absolute;
-		top: 20px;
-		left: -50%;
-		width: 665px;
-		> span {
-			display: block;
-			margin: -120px 0 9px 60px;
-		}
-		> small {
-			font-size: 14px;
-			line-height: 17px;
-			font-weight: 100;
-			color: $gray;
-			margin-left: 60px;
-		}
-	}
-	&__text {
-		color: $text-color-white;
-		font-weight: 900;
-		font-size: 135px;
-		line-height: 162px;
-		text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
-		> span {
-			display: inline-block;
-			max-width: 74px;
-			margin-left: 33px;
-			font-size: 24px;
-			line-height: 29px;
-			text-shadow: none;
-			color: $text-color;
-			font-weight: 500;
-		}
-		&::before {
-			content: "";
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: -10%;
-			border-left: 1px solid $border-gray;
-			z-index: -1;
-		}
-	}
+    padding: 110px 0 88px;
+
+    &__image {
+        position: absolute;
+        top: 20px;
+        left: -50%;
+        width: 665px;
+
+        >span {
+            display: block;
+            margin: -120px 0 9px 60px;
+        }
+
+        >small {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 100;
+            color: $gray;
+            margin-left: 60px;
+        }
+    }
+
+    &__text {
+        color: $text-color-white;
+        font-weight: 900;
+        font-size: 135px;
+        line-height: 162px;
+        text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+
+        >span {
+            display: inline-block;
+            max-width: 74px;
+            margin-left: 33px;
+            font-size: 24px;
+            line-height: 29px;
+            text-shadow: none;
+            color: $text-color;
+            font-weight: 500;
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -10%;
+            border-left: 1px solid $border-gray;
+            z-index: -1;
+        }
+    }
 }
 
 .price {
-	padding-bottom: 142px;
-	&__text {
-		font-weight: 100;
-		margin-top: 10px;
-		width: 50%;
-	}
-	&__form {
-		margin-top: 80px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		.spinner {
-			> span {
-				position: absolute;
-				top: -36px;
-				left: 50%;
-				@include transform(translateX(-50%));
-			}
-		}
-	}
+    padding-bottom: 142px;
+
+    &__text {
+        font-weight: 100;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    &__form {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .spinner {
+            >span {
+                position: absolute;
+                top: -36px;
+                left: 50%;
+                @include transform(translateX(-50%));
+            }
+        }
+    }
 }
 
 .assortment {
-	background-color: $bg-dark;
-	padding: 87px 0 154px;
-	position: relative;
-	z-index: 0;
-	.title-text-border {
-		color: $dark;
-		text-shadow: -1px -1px 0 $shadow-dark-text, 1px -1px 0 $shadow-dark-text, -1px 1px 0 $shadow-dark-text,
-			1px 1px 0 $shadow-dark-text;
-	}
-	&__card {
-		position: relative;
-		display: flex;
-		height: 260px;
-		width: 100%;
-		color: $text-color-white;
-		> img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
-	&__desc {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+    background-color: $bg-dark;
+    padding: 87px 0 124px;
+    position: relative;
+    z-index: 0;
+
+    .title-text-border {
+        color: $dark;
+        text-shadow: -1px -1px 0 $shadow-dark-text, 1px -1px 0 $shadow-dark-text, -1px 1px 0 $shadow-dark-text,
+            1px 1px 0 $shadow-dark-text;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        height: 260px;
+        width: 100%;
+        color: $text-color-white;
+        margin-bottom: 30px;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            color: $text-color-white;
+            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
+
+            .assortment__hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__desc {
+        position: absolute;
+        top: 38px;
+        left: 39px;
+        right: 39px;
+
+        >p {
+            margin-top: 16px;
+            width: 60%;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__hover {
+        opacity: 0;
+        position: absolute;
+        left: 39px;
+        bottom: 36px;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 17px;
+        @include transition(opacity 0.4s);
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}
+
+.sale {
+    &__title {
+        font-weight: 900;
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+        margin-bottom: 43px;
+        color: $text-color-white;
+    }
+
+    &__timer {
+        >span {
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .timer {
+            display: flex;
+            width: 285px;
+
+            >li {
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+
+                >span {
+                    height: 55px;
+                    min-width: 65px;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 43px;
+                    background-color: $dark-gray;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 8px;
+
+                    &::after {
+                        content: ':';
+                        padding-left: 8px;
+                    }
+
+                    &.days {
+                        padding-left: 22px;
+                    }
+
+                    &.minutes {
+                        padding-right: 6px;
+                    }
+
+                    &.seconds {
+                        background-color: $red;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                >small {
+                    opacity: 0.5;
+                }
+
+            }
+        }
+    }
+}
+
+.slider-sale {
+    &__item {
+        padding: 0;
+
+        .wrrap {
+            flex: 0 0 59.9%;
+            padding: 75px 48px;
+        }
+    }
+
+    &__image {
+        height: 400px;
+        flex: 0 0 40.1%;
+    }
 }
