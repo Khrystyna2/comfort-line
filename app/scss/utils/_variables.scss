@@ -13,7 +13,6 @@ $color-top-menu: #ebebeb;
 $title-color: #000;
 $title-color-wite: #fff;
 
-
 $font-size-h1: 60px;
 $line-height-h1: 72px;
 $font-size-h2: 32px;
@@ -23,16 +22,20 @@ $line-height-h3: 32px;
 
 // color
 $bg-dark: #25282a;
-$bg-color-input: #4B4B4B;
+$bg-color-input: #4b4b4b;
+$bg-spinner: #f7f7f7;
 
 $gray: #979797;
-$red: #FF1B1B;
+$red: #ff1b1b;
 $black: #000;
 $white: #fff;
+$dark: #25282a;
 
-$border-gray: #D8D8D8;
+$border-gray: #d8d8d8;
 
+$btn-red: #fa4616;
 
-$btn-red: #FA4616;
-
-$shodow-red: rgba(250, 70, 22, 0.3);
+$shadow-red: rgba(250, 70, 22, 0.3);
+$shadow-dark: rgba(0, 0, 0, 0.3);
+$shadow-light-text: #d3d3d3;
+$shadow-dark-text: #707070;
