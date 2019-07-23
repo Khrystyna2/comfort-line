@@ -90,18 +90,8 @@
     }
 
     &__img {
-        display: block;
-        width: 159px;
-        height: 159px;
-        @include radius(50%);
-        overflow: hidden;
+        @include circle-image(159px, 159px);
         margin-bottom: 20px;
-
-        >img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 
     &__title {

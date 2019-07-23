@@ -1,0 +1,141 @@
+%slider-counter {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    .slick-counter {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 100;
+        bottom: 0;
+        right: 0;
+
+        .total {
+            &::before {
+                content: "/";
+                font-size: 36px;
+                line-height: 43px;
+                margin-left: 6px;
+            }
+        }
+
+        .current {
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+}
+
+%general-arrow {
+    padding: 0;
+    width: 20px;
+    height: 10px;
+    @include transition(width 0.4s ease);
+}
+
+%arrow-next {
+    @include transform(rotate(180deg));
+    margin-left: 16px;
+
+    &:focus,
+    &:hover {
+        width: 54px;
+        @include transform(rotate(0));
+    }
+}
+
+%arrow-prev {
+    margin-right: 16px;
+
+    &:focus,
+    &:hover {
+        width: 54px;
+        @include transform(rotate(180deg));
+    }
+}
+
+.slider {
+    &__arrows {
+        @extend %slider-counter;
+        bottom: 66px;
+        color: $text-color-white;
+        left: 0;
+
+        .slick-counter {
+            color: $gray;
+
+            .current {
+                color: $text-color-white;
+            }
+        }
+    }
+
+    &__next,
+    &__prev {
+        @extend %general-arrow;
+    }
+
+    &__next {
+        @extend %arrow-next;
+        background: url(../image/icons/arrow-left.svg) no-repeat center center;
+
+        &:focus,
+        &:hover {
+            background: url(../image/icons/arrow-right.svg) no-repeat center center;
+        }
+    }
+
+    &__prev {
+        @extend %arrow-prev;
+        background: url(../image/icons/arrow-left.svg) no-repeat center center;
+
+        &:focus,
+        &:hover {
+            background: url(../image/icons/arrow-right.svg) no-repeat center center;
+        }
+    }
+}
+
+.slider-dark {
+    &__arrows {
+        @extend %slider-counter;
+        top: -80px;
+        justify-content: flex-end;
+        color: $slider-color-arrow;
+        width: 50%;
+
+        .slick-counter {
+            color: $slider-color-arrow;
+
+            .current {
+                color: $text-color;
+            }
+        }
+    }
+
+    &__next,
+    &__prev {
+        @extend %general-arrow;
+    }
+
+    &__next {
+        @extend %arrow-next;
+        background: url(../image/icons/arrow-left-dark.svg) no-repeat center center;
+
+        &:focus,
+        &:hover {
+            background: url(../image/icons/arrow-right-dark.svg) no-repeat center center;
+        }
+    }
+
+    &__prev {
+        @extend %arrow-prev;
+        background: url(../image/icons/arrow-left-dark.svg) no-repeat center center;
+
+        &:focus,
+        &:hover {
+            background: url(../image/icons/arrow-right-dark.svg) no-repeat center center;
+        }
+    }
+}
