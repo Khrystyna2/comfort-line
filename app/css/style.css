@@ -258,6 +258,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .phone__number > img { margin-right: 10px; width: 22px; }
 
+.phone__number > a { color: #fff; }
+
 .phone .arrow-down { position: relative; top: -12px; margin-left: 9px; width: 10px; }
 
 .menu { margin-top: 26px; }
