@@ -52,6 +52,10 @@
         left: -50%;
         width: 665px;
 
+        .mob-screen {
+            display: none;
+        }
+
         >span {
             display: block;
             margin: -120px 0 9px 60px;
@@ -705,6 +709,14 @@
         }
     }
 
+    .sale {
+        &__title {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+            margin-bottom: 32px;
+        }
+    }
+
     .reviews {
         &__tab {
             .tab-nav {
@@ -770,6 +782,8 @@
     }
 
     .price {
+        padding-bottom: 120px;
+
         .title-text-border {
             font-size: 72px;
             line-height: 86px;
@@ -802,6 +816,269 @@
             .btn-red {
                 width: 100%;
                 margin-top: 40px;
+            }
+        }
+    }
+
+    .assortment {
+        padding: 28px 0 0;
+
+        .title-text-border {
+            font-size: 56px;
+            line-height: 65px;
+            margin-bottom: 20px;
+        }
+
+        &__card {
+            height: 150px;
+
+            &_big {
+                height: 180px;
+            }
+        }
+
+        &__desc {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+            right: 20px;
+
+            >p {
+                width: 100%;
+            }
+
+            >h4 {
+                max-width: 110px;
+            }
+        }
+
+        &__hover {
+            left: 16px;
+            bottom: 20px;
+        }
+    }
+
+    .sale {
+        &__title {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+            margin-bottom: 30px;
+        }
+
+        &__timer {
+            >span {
+                margin-bottom: 8px;
+            }
+
+            .timer {
+                width: 190px;
+
+                >li {
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    >span {
+                        height: 35px;
+                        width: 50px;
+                        font-size: $font-size-h3;
+                        line-height: $line-height-h3;
+                        margin-bottom: 4px;
+
+                        &::after {
+                            content: ':';
+                            padding-left: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-sale {
+        margin-bottom: 125px;
+
+        &__item {
+            .wrrap {
+                padding: 23px 20px 25px;
+            }
+        }
+
+        &__image {
+            height: 240px;
+        }
+
+        .slider-dark__arrows {
+            top: auto;
+        }
+    }
+
+    .reviews {
+
+        &__tab {
+            .title-text-border {
+                margin-bottom: 20px;
+            }
+
+            .tab-nav {
+                width: 100%;
+                position: static;
+                top: 0;
+            }
+        }
+
+        &__desc {
+            .video {
+                box-shadow: 5px 20px 15px $shadow-dark;
+            }
+        }
+    }
+
+    .slider-reviews {
+        &.slick-slider .slick-track {
+            padding-bottom: 116px;
+        }
+
+        .slider-dark__arrows {
+            top: auto;
+            bottom: 40px;
+            z-index: 100;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+
+    .first-screen {
+        height: auto;
+
+        &__title {
+            width: 100%;
+            margin: 35px 0 10px;
+        }
+
+        &__text {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+
+    .slider {
+        position: relative;
+
+        &__item {
+            position: relative;
+            width: 100%;
+            height: 480px;
+
+            >img {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+
+        .slider__arrows {
+            bottom: 42%;
+        }
+    }
+
+    .our-account {
+        &__image {
+            width: 100%;
+            margin: 0 auto;
+
+            img {
+                display: none;
+            }
+
+            .mob-screen {
+                display: block;
+                margin: 0 auto;
+            }
+
+            >span {
+                margin: -66px 0 0;
+            }
+
+            >small {
+                margin: 13px 0 48px;
+                display: inline-block;
+            }
+        }
+
+        &__text {
+            text-align: left;
+        }
+    }
+
+    .price {
+        &__form {
+            .spinner {
+                margin-bottom: 11px;
+            }
+
+            .btn-red {
+                margin-top: 29px;
+            }
+        }
+    }
+
+    .assortment {
+        .title-text-border {
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        &__card {
+            height: 110px;
+
+            &_big {
+                height: 155px;
+            }
+        }
+
+        &__hover {
+            display: none;
+        }
+    }
+
+    .sale {
+        &__timer {
+            .timer {
+                >li {
+                    >span {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-sale {
+        &__item {
+            flex-direction: column;
+
+            .wrrap {
+                flex: 0 0 100%;
+            }
+        }
+
+        &__image {
+            height: 166px;
+            flex: 0 0 100%;
+            order: -1;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .our-account {
+        &__text {
+            text-align: left;
+
+            >span {
+                max-width: 100%;
+                display: block;
+                margin: -6px 0 10px;
             }
         }
     }

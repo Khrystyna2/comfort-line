@@ -339,4 +339,38 @@
     }
 }
 
-@media screen and (max-width: 575.8px) {}
+@media screen and (max-width: 575.8px) {
+    .call-us {
+        font-size: $base-font-size - 4px;
+        line-height: $base-line-height - 4px;
+
+        &__title {
+            text-align: left;
+        }
+
+        &__info {
+            text-align: left;
+
+            .phone {
+
+                &__number {
+                    font-size: $font-size-h3;
+                    line-height: $line-height-h3;
+                }
+
+                .arrow-down {
+                    top: -6px;
+                }
+            }
+        }
+
+        &__form {
+            flex-direction: column;
+
+            .btn-red {
+                min-width: 200px;
+                margin: 20px 0 0;
+            }
+        }
+    }
+}

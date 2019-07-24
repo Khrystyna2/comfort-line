@@ -42,17 +42,7 @@
                 >a {
                     color: $light-gray;
                     position: relative;
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        display: block;
-                        border-top: 1px solid $light-gray;
-
-                    }
+                    text-decoration: underline;
                 }
             }
         }
@@ -141,7 +131,7 @@
 
 @media only screen and (max-width: 1199.8px) {
     .calendar-section {
-        padding: 111px 0 100;
+        padding: 111px 0 100px;
 
         &__title {
             font-size: $font-size-h2 - 6px;
@@ -216,6 +206,68 @@
 
             >p {
                 margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .calendar-section {
+        padding: 75px 0;
+
+        &__title {
+            width: 100%;
+
+            +p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .calendar-section {
+
+        &__title {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+
+        &__block {
+            margin-top: 0;
+        }
+
+        &__form {
+            max-width: 100%;
+            padding: 43px 20px 24px;
+        }
+
+    }
+
+    .calendar {
+        margin-bottom: 30px;
+
+        &__header {
+            margin-bottom: 37px;
+            text-align: center;
+
+            >p {
+                margin-left: 20px;
+            }
+        }
+
+        >ul {
+            width: 250px;
+            margin: 0 auto;
+
+            >li {
+                width: 30px;
+                height: 30px;
+                margin-left: 5px;
+
+                &:nth-child(7n) {
+                    margin-right: 0;
+                }
             }
         }
     }
