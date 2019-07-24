@@ -76,7 +76,7 @@
 
         >span {
             display: inline-block;
-            max-width: 74px;
+            max-width: 120px;
             margin-left: 33px;
             font-size: $font-size-h3;
             line-height: $line-height-h3;
@@ -99,6 +99,15 @@
 
 .price {
     padding-bottom: 142px;
+
+    .title-text-border {
+        font-size: 144px;
+        line-height: 173px;
+    }
+
+    .cards-dark {
+        padding: 37px 95px 97px;
+    }
 
     &__text {
         font-weight: 100;
@@ -164,6 +173,11 @@
         top: 38px;
         left: 39px;
         right: 39px;
+
+        >h4 {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
 
         >p {
             margin-top: 16px;
@@ -392,8 +406,6 @@
 
         &__text {
             max-width: 458px;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
             margin-bottom: 50px;
         }
     }
@@ -405,7 +417,7 @@
     }
 }
 
-@media only screen and (max-height: 640px) and (max-width: 1200px) {
+@media only screen and (max-height: 640px) and (min-width: 1200px) {
     .first-screen {
         height: 640px;
     }
@@ -417,7 +429,7 @@
     }
 }
 
-@media only screen and (max-width: 1999.8px) {
+@media only screen and (max-width: 1199.8px) {
     .first-screen {
         height: 370px;
 
@@ -426,12 +438,12 @@
         }
 
         &__title {
-            max-width: 500px;
+            max-width: 580px;
             margin: 11px 0 17px;
         }
 
         &__text {
-            max-width: 340px;
+            max-width: 380px;
             margin-bottom: 15px;
         }
     }
@@ -446,6 +458,350 @@
 
             >img {
                 width: 52%;
+            }
+        }
+    }
+
+    .our-account {
+        padding: 58px 0;
+
+        &__image {
+            position: static;
+            top: 0;
+            left: 0;
+            width: 400px;
+            margin-left: -10%;
+
+            >span {
+                display: block;
+                margin: -20px 0 4px 40px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            >small {
+                font-size: 12px;
+                line-height: 14px;
+                margin-left: 40px;
+            }
+        }
+
+        &__text {
+            font-size: 100px;
+            line-height: 120px;
+
+            >span {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+    }
+
+    .price {
+        padding-bottom: 129px;
+
+        .cards-dark {
+            padding: 37px 40px 44px;
+        }
+
+        &__text {
+            margin-top: 15px;
+        }
+
+        &__form {
+            margin-top: 53px;
+
+            .spinner {
+                >span {
+                    top: -30px;
+                }
+            }
+
+        }
+    }
+
+    .assortment {
+        padding: 37px 0 59px;
+
+        &__card {
+            height: 200px;
+        }
+
+        &__desc {
+            position: absolute;
+            top: 24px;
+            left: 30px;
+            right: 30px;
+
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+
+            >p {
+                margin-top: 10px;
+                width: 80%;
+            }
+        }
+
+        &__hover {
+            left: 30px;
+            bottom: 28px;
+        }
+    }
+
+    .sale {
+        &__title {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 - 6px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .slider-sale {
+        margin-bottom: 110px;
+
+        &__item {
+            .wrrap {
+                padding: 48px 45px;
+            }
+        }
+
+        &__image {
+            height: 360px;
+        }
+
+        .slider-dark__arrows {
+            top: -70px;
+        }
+    }
+
+    .reviews {
+        &__tab {
+            .tab-nav {
+                width: 200px;
+            }
+        }
+
+        &__header {
+            margin-bottom: 32px;
+
+            .icon-social {
+                left: 35px;
+                top: 35px;
+                width: 20px;
+            }
+        }
+
+        &__avatar {
+            @include circle-image(60px, 60px);
+            min-width: 60px;
+        }
+
+        &__title {
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+
+        &__desc {
+            width: 100%;
+
+            .video {
+                height: 140px;
+            }
+        }
+    }
+
+    .slider-reviews {
+
+        &.slick-slider .slick-track {
+            padding-bottom: 140px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 991.8px) {
+    .first-screen {
+
+        &__title {
+            max-width: 500px;
+        }
+
+        &__text {
+            max-width: 340px;
+        }
+    }
+
+    .our-account {
+        &__image {
+            width: 310px;
+            margin-left: -10%;
+        }
+
+        &__text {
+            font-size: 72px;
+            line-height: 86px;
+
+            >span {
+                max-width: 90px;
+                margin-left: 11px;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .price {
+
+        .cards-dark {
+            padding: 37px 30px 44px;
+        }
+
+        &__text {
+            width: 60%;
+        }
+
+        &__form {
+
+            .btn-red {
+                width: 210px;
+            }
+        }
+    }
+
+    .assortment {
+
+        .title-text-border {
+            font-size: 96px;
+            line-height: 115px;
+            margin-bottom: -26px;
+        }
+
+        &__card {
+            height: 150px;
+        }
+
+        &__desc {
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            right: 13px;
+
+            &_big {
+                top: 24px;
+                left: 30px;
+                right: 30px;
+            }
+        }
+
+        &__hover {
+            left: 13px;
+            bottom: 15px;
+        }
+    }
+
+    .reviews {
+        &__tab {
+            .tab-nav {
+                top: -16px;
+            }
+        }
+
+        &__header {
+            .icon-social {
+                left: 38px;
+                top: 38px;
+                width: 25px;
+            }
+        }
+
+        &__title {
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+
+            >p {
+                width: 100%;
+            }
+        }
+
+        &__desc {
+            .video {
+                max-width: 320px;
+                height: 190px;
+                box-shadow: 3px 20px 20px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    .slider-reviews {
+        .slider-dark__arrows {
+            top: -114px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767.8px) {
+    .our-account {
+        &__image {
+            width: 80%;
+            margin: 0 auto;
+
+            >span {
+                margin-top: -60px;
+            }
+
+            >small {
+                margin-bottom: 30px;
+                display: inline-block;
+            }
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    .price {
+        .title-text-border {
+            font-size: 72px;
+            line-height: 86px;
+        }
+
+        .cards-dark {
+            padding: 20px 30px 25px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__form {
+            margin-top: 20px;
+            flex-wrap: wrap;
+
+            .spinner {
+
+                >span {
+                    position: static;
+                    top: 0;
+                    left: 0;
+                    @include transform(translateX(0));
+                    margin-bottom: 12px;
+                    display: inline-block;
+                }
+            }
+
+            .btn-red {
+                width: 100%;
+                margin-top: 40px;
             }
         }
     }

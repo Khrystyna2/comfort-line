@@ -98,7 +98,16 @@ $(document).ready(function () {
 				slide: ".slider-reviews__item",
 				nextArrow: ".slider-reviews-next",
 				prevArrow: ".slider-reviews-prev",
-				speed: 1000
+				speed: 1000,
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					}
+				]
 			})
 			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;

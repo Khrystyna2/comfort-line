@@ -78,11 +78,13 @@
         margin-bottom: 41px;
         text-align: left;
         font-weight: 700;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
 
         >p {
             position: relative;
             display: inline-block;
-            color: #777777;
+            color: $tab-color;
             margin-left: 20px;
 
             &.active {
@@ -132,6 +134,88 @@
             &.active {
                 background-color: $btn-red;
                 color: $white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .calendar-section {
+        padding: 111px 0 100;
+
+        &__title {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 -6px;
+            margin-bottom: 10px;
+        }
+
+        &__block {
+            margin-top: 25px;
+        }
+
+        &__form {
+            padding: 40px 35px 50px 20px;
+        }
+
+    }
+
+    .calendar {
+        margin-bottom: 20px;
+
+        &__header {
+            margin-bottom: 20px;
+
+            >p {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991.8px) {
+    .calendar-section {
+
+        &__title {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+
+            +p {
+                width: 60%;
+            }
+        }
+
+        &__block {
+
+            margin-top: 60px;
+        }
+
+        &__form {
+            flex: 0 0 100%;
+            max-width: 450px;
+            padding: 43px 0 61px;
+            margin: 0 auto;
+
+            .group-checkobox {
+                justify-content: center;
+            }
+        }
+
+        &__img {
+            display: none;
+        }
+
+    }
+
+    .calendar {
+        margin-bottom: 54px;
+
+        &__header {
+            margin-bottom: 41px;
+            text-align: center;
+
+            >p {
+                margin-left: 20px;
             }
         }
     }

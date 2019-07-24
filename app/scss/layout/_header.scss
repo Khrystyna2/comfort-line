@@ -169,6 +169,13 @@
                 margin-top: 25px;
                 justify-content: flex-end;
                 width: calc(100% - 242px);
+
+                >li {
+
+                    >a {
+                        width: 20px;
+                    }
+                }
             }
         }
 
@@ -333,9 +340,102 @@
     }
 }
 
-@media screen and (max-width: 991.8px) {}
+@media screen and (max-width: 767.8px) {
+    .header {
+        &__top {
+            .btn-border {
+                display: none;
+            }
 
-@media screen and (max-width: 767.8px) {}
+            .social-networks {
+                margin-top: 25px;
+                justify-content: flex-end;
+                width: calc(100% - 242px);
+
+                >li {
+
+                    >a {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        &__address {
+            display: none;
+        }
+
+        &__logo {
+
+            >a {
+                width: 90px;
+                margin-right: 12px;
+            }
+
+            >span {
+                width: 180px;
+            }
+        }
+
+        .language {
+            >a {
+
+                &:first-child {
+                    &::after {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+
+                &.active {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+
+    .phone {
+        margin: 25px 0 0 auto;
+        position: relative;
+        padding-left: 10px;
+
+        &__list {
+            display: none;
+            width: 100%;
+            padding: 10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background-color: $bg-dark;
+            z-index: 2;
+
+            >li {
+                margin-bottom: 6px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__number {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+
+            >img {
+                margin-right: 8px;
+                width: 14px;
+            }
+        }
+
+        .arrow-down {
+            top: -10px;
+            margin-left: 8px;
+        }
+    }
+}
 
 @media screen and (max-width: 575.8px) {}
 
