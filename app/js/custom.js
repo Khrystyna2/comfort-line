@@ -40,9 +40,9 @@ $(document).ready(function () {
 			});
 	});
 
-	// slider sale
+	// slider promotions
 	$(function () {
-		$(".slider-sale")
+		$(".slider-promotions")
 			.on("init", function (event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
@@ -59,9 +59,9 @@ $(document).ready(function () {
 				// autoplay: true,
 				autoplaySpeed: 2000,
 				focusOnSelect: false,
-				slide: ".slider-sale__item",
-				nextArrow: ".slider-sale-next",
-				prevArrow: ".slider-sale-prev"
+				slide: ".slider-promotions__item",
+				nextArrow: ".slider-promotions-next",
+				prevArrow: ".slider-promotions-prev"
 			})
 			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;

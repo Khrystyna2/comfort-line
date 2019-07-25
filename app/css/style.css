@@ -395,37 +395,37 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .assortment__hover img { margin-left: 10px; }
 
-.sale__title { font-weight: 900; font-size: 36px; line-height: 43px; margin-bottom: 43px; color: #fff; }
+.promotions__title { font-weight: 900; font-size: 36px; line-height: 43px; margin-bottom: 43px; color: #fff; }
 
-.sale__timer > span { font-weight: 700; margin-bottom: 16px; display: block; }
+.promotions__timer > span { font-weight: 700; margin-bottom: 16px; display: block; }
 
-.sale__timer .timer { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 285px; }
+.promotions__timer .timer { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 285px; }
 
-.sale__timer .timer > li { font-size: 14px; line-height: 17px; text-align: center; }
+.promotions__timer .timer > li { font-size: 14px; line-height: 17px; text-align: center; }
 
-.sale__timer .timer > li > span { height: 55px; width: 70px; font-weight: 900; font-size: 36px; line-height: 43px; background-color: #454545; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 8px; }
+.promotions__timer .timer > li > span { height: 55px; width: 70px; font-weight: 900; font-size: 36px; line-height: 43px; background-color: #454545; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 8px; }
 
-.sale__timer .timer > li > span::after { content: ':'; padding-left: 8px; }
+.promotions__timer .timer > li > span::after { content: ':'; padding-left: 8px; }
 
-.sale__timer .timer > li > span.days { padding-left: 10px; }
+.promotions__timer .timer > li > span.days { padding-left: 10px; }
 
-.sale__timer .timer > li > span.minutes { padding-right: 6px; }
+.promotions__timer .timer > li > span.minutes { padding-right: 6px; }
 
-.sale__timer .timer > li > span.seconds { background-color: #ff1b1b; }
+.promotions__timer .timer > li > span.seconds { background-color: #ff1b1b; }
 
-.sale__timer .timer > li > span.seconds::after { display: none; }
+.promotions__timer .timer > li > span.seconds::after { display: none; }
 
-.sale__timer .timer > li > small { opacity: 0.5; }
+.promotions__timer .timer > li > small { opacity: 0.5; }
 
-.slider-sale { position: relative; width: 100%; padding: 0; margin-bottom: 167px; }
+.slider-promotions { position: relative; width: 100%; padding: 0; margin-bottom: 167px; }
 
-.slider-sale__item { padding: 0; }
+.slider-promotions__item { padding: 0; }
 
-.slider-sale__item .wrrap { -webkit-flex: 0 0 59.9%; -ms-flex: 0 0 59.9%; flex: 0 0 59.9%; padding: 48px 75px; }
+.slider-promotions__item .wrrap { -webkit-flex: 0 0 59.9%; -ms-flex: 0 0 59.9%; flex: 0 0 59.9%; padding: 48px 75px; }
 
-.slider-sale__image { height: 400px; -webkit-flex: 0 0 40.1%; -ms-flex: 0 0 40.1%; flex: 0 0 40.1%; }
+.slider-promotions__image { height: 400px; -webkit-flex: 0 0 40.1%; -ms-flex: 0 0 40.1%; flex: 0 0 40.1%; }
 
-.slider-sale__image > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+.slider-promotions__image > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
 .reviews { position: relative; }
 
@@ -494,11 +494,11 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortment__desc > h4 { font-size: 18px; line-height: 22px; }
   .assortment__desc > p { margin-top: 10px; width: 80%; }
   .assortment__hover { left: 30px; bottom: 28px; }
-  .sale__title { font-size: 30px; line-height: 37px; margin-bottom: 32px; }
-  .slider-sale { margin-bottom: 110px; }
-  .slider-sale__item .wrrap { padding: 48px 45px; }
-  .slider-sale__image { height: 360px; }
-  .slider-sale .slider-dark__arrows { top: -70px; }
+  .promotions__title { font-size: 30px; line-height: 37px; margin-bottom: 32px; }
+  .slider-promotions { margin-bottom: 110px; }
+  .slider-promotions__item .wrrap { padding: 48px 45px; }
+  .slider-promotions__image { height: 360px; }
+  .slider-promotions .slider-dark__arrows { top: -70px; }
   .reviews__tab .tab-nav { width: 200px; }
   .reviews__header { margin-bottom: 32px; }
   .reviews__header .icon-social { left: 35px; top: 35px; width: 20px; }
@@ -523,7 +523,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortment__desc { position: absolute; top: 13px; left: 13px; right: 13px; }
   .assortment__desc_big { top: 24px; left: 30px; right: 30px; }
   .assortment__hover { left: 13px; bottom: 15px; }
-  .sale__title { font-size: 24px; line-height: 29px; margin-bottom: 32px; }
+  .promotions__title { font-size: 24px; line-height: 29px; margin-bottom: 32px; }
   .reviews__tab .tab-nav { top: -16px; }
   .reviews__header .icon-social { left: 38px; top: 38px; width: 25px; }
   .reviews__title > h4 { font-size: 18px; line-height: 22px; }
@@ -550,16 +550,16 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortment__desc > p { width: 100%; }
   .assortment__desc > h4 { max-width: 110px; }
   .assortment__hover { left: 16px; bottom: 20px; }
-  .sale__title { font-size: 18px; line-height: 22px; margin-bottom: 30px; }
-  .sale__timer > span { margin-bottom: 8px; }
-  .sale__timer .timer { width: 190px; }
-  .sale__timer .timer > li { font-size: 12px; line-height: 14px; }
-  .sale__timer .timer > li > span { height: 35px; width: 50px; font-size: 24px; line-height: 29px; margin-bottom: 4px; }
-  .sale__timer .timer > li > span::after { content: ':'; padding-left: 4px; }
-  .slider-sale { margin-bottom: 125px; }
-  .slider-sale__item .wrrap { padding: 23px 20px 25px; }
-  .slider-sale__image { height: 240px; }
-  .slider-sale .slider-dark__arrows { top: auto; }
+  .promotions__title { font-size: 18px; line-height: 22px; margin-bottom: 30px; }
+  .promotions__timer > span { margin-bottom: 8px; }
+  .promotions__timer .timer { width: 190px; }
+  .promotions__timer .timer > li { font-size: 12px; line-height: 14px; }
+  .promotions__timer .timer > li > span { height: 35px; width: 50px; font-size: 24px; line-height: 29px; margin-bottom: 4px; }
+  .promotions__timer .timer > li > span::after { content: ':'; padding-left: 4px; }
+  .slider-promotions { margin-bottom: 125px; }
+  .slider-promotions__item .wrrap { padding: 23px 20px 25px; }
+  .slider-promotions__image { height: 240px; }
+  .slider-promotions .slider-dark__arrows { top: auto; }
   .reviews__tab .title-text-border { margin-bottom: 20px; }
   .reviews__tab .tab-nav { width: 100%; position: static; top: 0; }
   .reviews__desc .video { box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.3); }
@@ -585,10 +585,10 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortment__card { height: 110px; }
   .assortment__card_big { height: 155px; }
   .assortment__hover { display: none; }
-  .sale__timer .timer > li > span { width: 50px; }
-  .slider-sale__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  .slider-sale__item .wrrap { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
-  .slider-sale__image { height: 166px; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; -webkit-order: -1; -ms-flex-order: -1; order: -1; } }
+  .promotions__timer .timer > li > span { width: 50px; }
+  .slider-promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  .slider-promotions__item .wrrap { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+  .slider-promotions__image { height: 166px; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; -webkit-order: -1; -ms-flex-order: -1; order: -1; } }
 
 @media only screen and (max-width: 375px) { .our-account__text { text-align: left; }
   .our-account__text > span { max-width: 100%; display: block; margin: -6px 0 10px; } }

@@ -215,7 +215,7 @@
     }
 }
 
-.sale {
+.promotions {
     &__title {
         font-weight: 900;
         font-size: $font-size-h2;
@@ -283,7 +283,7 @@
     }
 }
 
-.slider-sale {
+.slider-promotions {
     position: relative;
     width: 100%;
     padding: 0;
@@ -565,7 +565,7 @@
         }
     }
 
-    .sale {
+    .promotions {
         &__title {
             font-size: $font-size-h2 - 6px;
             line-height: $line-height-h2 - 6px;
@@ -573,7 +573,7 @@
         }
     }
 
-    .slider-sale {
+    .slider-promotions {
         margin-bottom: 110px;
 
         &__item {
@@ -721,7 +721,7 @@
         }
     }
 
-    .sale {
+    .promotions {
         &__title {
             font-size: $font-size-h3;
             line-height: $line-height-h3;
@@ -870,7 +870,7 @@
         }
     }
 
-    .sale {
+    .promotions {
         &__title {
             font-size: $base-font-size;
             line-height: $base-line-height;
@@ -906,7 +906,7 @@
         }
     }
 
-    .slider-sale {
+    .slider-promotions {
         margin-bottom: 125px;
 
         &__item {
@@ -1053,7 +1053,7 @@
         }
     }
 
-    .sale {
+    .promotions {
         &__timer {
             .timer {
                 >li {
@@ -1065,7 +1065,7 @@
         }
     }
 
-    .slider-sale {
+    .slider-promotions {
         &__item {
             flex-direction: column;
 
