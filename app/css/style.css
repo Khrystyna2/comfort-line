@@ -166,7 +166,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .cards-dark { background-color: #25282a; color: #fff; box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.3); }
 
-.box-shadow { box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); }
+.bg-white-shadow { background-color: #fff; box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); }
 
 .spinner { width: 255px; position: relative; text-align: center; }
 
@@ -199,6 +199,14 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .label-checkbox .checkmark::after { content: ""; position: absolute; display: none; left: 0; top: -1px; width: 15px; height: 15px; background: url(../image/icons/checked.svg) no-repeat center center; }
 
+.label-radio-input { display: block; position: relative; height: 30px; width: 30px; border: 1px solid transparent; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; margin: 0; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.label-radio-input > input { position: absolute; opacity: 0; cursor: pointer; }
+
+.label-radio-input > input:checked ~ .radio-input-checkmark { display: block; }
+
+.label-radio-input .radio-input-checkmark { position: absolute; display: none; left: -6px; top: -6px; width: 42px; height: 42px; border: 3px solid #fff; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+
 .nav-pills .nav-link { color: #777777; height: 50px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding-left: 62px; border-left: 3px solid transparent; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; }
 
 .nav-pills .nav-link:hover, .nav-pills .nav-link.active { color: #000; font-weight: 600; }
@@ -212,6 +220,20 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 .bread-crumbs__item::after { content: '/'; color: #FF9300; margin: 0 2px 0 6px; }
 
 .bread-crumbs__item > span { color: #979797; }
+
+.download-catalog__wrap { position: relative; padding: 68px 0 97px; }
+
+.download-catalog__wrap p { font-size: 14px; line-height: 17px; color: #020202; margin-bottom: 0; }
+
+.download-catalog__title { color: #2E2E2E; font-size: 36px; line-height: 43px; font-weight: 900; margin-bottom: 16px; }
+
+.download-catalog__form { margin-top: 42px; }
+
+.download-catalog__form > input { width: 350px; margin-bottom: 10px; }
+
+.download-catalog__form .btn-red { margin-top: 20px; }
+
+.download-catalog__img { position: absolute; top: -131px; right: -184px; max-width: 830px; }
 
 @media only screen and (max-width: 1199.8px) { body { line-height: 19px; font-size: 16px !important; }
   .title-section, .title-white { font-size: 48px; line-height: 48px; }
@@ -718,6 +740,38 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 .function-roletta__form > form { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: 23px; }
 
 .function-roletta__form > form .btn-red { min-width: 350px; margin-left: 30px; }
+
+.roletta-assortement { padding: 119px 0 200px; }
+
+.roletta-assortement__title { margin-bottom: 64px; }
+
+.roletta-assortement__card { padding: 34px 19px 16px; text-align: center; height: 100%; }
+
+.roletta-assortement__card > h4 { font-size: 24px; line-height: 29px; margin-bottom: 16px; height: 61px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.roletta-assortement__card > p { margin-bottom: 30px; }
+
+.roletta-assortement__card > img { position: relative; right: -19px; width: 100%; }
+
+.roletta-assortement__card > small { font-weight: 100; font-size: 14px; line-height: 17px; opacity: 0.5; display: block; width: 78%; margin: 20px auto 0; }
+
+.roletta-assortement__color { position: relative; background-color: #fff; margin-top: 55px; padding: 16px 32px 0 65px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-align-items: center; -ms-flex-align: center; align-items: center; z-index: 1; }
+
+.roletta-assortement__color .group-radio-input { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.roletta-assortement__color .group-radio-input > h3 { width: 100%; font-size: 36px; line-height: 43px; font-weight: 900; margin-bottom: 10px; }
+
+.roletta-assortement__color .group-radio-input .label-radio-input { margin: 50px 65px 0 0; }
+
+.roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(6n) { margin-right: 0; }
+
+.roletta-download-catalog { margin-bottom: 212px; background-color: #25282a; }
+
+.roletta-download-catalog .download-catalog__wrap p { color: #fff; }
+
+.roletta-download-catalog .download-catalog__title { color: #fff; }
+
+.roletta-download-catalog .download-catalog__img { top: -180px; right: -150px; max-width: 900px; }
 
 /*
 ================================================================================
