@@ -128,6 +128,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .btn-red:hover { background: #DA2E00; box-shadow: 0px 10px 35px rgba(216, 48, 3, 0.4); }
 
+.line { width: 100%; opacity: 0.1; border: 1px solid #000; }
+
 .social-networks { display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .social-networks > li:first-child { margin-right: 17px; }
@@ -202,6 +204,14 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 .nav-pills .nav-link:hover, .nav-pills .nav-link.active { color: #000; font-weight: 600; }
 
 .nav-pills .nav-link.active { background-color: transparent; border-color: #FF9300; }
+
+.bread-crumbs { padding: 34px 0 54px; font-weight: 100; font-size: 14px; line-height: 17px; color: #fff; }
+
+.bread-crumbs__item { display: inline-block; }
+
+.bread-crumbs__item::after { content: '/'; color: #FF9300; margin: 0 2px 0 6px; }
+
+.bread-crumbs__item > span { color: #979797; }
 
 @media only screen and (max-width: 1199.8px) { body { line-height: 19px; font-size: 16px !important; }
   .title-section, .title-white { font-size: 48px; line-height: 48px; }
@@ -371,29 +381,29 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .price__form .spinner > span { position: absolute; top: -36px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); }
 
-.assortment { background-color: #25282a; padding: 87px 0 124px; position: relative; z-index: 0; }
+.assortement { background-color: #25282a; padding: 87px 0 124px; position: relative; z-index: 0; }
 
-.assortment .title-text-border { color: #25282a; text-shadow: -1px -1px 0 #707070, 1px -1px 0 #707070, -1px 1px 0 #707070, 1px 1px 0 #707070; }
+.assortement .title-text-border { color: #25282a; text-shadow: -1px -1px 0 #707070, 1px -1px 0 #707070, -1px 1px 0 #707070, 1px 1px 0 #707070; }
 
-.assortment__card { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 260px; width: 100%; color: #fff; margin-bottom: 30px; }
+.assortement__card { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 260px; width: 100%; color: #fff; margin-bottom: 30px; }
 
-.assortment__card > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+.assortement__card > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
-.assortment__card:hover { color: #fff; box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4); }
+.assortement__card:hover { color: #fff; box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4); }
 
-.assortment__card:hover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
+.assortement__card:hover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
 
-.assortment__card:hover .assortment__hover { opacity: 1; }
+.assortement__card:hover .assortement__hover { opacity: 1; }
 
-.assortment__desc { position: absolute; top: 38px; left: 39px; right: 39px; }
+.assortement__desc { position: absolute; top: 38px; left: 39px; right: 39px; }
 
-.assortment__desc > h4 { font-size: 24px; line-height: 29px; }
+.assortement__desc > h4 { font-size: 24px; line-height: 29px; }
 
-.assortment__desc > p { margin-top: 16px; width: 60%; }
+.assortement__desc > p { margin-top: 16px; width: 60%; }
 
-.assortment__hover { opacity: 0; position: absolute; left: 39px; bottom: 36px; font-weight: 100; font-size: 14px; line-height: 17px; transition: opacity 0.4s; -webkit-transition: opacity 0.4s; -moz-transition: opacity 0.4s; -ms-transition: opacity 0.4s; -o-transition: opacity 0.4s; }
+.assortement__hover { opacity: 0; position: absolute; left: 39px; bottom: 36px; font-weight: 100; font-size: 14px; line-height: 17px; transition: opacity 0.4s; -webkit-transition: opacity 0.4s; -moz-transition: opacity 0.4s; -ms-transition: opacity 0.4s; -o-transition: opacity 0.4s; }
 
-.assortment__hover img { margin-left: 10px; }
+.assortement__hover img { margin-left: 10px; }
 
 .promotions__title { font-weight: 900; font-size: 36px; line-height: 43px; margin-bottom: 43px; color: #fff; }
 
@@ -488,12 +498,12 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .price__text { margin-top: 15px; }
   .price__form { margin-top: 53px; }
   .price__form .spinner > span { top: -30px; }
-  .assortment { padding: 37px 0 59px; }
-  .assortment__card { height: 200px; }
-  .assortment__desc { position: absolute; top: 24px; left: 30px; right: 30px; }
-  .assortment__desc > h4 { font-size: 18px; line-height: 22px; }
-  .assortment__desc > p { margin-top: 10px; width: 80%; }
-  .assortment__hover { left: 30px; bottom: 28px; }
+  .assortement { padding: 37px 0 59px; }
+  .assortement__card { height: 200px; }
+  .assortement__desc { position: absolute; top: 24px; left: 30px; right: 30px; }
+  .assortement__desc > h4 { font-size: 18px; line-height: 22px; }
+  .assortement__desc > p { margin-top: 10px; width: 80%; }
+  .assortement__hover { left: 30px; bottom: 28px; }
   .promotions__title { font-size: 30px; line-height: 37px; margin-bottom: 32px; }
   .slider-promotions { margin-bottom: 110px; }
   .slider-promotions__item .wrrap { padding: 48px 45px; }
@@ -518,11 +528,11 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .price .cards-dark { padding: 37px 30px 44px; }
   .price__text { width: 60%; }
   .price__form .btn-red { width: 210px; }
-  .assortment .title-text-border { font-size: 96px; line-height: 115px; margin-bottom: -26px; }
-  .assortment__card { height: 150px; }
-  .assortment__desc { position: absolute; top: 13px; left: 13px; right: 13px; }
-  .assortment__desc_big { top: 24px; left: 30px; right: 30px; }
-  .assortment__hover { left: 13px; bottom: 15px; }
+  .assortement .title-text-border { font-size: 96px; line-height: 115px; margin-bottom: -26px; }
+  .assortement__card { height: 150px; }
+  .assortement__desc { position: absolute; top: 13px; left: 13px; right: 13px; }
+  .assortement__desc_big { top: 24px; left: 30px; right: 30px; }
+  .assortement__hover { left: 13px; bottom: 15px; }
   .promotions__title { font-size: 24px; line-height: 29px; margin-bottom: 32px; }
   .reviews__tab .tab-nav { top: -16px; }
   .reviews__header .icon-social { left: 38px; top: 38px; width: 25px; }
@@ -542,14 +552,14 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .price__form { margin-top: 20px; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .price__form .spinner > span { position: static; top: 0; left: 0; transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); margin-bottom: 12px; display: inline-block; }
   .price__form .btn-red { width: 100%; margin-top: 40px; }
-  .assortment { padding: 28px 0 0; }
-  .assortment .title-text-border { font-size: 56px; line-height: 65px; margin-bottom: 20px; }
-  .assortment__card { height: 150px; }
-  .assortment__card_big { height: 180px; }
-  .assortment__desc { position: absolute; top: 16px; left: 20px; right: 20px; }
-  .assortment__desc > p { width: 100%; }
-  .assortment__desc > h4 { max-width: 110px; }
-  .assortment__hover { left: 16px; bottom: 20px; }
+  .assortement { padding: 28px 0 0; }
+  .assortement .title-text-border { font-size: 56px; line-height: 65px; margin-bottom: 20px; }
+  .assortement__card { height: 150px; }
+  .assortement__card_big { height: 180px; }
+  .assortement__desc { position: absolute; top: 16px; left: 20px; right: 20px; }
+  .assortement__desc > p { width: 100%; }
+  .assortement__desc > h4 { max-width: 110px; }
+  .assortement__hover { left: 16px; bottom: 20px; }
   .promotions__title { font-size: 18px; line-height: 22px; margin-bottom: 30px; }
   .promotions__timer > span { margin-bottom: 8px; }
   .promotions__timer .timer { width: 190px; }
@@ -581,10 +591,10 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .our-account__text { text-align: left; }
   .price__form .spinner { margin-bottom: 11px; }
   .price__form .btn-red { margin-top: 29px; }
-  .assortment .title-text-border { font-size: 36px; line-height: 43px; }
-  .assortment__card { height: 110px; }
-  .assortment__card_big { height: 155px; }
-  .assortment__hover { display: none; }
+  .assortement .title-text-border { font-size: 36px; line-height: 43px; }
+  .assortement__card { height: 110px; }
+  .assortement__card_big { height: 155px; }
+  .assortement__hover { display: none; }
   .promotions__timer .timer > li > span { width: 50px; }
   .slider-promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .slider-promotions__item .wrrap { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
@@ -668,6 +678,46 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .calendar > ul { width: 250px; margin: 0 auto; }
   .calendar > ul > li { width: 30px; height: 30px; margin-left: 5px; }
   .calendar > ul > li:nth-child(7n) { margin-right: 0; } }
+
+.roletta-header { position: relative; color: #fff; padding-bottom: 145px; }
+
+.roletta-header .container { position: relative; }
+
+.roletta-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 336px; background-color: #25282a; z-index: -1; }
+
+.roletta-header__img { position: absolute; bottom: 192px; right: -45px; width: 48%; }
+
+.roletta-header__title { margin-bottom: 17px; }
+
+.roletta-header p { width: 78%; }
+
+.roletta-header__card { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.15); margin-top: 62px; }
+
+.roletta-header__card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
+
+.roletta-header__card > h4 { position: absolute; left: 31px; bottom: 18px; font-size: 24px; line-height: 29px; }
+
+.function-roletta { padding-bottom: 143px; }
+
+.function-roletta__item { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 24px; line-height: 29px; font-weight: 500; margin-bottom: 58px; }
+
+.function-roletta__item > p { margin-left: 30px; margin-bottom: 0; }
+
+.function-roletta .circle { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 160px; min-width: 160px; height: 157px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border: 1px solid #B1B1B1; }
+
+.function-roletta .circle_big { width: 255px; min-width: 255px; height: 251px; }
+
+.function-roletta .mb-87 { margin-bottom: 87px; }
+
+.function-roletta__form { padding: 50px 75px 67px; }
+
+.function-roletta__form > h3 { font-size: 36px; line-height: 43px; margin-bottom: 16px; }
+
+.function-roletta__form > p { width: 56.4%; }
+
+.function-roletta__form > form { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: 23px; }
+
+.function-roletta__form > form .btn-red { min-width: 350px; margin-left: 30px; }
 
 /*
 ================================================================================

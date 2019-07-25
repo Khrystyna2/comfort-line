@@ -1,0 +1,124 @@
+.roletta-header {
+    position: relative;
+    color: $text-color-white;
+    padding-bottom: 145px;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 336px;
+        background-color: $bg-dark;
+        z-index: -1;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 192px;
+        right: -45px;
+        width: 48%;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    p {
+        width: 78%;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.15);
+        margin-top: 62px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $black-opacity;
+        }
+
+        >h4 {
+            position: absolute;
+            left: 31px;
+            bottom: 18px;
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+    }
+}
+
+.function-roletta {
+    padding-bottom: 143px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: $font-size-h3;
+        line-height: $line-height-h3;
+        font-weight: 500;
+        margin-bottom: 58px;
+
+        >p {
+            margin-left: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        min-width: 160px;
+        height: 157px;
+        @include radius(50%);
+        border: 1px solid $light-gray;
+
+        &_big {
+            width: 255px;
+            min-width: 255px;
+            height: 251px;
+        }
+    }
+
+    .mb-87 {
+        margin-bottom: 87px;
+    }
+
+    &__form {
+        padding: 50px 75px 67px;
+
+        >h3 {
+            font-size: $font-size-h2;
+            line-height: $line-height-h2;
+            margin-bottom: 16px;
+        }
+
+        >p {
+            width: 56.4%;
+        }
+
+        >form {
+            display: flex;
+            align-items: center;
+            margin-top: 23px;
+
+            .btn-red {
+                min-width: 350px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

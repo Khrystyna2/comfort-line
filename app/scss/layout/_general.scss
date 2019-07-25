@@ -49,6 +49,12 @@ body {
     }
 }
 
+.line {
+    width: 100%;
+    opacity: 0.1;
+    border: 1px solid $black;
+}
+
 .social-networks {
     display: flex;
 
@@ -271,6 +277,28 @@ body {
         &.active {
             background-color: transparent;
             border-color: $yellow;
+        }
+    }
+}
+
+.bread-crumbs {
+    padding: 34px 0 54px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color-white;
+
+    &__item {
+        display: inline-block;
+
+        &::after {
+            content: '/';
+            color: $yellow;
+            margin: 0 2px 0 6px;
+        }
+
+        >span {
+            color: $gray;
         }
     }
 }
