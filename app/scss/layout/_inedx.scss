@@ -164,7 +164,17 @@
 
         &:hover {
             color: $text-color-white;
-            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 20px 50px $black-opacity;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $black-opacity;
+            }
 
             .assortment__hover {
                 opacity: 1;
@@ -332,7 +342,8 @@
     }
 
     &__avatar {
-        @include circle-image(65px, 65px);
+        @include circle-image(65px,
+        65px);
         min-width: 65px;
         margin-right: 30px;
     }
@@ -598,7 +609,8 @@
         }
 
         &__avatar {
-            @include circle-image(60px, 60px);
+            @include circle-image(60px,
+            60px);
             min-width: 60px;
         }
 

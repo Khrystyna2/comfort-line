@@ -110,18 +110,30 @@
 
     &__info {
         .phone {
+            display: inline-block;
             margin-bottom: 20px;
+            margin-left: -12px;
 
             &__number {
                 font-size: $font-size-h1;
                 line-height: $line-height-h1;
             }
 
+            &__list {
+                >li {
+                    padding: 0;
+                }
+            }
+
             .arrow-down {
                 position: relative;
                 top: -20px;
                 margin-left: 9px;
-                width: 34px
+
+                >svg {
+                    width: 34px;
+                    height: 34px;
+                }
             }
         }
     }
@@ -176,7 +188,7 @@
 
         &__info {
             .phone {
-                margin: 0 0 43px;
+                margin: 0 0 43px -12px;
 
                 &__number {
                     font-size: $font-size-h1 - 10px;
@@ -185,7 +197,11 @@
 
                 .arrow-down {
                     top: -18px;
-                    width: 32px
+
+                    >svg {
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
             }
         }
@@ -221,8 +237,12 @@
 
                 .arrow-down {
                     top: -10px;
-                    width: 18px;
                     margin-left: 16px;
+
+                    >svg {
+                        width: 18px;
+                        height: 18px;
+                    }
                 }
             }
         }

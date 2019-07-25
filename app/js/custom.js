@@ -1,8 +1,7 @@
 $(document).ready(function () {
 	$(".phone .arrow-down").click(function () {
-		$(this)
-			.next()
-			.slideToggle();
+		$(this).parent().toggleClass('open');
+		$(this).next().toggleClass('show');
 	});
 
 	// slider first screen
@@ -62,8 +61,7 @@ $(document).ready(function () {
 				focusOnSelect: false,
 				slide: ".slider-sale__item",
 				nextArrow: ".slider-sale-next",
-				prevArrow: ".slider-sale-prev",
-				speed: 1000
+				prevArrow: ".slider-sale-prev"
 			})
 			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
@@ -98,7 +96,6 @@ $(document).ready(function () {
 				slide: ".slider-reviews__item",
 				nextArrow: ".slider-reviews-next",
 				prevArrow: ".slider-reviews-prev",
-				speed: 1000,
 				responsive: [
 					{
 						breakpoint: 992,

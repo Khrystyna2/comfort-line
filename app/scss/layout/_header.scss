@@ -64,20 +64,39 @@
 
 .phone {
     position: relative;
-    padding-left: 10px;
+    padding: 7px 12px 0 15px;
+    color: $text-color-white;
+
+    &.open {
+        background-color: $base-bg;
+        color: $text-color;
+
+        svg {
+            fill: $black;
+        }
+    }
+
+    svg {
+        fill: $white;
+    }
 
     &__list {
         display: none;
         width: 100%;
-        padding: 10px;
+        padding: 7px 12px 15px 15px;
         position: absolute;
         left: 0;
         right: 0;
         top: 100%;
-        background-color: $bg-dark;
+        background-color: $base-bg;
         z-index: 2;
 
+        &.show {
+            display: block;
+        }
+
         >li {
+            padding-left: 32px;
             margin-bottom: 6px;
 
             &:last-child {
@@ -88,25 +107,29 @@
 
     &__number {
         display: inline-flex;
+        align-items: center;
         font-weight: 900;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: $font-size-h3;
+        line-height: $line-height-h3;
 
-        >img {
+        >svg {
             margin-right: 10px;
             width: 22px;
         }
 
         >a {
-            color: $text-color-whi te;
+            &:hover {
+                color: $yellow;
+            }
         }
     }
 
     .arrow-down {
         position: relative;
-        top: -12px;
+        top: -10px;
         margin-left: 9px;
         width: 10px;
+        cursor: pointer;
     }
 }
 
@@ -172,7 +195,7 @@
             .social-networks {
                 margin-top: 25px;
                 justify-content: flex-end;
-                width: calc(100% - 242px);
+                width: calc(100% - 260px);
 
                 >li {
 
@@ -215,28 +238,6 @@
 
     .phone {
         margin: 25px 0 0 auto;
-        position: relative;
-        padding-left: 10px;
-
-        &__list {
-            display: none;
-            width: 100%;
-            padding: 10px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 100%;
-            background-color: $bg-dark;
-            z-index: 2;
-
-            >li {
-                margin-bottom: 6px;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
 
         &__number {
             font-size: $base-font-size;
