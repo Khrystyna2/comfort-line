@@ -52,7 +52,7 @@ body {
 .line {
     width: 100%;
     opacity: 0.1;
-    border: 1px solid $black;
+    border-top: 1px solid $black;
 }
 
 .social-networks {
@@ -110,6 +110,7 @@ body {
     box-shadow: none;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    font-weight: 300;
 }
 
 .input-bark {
