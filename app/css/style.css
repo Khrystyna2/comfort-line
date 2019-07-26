@@ -21,6 +21,8 @@ button { border: none; background-color: transparent; cursor: pointer; }
 
 img, iframe { max-width: 100%; }
 
+p { margin: 0; }
+
 @font-face { font-family: 'Museo Sans Cyrl'; src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot"); src: local("../fonts/MuseoSans/MuseoSansCyrl-100"), url("../fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-100.ttf") format("truetype"); font-weight: 100; font-style: normal; }
 
 @font-face { font-family: 'Museo Sans Cyrl'; src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot"); src: local("../fonts/MuseoSans/MuseoSansCyrl-300"), url("../fonts/MuseoSans/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype"); font-weight: 300; font-style: normal; }
@@ -128,6 +130,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .btn-red:hover { background: #DA2E00; box-shadow: 0px 10px 35px rgba(216, 48, 3, 0.4); }
 
+.line { width: 100%; opacity: 0.1; border-top: 1px solid #000; }
+
 .social-networks { display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .social-networks > li:first-child { margin-right: 17px; }
@@ -144,7 +148,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .title-text-border { color: #fff; font-weight: 900; font-size: 144px; line-height: 173px; text-shadow: -1px -1px 0 #d3d3d3, 1px -1px 0 #d3d3d3, -1px 1px 0 #d3d3d3, 1px 1px 0 #d3d3d3; text-align: center; margin-bottom: -38px; position: relative; z-index: -1; }
 
-.input-bark, .input-light { height: 55px; width: 100%; border: none; padding: 0 21px; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; box-shadow: none; font-size: 18px; line-height: 22px; }
+.input-bark, .input-light { height: 55px; width: 100%; border: none; padding: 0 21px; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; box-shadow: none; font-size: 18px; line-height: 22px; font-weight: 300; }
 
 .input-bark { background-color: #4b4b4b; color: #fff; }
 
@@ -164,7 +168,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .cards-dark { background-color: #25282a; color: #fff; box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.3); }
 
-.box-shadow { box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); }
+.bg-white-shadow { background-color: #fff; box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); }
 
 .spinner { width: 255px; position: relative; text-align: center; }
 
@@ -197,11 +201,41 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .label-checkbox .checkmark::after { content: ""; position: absolute; display: none; left: 0; top: -1px; width: 15px; height: 15px; background: url(../image/icons/checked.svg) no-repeat center center; }
 
+.label-radio-input { display: block; position: relative; height: 30px; width: 30px; border: 1px solid transparent; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; margin: 0; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.label-radio-input > input { position: absolute; opacity: 0; cursor: pointer; }
+
+.label-radio-input > input:checked ~ .radio-input-checkmark { display: block; }
+
+.label-radio-input .radio-input-checkmark { position: absolute; display: none; left: -6px; top: -6px; width: 42px; height: 42px; border: 3px solid #fff; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+
 .nav-pills .nav-link { color: #777777; height: 50px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding-left: 62px; border-left: 3px solid transparent; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; }
 
 .nav-pills .nav-link:hover, .nav-pills .nav-link.active { color: #000; font-weight: 600; }
 
 .nav-pills .nav-link.active { background-color: transparent; border-color: #FF9300; }
+
+.bread-crumbs { padding: 34px 0 54px; font-weight: 100; font-size: 14px; line-height: 17px; color: #fff; }
+
+.bread-crumbs__item { display: inline-block; }
+
+.bread-crumbs__item::after { content: '/'; color: #FF9300; margin: 0 2px 0 6px; }
+
+.bread-crumbs__item > span { color: #979797; }
+
+.download-catalog__wrap { position: relative; padding: 68px 0 97px; }
+
+.download-catalog__wrap p { font-size: 14px; line-height: 17px; color: #020202; margin-bottom: 0; }
+
+.download-catalog__title { color: #2E2E2E; font-size: 36px; line-height: 43px; font-weight: 900; margin-bottom: 16px; }
+
+.download-catalog__form { margin-top: 42px; }
+
+.download-catalog__form > input { width: 350px; margin-bottom: 10px; }
+
+.download-catalog__form .btn-red { margin-top: 20px; }
+
+.download-catalog__img { position: absolute; top: -131px; right: -184px; max-width: 830px; }
 
 @media only screen and (max-width: 1199.8px) { body { line-height: 19px; font-size: 16px !important; }
   .title-section, .title-white { font-size: 48px; line-height: 48px; }
@@ -371,29 +405,29 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .price__form .spinner > span { position: absolute; top: -36px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); }
 
-.assortment { background-color: #25282a; padding: 87px 0 124px; position: relative; z-index: 0; }
+.assortement { background-color: #25282a; padding: 87px 0 124px; position: relative; z-index: 0; }
 
-.assortment .title-text-border { color: #25282a; text-shadow: -1px -1px 0 #707070, 1px -1px 0 #707070, -1px 1px 0 #707070, 1px 1px 0 #707070; }
+.assortement .title-text-border { color: #25282a; text-shadow: -1px -1px 0 #707070, 1px -1px 0 #707070, -1px 1px 0 #707070, 1px 1px 0 #707070; }
 
-.assortment__card { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 260px; width: 100%; color: #fff; margin-bottom: 30px; }
+.assortement__card { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 260px; width: 100%; color: #fff; margin-bottom: 30px; }
 
-.assortment__card > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+.assortement__card > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
-.assortment__card:hover { color: #fff; box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4); }
+.assortement__card:hover { color: #fff; box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4); }
 
-.assortment__card:hover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
+.assortement__card:hover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
 
-.assortment__card:hover .assortment__hover { opacity: 1; }
+.assortement__card:hover .assortement__hover { opacity: 1; }
 
-.assortment__desc { position: absolute; top: 38px; left: 39px; right: 39px; }
+.assortement__desc { position: absolute; top: 38px; left: 39px; right: 39px; }
 
-.assortment__desc > h4 { font-size: 24px; line-height: 29px; }
+.assortement__desc > h4 { font-size: 24px; line-height: 29px; }
 
-.assortment__desc > p { margin-top: 16px; width: 60%; }
+.assortement__desc > p { margin-top: 16px; width: 60%; }
 
-.assortment__hover { opacity: 0; position: absolute; left: 39px; bottom: 36px; font-weight: 100; font-size: 14px; line-height: 17px; transition: opacity 0.4s; -webkit-transition: opacity 0.4s; -moz-transition: opacity 0.4s; -ms-transition: opacity 0.4s; -o-transition: opacity 0.4s; }
+.assortement__hover { opacity: 0; position: absolute; left: 39px; bottom: 36px; font-weight: 100; font-size: 14px; line-height: 17px; transition: opacity 0.4s; -webkit-transition: opacity 0.4s; -moz-transition: opacity 0.4s; -ms-transition: opacity 0.4s; -o-transition: opacity 0.4s; }
 
-.assortment__hover img { margin-left: 10px; }
+.assortement__hover img { margin-left: 10px; }
 
 .promotions__title { font-weight: 900; font-size: 36px; line-height: 43px; margin-bottom: 43px; color: #fff; }
 
@@ -435,7 +469,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .reviews__tab .tab-nav { width: 300px; position: absolute; top: 10px; left: 0; }
 
-.reviews__header { position: relative; margin-bottom: 42px; }
+.reviews__header { position: relative; margin-bottom: 37px; }
 
 .reviews__header .icon-social { position: absolute; left: 40px; top: 40px; width: 25px; display: block; }
 
@@ -488,19 +522,19 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .price__text { margin-top: 15px; }
   .price__form { margin-top: 53px; }
   .price__form .spinner > span { top: -30px; }
-  .assortment { padding: 37px 0 59px; }
-  .assortment__card { height: 200px; }
-  .assortment__desc { position: absolute; top: 24px; left: 30px; right: 30px; }
-  .assortment__desc > h4 { font-size: 18px; line-height: 22px; }
-  .assortment__desc > p { margin-top: 10px; width: 80%; }
-  .assortment__hover { left: 30px; bottom: 28px; }
+  .assortement { padding: 37px 0 59px; }
+  .assortement__card { height: 200px; }
+  .assortement__desc { position: absolute; top: 24px; left: 30px; right: 30px; }
+  .assortement__desc > h4 { font-size: 18px; line-height: 22px; }
+  .assortement__desc > p { margin-top: 10px; width: 80%; }
+  .assortement__hover { left: 30px; bottom: 28px; }
   .promotions__title { font-size: 30px; line-height: 37px; margin-bottom: 32px; }
   .slider-promotions { margin-bottom: 110px; }
   .slider-promotions__item .wrrap { padding: 48px 45px; }
   .slider-promotions__image { height: 360px; }
   .slider-promotions .slider-dark__arrows { top: -70px; }
   .reviews__tab .tab-nav { width: 200px; }
-  .reviews__header { margin-bottom: 32px; }
+  .reviews__header { margin-bottom: 25px; }
   .reviews__header .icon-social { left: 35px; top: 35px; width: 20px; }
   .reviews__avatar { width: 60px; height: 60px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; overflow: hidden; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-width: 60px; }
   .reviews__avatar > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
@@ -518,11 +552,11 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .price .cards-dark { padding: 37px 30px 44px; }
   .price__text { width: 60%; }
   .price__form .btn-red { width: 210px; }
-  .assortment .title-text-border { font-size: 96px; line-height: 115px; margin-bottom: -26px; }
-  .assortment__card { height: 150px; }
-  .assortment__desc { position: absolute; top: 13px; left: 13px; right: 13px; }
-  .assortment__desc_big { top: 24px; left: 30px; right: 30px; }
-  .assortment__hover { left: 13px; bottom: 15px; }
+  .assortement .title-text-border { font-size: 96px; line-height: 115px; margin-bottom: -26px; }
+  .assortement__card { height: 150px; }
+  .assortement__desc { position: absolute; top: 13px; left: 13px; right: 13px; }
+  .assortement__desc_big { top: 24px; left: 30px; right: 30px; }
+  .assortement__hover { left: 13px; bottom: 15px; }
   .promotions__title { font-size: 24px; line-height: 29px; margin-bottom: 32px; }
   .reviews__tab .tab-nav { top: -16px; }
   .reviews__header .icon-social { left: 38px; top: 38px; width: 25px; }
@@ -542,14 +576,14 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .price__form { margin-top: 20px; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .price__form .spinner > span { position: static; top: 0; left: 0; transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); margin-bottom: 12px; display: inline-block; }
   .price__form .btn-red { width: 100%; margin-top: 40px; }
-  .assortment { padding: 28px 0 0; }
-  .assortment .title-text-border { font-size: 56px; line-height: 65px; margin-bottom: 20px; }
-  .assortment__card { height: 150px; }
-  .assortment__card_big { height: 180px; }
-  .assortment__desc { position: absolute; top: 16px; left: 20px; right: 20px; }
-  .assortment__desc > p { width: 100%; }
-  .assortment__desc > h4 { max-width: 110px; }
-  .assortment__hover { left: 16px; bottom: 20px; }
+  .assortement { padding: 28px 0 0; }
+  .assortement .title-text-border { font-size: 56px; line-height: 65px; margin-bottom: 20px; }
+  .assortement__card { height: 150px; }
+  .assortement__card_big { height: 180px; }
+  .assortement__desc { position: absolute; top: 16px; left: 20px; right: 20px; }
+  .assortement__desc > p { width: 100%; }
+  .assortement__desc > h4 { max-width: 110px; }
+  .assortement__hover { left: 16px; bottom: 20px; }
   .promotions__title { font-size: 18px; line-height: 22px; margin-bottom: 30px; }
   .promotions__timer > span { margin-bottom: 8px; }
   .promotions__timer .timer { width: 190px; }
@@ -581,10 +615,10 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .our-account__text { text-align: left; }
   .price__form .spinner { margin-bottom: 11px; }
   .price__form .btn-red { margin-top: 29px; }
-  .assortment .title-text-border { font-size: 36px; line-height: 43px; }
-  .assortment__card { height: 110px; }
-  .assortment__card_big { height: 155px; }
-  .assortment__hover { display: none; }
+  .assortement .title-text-border { font-size: 36px; line-height: 43px; }
+  .assortement__card { height: 110px; }
+  .assortement__card_big { height: 155px; }
+  .assortement__hover { display: none; }
   .promotions__timer .timer > li > span { width: 50px; }
   .slider-promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .slider-promotions__item .wrrap { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
@@ -669,6 +703,110 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .calendar > ul > li { width: 30px; height: 30px; margin-left: 5px; }
   .calendar > ul > li:nth-child(7n) { margin-right: 0; } }
 
+.roletta-header { position: relative; color: #fff; padding-bottom: 145px; }
+
+.roletta-header .container { position: relative; }
+
+.roletta-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 336px; background-color: #25282a; z-index: -1; }
+
+.roletta-header__img { position: absolute; bottom: 192px; right: -45px; width: 48%; }
+
+.roletta-header__title { margin-bottom: 17px; }
+
+.roletta-header p { width: 78%; }
+
+.roletta-header__card { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.15); margin-top: 62px; }
+
+.roletta-header__card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
+
+.roletta-header__card > h4 { position: absolute; left: 31px; bottom: 18px; font-size: 24px; line-height: 29px; }
+
+.function-roletta { padding-bottom: 143px; }
+
+.function-roletta__item { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 24px; line-height: 29px; font-weight: 500; margin-bottom: 58px; }
+
+.function-roletta__item > p { margin-left: 30px; }
+
+.function-roletta .mb-87 { margin-bottom: 87px; }
+
+.function-roletta__form { padding: 50px 75px 67px; }
+
+.function-roletta__form > h3 { font-size: 36px; line-height: 43px; margin-bottom: 16px; }
+
+.function-roletta__form > p { width: 56.4%; }
+
+.function-roletta__form > form { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: 23px; }
+
+.function-roletta__form > form .btn-red { min-width: 350px; margin-left: 30px; }
+
+.circle { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 160px; min-width: 160px; height: 157px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border: 1px solid #B1B1B1; }
+
+.circle_big { width: 255px; min-width: 255px; height: 251px; }
+
+.roletta-assortement { padding: 119px 0 200px; }
+
+.roletta-assortement__title { margin-bottom: 64px; }
+
+.roletta-assortement__card { padding: 34px 19px 16px; text-align: center; height: 100%; }
+
+.roletta-assortement__card > h4 { font-size: 24px; line-height: 29px; margin-bottom: 16px; height: 61px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.roletta-assortement__card > p { margin-bottom: 30px; }
+
+.roletta-assortement__card > img { position: relative; right: -19px; width: 100%; }
+
+.roletta-assortement__card > small { font-weight: 100; font-size: 14px; line-height: 17px; opacity: 0.5; display: block; width: 78%; margin: 20px auto 0; }
+
+.roletta-assortement__color { position: relative; background-color: #fff; margin-top: 55px; padding: 16px 32px 0 65px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-align-items: center; -ms-flex-align: center; align-items: center; z-index: 1; }
+
+.roletta-assortement__color .group-radio-input { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.roletta-assortement__color .group-radio-input > h3 { width: 100%; font-size: 36px; line-height: 43px; font-weight: 900; margin-bottom: 10px; }
+
+.roletta-assortement__color .group-radio-input .label-radio-input { margin: 50px 65px 0 0; }
+
+.roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(6n) { margin-right: 0; }
+
+.roletta-download-catalog { margin-bottom: 212px; background-color: #25282a; }
+
+.roletta-download-catalog .download-catalog__wrap p { color: #fff; }
+
+.roletta-download-catalog .download-catalog__title { color: #fff; }
+
+.roletta-download-catalog .download-catalog__img { top: -190px; right: -150px; max-width: 900px; }
+
+.roletta-control { padding: 20px 0 151px; background: url(../image/roletta/image-bg.png) no-repeat top 740px right; }
+
+.roletta-control__header { position: relative; margin-bottom: 55px; }
+
+.roletta-control__header .title-section { margin-bottom: 22px; }
+
+.roletta-control__header > img { position: absolute; right: -226px; top: -25px; z-index: 1; }
+
+.roletta-control__header p { max-width: 475px; }
+
+.roletta-control__subtitle { font-size: 36px; line-height: 43px; font-weight: 900; margin-bottom: 17px; }
+
+.roletta-control__subtitle > span { display: inline-block; margin-right: 20px; color: #B1B1B1; }
+
+.roletta-control__auto { padding: 56px 0 110px; }
+
+.roletta-control__auto p { max-width: 455px; }
+
+.roletta-control__group-list { display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 61px 0; }
+
+.roletta-control__list { -webkit-flex: 0 0 41.666667%; -ms-flex: 0 0 41.666667%; flex: 0 0 41.666667%; max-width: 41.666667%; margin-right: 30px; }
+
+.roletta-control__list:last-of-type { max-width: 33%; }
+
+.roletta-control__list > li { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 42px; }
+
+.roletta-control__list > li .circle { width: 65px; min-width: 65px; height: 65px; margin-right: 30px; font-size: 24px; line-height: 29px; font-weight: 100; color: #B1B1B1; }
+
+.roletta-control__list > li p > small { display: block; font-weight: 100; font-size: 14px; line-height: 17px; margin-top: 9px; }
+
+.roletta-control__text-big { font-size: 36px; line-height: 43px; max-width: 63% !important; }
+
 .promotions_cards .slider-promotions__item:not(:first-child) { margin-top: 50px; }
 
 .checkbox_section { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
@@ -734,7 +872,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .footer__link { display: block; color: #fff; text-align: center; text-decoration: underline; opacity: 0.8; }
 
-.footer__line { width: 100%; opacity: 0.1; border: 1px solid #fff; }
+.footer__line { width: 100%; opacity: 0.1; border-top: 1px solid #fff; }
 
 .footer__right-col { text-align: right; }
 

@@ -1,0 +1,316 @@
+.roletta-header {
+    position: relative;
+    color: $text-color-white;
+    padding-bottom: 145px;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 336px;
+        background-color: $bg-dark;
+        z-index: -1;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 192px;
+        right: -45px;
+        width: 48%;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    p {
+        width: 78%;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.15);
+        margin-top: 62px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $black-opacity;
+        }
+
+        >h4 {
+            position: absolute;
+            left: 31px;
+            bottom: 18px;
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+    }
+}
+
+.function-roletta {
+    padding-bottom: 143px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: $font-size-h3;
+        line-height: $line-height-h3;
+        font-weight: 500;
+        margin-bottom: 58px;
+
+        >p {
+            margin-left: 30px;
+        }
+    }
+
+    .mb-87 {
+        margin-bottom: 87px;
+    }
+
+    &__form {
+        padding: 50px 75px 67px;
+
+        >h3 {
+            font-size: $font-size-h2;
+            line-height: $line-height-h2;
+            margin-bottom: 16px;
+        }
+
+        >p {
+            width: 56.4%;
+        }
+
+        >form {
+            display: flex;
+            align-items: center;
+            margin-top: 23px;
+
+            .btn-red {
+                min-width: 350px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    min-width: 160px;
+    height: 157px;
+    @include radius(50%);
+    border: 1px solid $light-gray;
+
+    &_big {
+        width: 255px;
+        min-width: 255px;
+        height: 251px;
+    }
+}
+
+.roletta-assortement {
+    padding: 119px 0 200px;
+
+    &__title {
+        margin-bottom: 64px;
+    }
+
+    &__card {
+        padding: 34px 19px 16px;
+        text-align: center;
+        height: 100%;
+
+        >h4 {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+            margin-bottom: 16px;
+            height: 61px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        >p {
+            margin-bottom: 30px;
+        }
+
+        >img {
+            position: relative;
+            right: -19px;
+            width: 100%;
+        }
+
+        >small {
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 17px;
+            opacity: 0.5;
+            display: block;
+            width: 78%;
+            margin: 20px auto 0;
+        }
+    }
+
+    &__color {
+        position: relative;
+        background-color: $base-bg;
+        margin-top: 55px;
+        padding: 16px 32px 0 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+
+        .group-radio-input {
+            display: flex;
+            flex-wrap: wrap;
+
+            >h3 {
+                width: 100%;
+                font-size: $font-size-h2;
+                line-height: $line-height-h2;
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+
+            .label-radio-input {
+                margin: 50px 65px 0 0;
+
+                &:nth-of-type(6n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.roletta-download-catalog {
+    margin-bottom: 212px;
+    background-color: $bg-dark;
+
+    .download-catalog {
+        &__wrap {
+            p {
+                color: $text-color-white;
+            }
+        }
+
+        &__title {
+            color: $text-color-white;
+        }
+
+        &__img {
+            top: -190px;
+            right: -150px;
+            max-width: 900px;
+        }
+    }
+}
+
+.roletta-control {
+    padding: 20px 0 151px;
+    background: url(../image/roletta/image-bg.png) no-repeat top 740px right;
+
+    &__header {
+        position: relative;
+        margin-bottom: 55px;
+
+        .title-section {
+            margin-bottom: 22px;
+        }
+
+        >img {
+            position: absolute;
+            right: -226px;
+            top: -25px;
+            z-index: 1;
+        }
+
+        p {
+            max-width: 475px;
+        }
+    }
+
+    &__subtitle {
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+        font-weight: 900;
+        margin-bottom: 17px;
+
+        >span {
+            display: inline-block;
+            margin-right: 20px;
+            color: $light-gray;
+        }
+    }
+
+    &__auto {
+        padding: 56px 0 110px;
+
+        p {
+            max-width: 455px;
+        }
+    }
+
+    &__group-list {
+        display: flex;
+        margin: 61px 0;
+    }
+
+    &__list {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+        margin-right: 30px;
+
+        &:last-of-type {
+            max-width: 33%;
+        }
+
+        >li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 42px;
+
+            .circle {
+                width: 65px;
+                min-width: 65px;
+                height: 65px;
+                margin-right: 30px;
+                font-size: $font-size-h3;
+                line-height: $line-height-h3;
+                font-weight: 100;
+                color: $light-gray;
+            }
+
+            p {
+                >small {
+                    display: block;
+                    font-weight: 100;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+
+    &__text-big {
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+        max-width: 63% !important;
+    }
+}

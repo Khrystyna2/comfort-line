@@ -49,6 +49,12 @@ body {
     }
 }
 
+.line {
+    width: 100%;
+    opacity: 0.1;
+    border-top: 1px solid $black;
+}
+
 .social-networks {
     display: flex;
 
@@ -104,6 +110,7 @@ body {
     box-shadow: none;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    font-weight: 300;
 }
 
 .input-bark {
@@ -135,7 +142,8 @@ body {
     box-shadow: 0px 70px 100px $shadow-dark;
 }
 
-.box-shadow {
+.bg-white-shadow {
+    background-color: $base-bg;
     box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08);
 }
 
@@ -249,6 +257,44 @@ body {
     }
 }
 
+// style radio input
+.label-radio-input {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: 1px solid transparent;
+    @include radius(50%);
+    margin: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    >input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked~.radio-input-checkmark {
+            display: block;
+        }
+    }
+
+    .radio-input-checkmark {
+        position: absolute;
+        display: none;
+        left: -6px;
+        top: -6px;
+        width: 42px;
+        height: 42px;
+        border: 3px solid $white;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        @include radius(50%);
+    }
+}
+
 // style tabs navigation
 
 .nav-pills {
@@ -272,6 +318,70 @@ body {
             background-color: transparent;
             border-color: $yellow;
         }
+    }
+}
+
+.bread-crumbs {
+    padding: 34px 0 54px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color-white;
+
+    &__item {
+        display: inline-block;
+
+        &::after {
+            content: '/';
+            color: $yellow;
+            margin: 0 2px 0 6px;
+        }
+
+        >span {
+            color: $gray;
+        }
+    }
+}
+
+.download-catalog {
+    &__wrap {
+        position: relative;
+        padding: 68px 0 97px;
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+            color: #020202;
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        color: $text-color-dark;
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+        font-weight: 900;
+        margin-bottom: 16px;
+    }
+
+    &__form {
+        margin-top: 42px;
+
+        >input {
+            width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .btn-red {
+            margin-top: 20px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -131px;
+        right: -184px;
+        max-width: 830px;
     }
 }
 
