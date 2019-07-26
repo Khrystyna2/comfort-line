@@ -950,7 +950,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .promotions_open .timer { color: #ffffff; }
 
-@media (max-width: 1200px) { .letter_form { padding: 78px 80px 41px 0; width: 450px; }
+@media (max-width: 1199.8px) { .letter_form { padding: 78px 80px 41px 0; width: 450px; }
   .img_letter_wraper { left: -199px; bottom: -295px; width: 790px; }
   .letter_form_wrap:before { width: 144px; height: 60px; top: -20px; } }
 
