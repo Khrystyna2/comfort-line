@@ -424,6 +424,10 @@ body {
             .input-light {
                 margin-bottom: 20px;
             }
+
+            .btn-red {
+                width: 100%;
+            }
         }
     }
 
@@ -564,6 +568,110 @@ body {
     .bread-crumbs {
         display: none;
     }
+
+    .download-catalog {
+        &__wrap {
+            position: relative;
+            padding: 68px 0 97px;
+        }
+
+        &__title {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 - 6px;
+        }
+
+        &__form {
+            margin-top: 42px;
+
+            >input {
+                width: 270px;
+            }
+
+            .btn-red {
+                margin-top: 20px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: -131px;
+            right: -184px;
+            max-width: 450px;
+        }
+    }
+
+    .order-takes {
+        padding: 39px 0 33px;
+        background-size: 54%;
+
+        .title-section {
+            padding-right: 20px;
+        }
+
+        &__subtitle {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 - 6px;
+        }
+    }
+
+    .ready-order {
+        padding: 68px 0 76px;
+
+        &__form {
+            margin-bottom: 49px;
+            padding: 33px 30px 43px;
+
+            >form {
+                max-width: 270px;
+
+                .input-light {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &__number {
+            font-size: 70px;
+            line-height: 90px;
+        }
+
+        &__text {
+            margin-left: 33px;
+
+            >h4 {
+                font-size: $font-size-h3 - 4px;
+                line-height: $line-height-h3 -4 px;
+                margin-bottom: 14px;
+            }
+        }
+
+        &__card {
+            padding: 15px 30px 17px;
+        }
+    }
+
+    .FAQ {
+        padding: 39px 0 76px;
+
+        .title-text-border {
+            margin-bottom: -98px;
+        }
+
+    }
+
+    .accordion {
+        margin-top: 72px;
+
+        &__title {
+            >span {
+                font-size: $font-size-h3 - 4px;
+            }
+        }
+
+        article {
+            padding: 26px 30px;
+        }
+    }
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -603,6 +711,84 @@ body {
         }
     }
 
+    .download-catalog {
+        &__wrap {
+            position: relative;
+            padding: 68px 0 97px;
+
+            p {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__title {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+
+        &__form {
+            margin-top: 42px;
+
+            >input {
+                width: 270px;
+            }
+
+            .btn-red {
+                margin-top: 20px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: -131px;
+            right: -184px;
+            max-width: 450px;
+        }
+    }
+
+    .order-takes {
+        &__subtitle {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+    }
+
+    .ready-order {
+        &__form {
+            >form {
+                min-width: 240px;
+            }
+        }
+
+        &__number {
+            font-size: 48px;
+            line-height: 58px;
+        }
+
+        &__text {
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+    }
+
+    .FAQ {
+        .title-text-border {
+            margin-bottom: -60px;
+        }
+    }
+
+    .accordion {
+
+        &__title {
+            >span {
+                font-size: $base-font-size;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -620,6 +806,90 @@ body {
             border-bottom: 3px solid transparent;
             border-left: none;
             margin-bottom: 46px;
+        }
+    }
+
+    .download-catalog {
+        &__wrap {
+            position: relative;
+            padding: 68px 0 97px;
+
+            p {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__title {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+
+        &__form {
+            margin-top: 42px;
+
+            >input {
+                width: 100%;
+            }
+
+            .btn-red {
+                width: 100%;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: -131px;
+            right: -184px;
+            max-width: 450px;
+        }
+    }
+
+    .order-takes {
+        padding: 30px 0 27px;
+        background-position: bottom 27px right;
+        background-size: 470px;
+
+        &__subtitle {
+            margin-top: 20px;
+            margin-left: auto;
+            width: 60%;
+            padding: 22px 0;
+        }
+    }
+
+    .ready-order {
+        padding: 92px 0 0;
+
+        &__form {
+            padding: 28px 40px;
+            flex-direction: column;
+
+            >form {
+                max-width: 100%;
+                width: 100%;
+                margin-top: 22px;
+            }
+        }
+
+        &__card {
+            margin-bottom: 30px;
+            height: auto;
+        }
+    }
+
+    .FAQ {
+        padding: 39px 0 78px;
+
+        .title-text-border {
+            margin-bottom: -58px;
+        }
+
+    }
+
+    .accordion {
+        article {
+            padding: 16px 20px;
         }
     }
 
@@ -644,5 +914,73 @@ body {
 
     .spinner {
         width: 100%;
+    }
+
+    .order-takes {
+        background-size: 300px;
+        background: $base-bg;
+
+        &__subtitle {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: -15px;
+            width: 100%;
+            padding: 22px 0 22px 42px;
+            background: url(../image/roletta/bg-vector.svg) no-repeat center left;
+        }
+    }
+
+    .ready-order {
+        &__desc {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__form {
+            padding: 28px 20px;
+        }
+
+        &__text {
+            margin-left: 0;
+        }
+
+        &__number {
+            font-size: $font-size-h2;
+            line-height: $line-height-h2;
+            margin-bottom: 15px;
+        }
+
+        &__card {
+            height: 120px;
+            padding: 21px 10px 17px;
+        }
+    }
+
+    .FAQ {
+        .title-text-border {
+            margin-bottom: -56px;
+        }
+
+    }
+
+    .accordion {
+        article {
+            padding: 16px 20px;
+        }
+
+        &__title {
+            padding-bottom: 18px;
+
+            >span {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+
+        &__item {
+            margin-bottom: 11px;
+        }
     }
 }

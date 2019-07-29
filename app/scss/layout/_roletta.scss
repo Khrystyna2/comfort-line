@@ -55,6 +55,12 @@
             background-color: $black-opacity;
         }
 
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         >h4 {
             position: absolute;
             left: 31px;
@@ -104,7 +110,6 @@
             margin-top: 23px;
 
             .btn-red {
-                min-width: 350px;
                 margin-left: 30px;
             }
         }
@@ -301,6 +306,10 @@
             align-items: center;
             margin-bottom: 42px;
 
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
             .circle {
                 width: 65px;
                 min-width: 65px;
@@ -329,6 +338,10 @@
         line-height: $line-height-h2;
         max-width: 63% !important;
         margin-bottom: 115px;
+
+        >img {
+            display: none;
+        }
     }
 
     &__img-circle {
@@ -363,6 +376,7 @@
     padding: 90px 0 137px;
 
     &__title {
+        font-weight: 900;
         font-size: $font-size-h2;
         line-height: $line-height-h2;
         margin-bottom: 20px;
@@ -485,6 +499,11 @@
 
         &__card {
             margin-top: 42px;
+
+            >h4 {
+                font-size: $font-size-h3 - 4px;
+                line-height: $line-height-h3 - 4px;
+            }
         }
     }
 
@@ -493,6 +512,8 @@
 
         &__item {
             margin-bottom: 38px;
+            font-size: $font-size-h3 - 4px;
+            line-height: $line-height-h3 - 4px;
         }
 
         .mb-87 {
@@ -502,6 +523,11 @@
         &__form {
             margin-top: 109px;
             padding: 36px 60px 54px;
+
+            >h3 {
+                font-size: $font-size-h2 - 6px;
+                line-height: $line-height-h2 - 6px;
+            }
         }
     }
 
@@ -522,6 +548,751 @@
             >img {
                 width: 65px;
             }
+        }
+    }
+
+    .roletta-assortement {
+        padding: 68px 0 95px;
+
+        &__title {
+            margin-bottom: 32px;
+        }
+
+        &__card {
+            padding: 15px;
+
+            >h4 {
+                font-size: $font-size-h3 - 4px;
+                line-height: $line-height-h3 - 4px;
+                margin-bottom: 6px;
+            }
+
+            >p {
+                margin-bottom: 20px;
+            }
+
+            >img {
+                right: -15px;
+            }
+
+            >small {
+                width: 90%;
+            }
+        }
+
+        &__color {
+            margin-top: 30px;
+            padding: 12px 0 0 30px;
+            overflow: hidden;
+
+            >img {
+                margin-right: -60px;
+            }
+
+            .group-radio-input {
+                >h3 {
+                    font-size: $font-size-h2 - 6px;
+                    line-height: $line-height-h2 - 6px;
+                }
+
+                .label-radio-input {
+                    margin: 50px 50px 0 0;
+                }
+            }
+        }
+    }
+
+    .roletta-download-catalog {
+        margin-bottom: 95px;
+
+        .download-catalog {
+            &__img {
+                top: -36px;
+                right: 20px;
+                max-width: 510px;
+            }
+        }
+    }
+
+    .roletta-control {
+        padding: 0 0 76px;
+        background-size: 44%;
+
+        &__header {
+            margin-bottom: 35px;
+
+            .title-section {
+                margin-bottom: 12px;
+            }
+
+            .image {
+                right: -80px;
+                top: 70px;
+                @include transform(rotate(-22deg));
+            }
+
+            p {
+                max-width: 50%;
+            }
+        }
+
+        &__subtitle {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 - 6px;
+            margin-bottom: 10px;
+
+            >span {
+                margin-right: 15px;
+            }
+        }
+
+        &__auto {
+            padding: 43px 0 68px;
+
+            p {
+                max-width: 500px;
+
+                >b {
+                    max-width: 240px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__group-list {
+            align-items: flex-end;
+            margin: 55px 0 136px;
+        }
+
+        &__list {
+            >li {
+                margin-bottom: 35px;
+            }
+        }
+
+        &__text-big {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 - 6px;
+            max-width: 60% !important;
+            margin-bottom: 70px;
+        }
+
+        &__img-circle {
+            .circle {
+                width: 110px;
+                height: 110px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__manual {
+            padding-top: 60px;
+
+            .circle {
+                >img {
+                    width: 100%;
+                }
+            }
+
+            .roletta-control__subtitle {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    .roletta-calendar {
+        padding: 76px 0 120px;
+    }
+
+    .roletta-slider {
+        padding: 76px 0 120px;
+
+        &__title {
+            font-size: $font-size-h2 - 6px;
+            line-height: $line-height-h2 - 6px;
+        }
+    }
+
+    .slider-brands {
+        &__item {
+            height: 180px;
+            padding: 0 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991.8px) {
+    .roletta-header {
+        &::before {
+            bottom: 162px;
+        }
+
+        &__img {
+            bottom: 107px;
+            max-width: 40%;
+        }
+
+        &__card {
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+    }
+
+    .function-roletta {
+        &__item {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+
+            >p {
+                margin-left: 12px;
+            }
+        }
+
+        &__form {
+            >h3 {
+                font-size: $font-size-h3;
+                line-height: $line-height-h3;
+            }
+
+            >p {
+                width: 67%;
+            }
+        }
+    }
+
+    .circle {
+        &_big {
+            margin-right: 18px;
+        }
+    }
+
+    .roletta-assortement {
+        &__card {
+            padding: 15px 10px;
+
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+
+            >p {
+                height: 50px;
+            }
+
+            >img {
+                right: -10px;
+            }
+
+            >small {
+                width: 100%;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__color {
+            >img {
+                width: 56%;
+            }
+
+            .group-radio-input {
+                >h3 {
+                    font-size: $font-size-h3;
+                    line-height: $line-height-h3;
+                }
+
+                .label-radio-input {
+                    margin: 50px 30px 0 0;
+                }
+            }
+        }
+    }
+
+    .roletta-download-catalog {
+        .download-catalog {
+            &__wrap {
+                padding: 49px 0 79px;
+            }
+
+            &__img {
+                top: -26px;
+                right: -20px;
+                max-width: 440px;
+            }
+        }
+    }
+
+    .roletta-control {
+        background-size: 50%;
+        background-position: top 770px right -146px;
+
+        &__header {
+            .image {
+                right: -60px;
+                top: 70px;
+                width: 50%;
+            }
+
+            p {
+                max-width: 52%;
+            }
+        }
+
+        &__subtitle {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+
+        &__auto {
+            p {
+                max-width: 380px;
+
+                >b {
+                    max-width: 200px;
+                }
+            }
+        }
+
+        &__group-list {
+            align-items: flex-end;
+            margin: 55px 0 136px;
+        }
+
+        &__list {
+            flex: 0 0 47%;
+            max-width: 47%;
+
+            &:last-of-type {
+                max-width: 43%;
+            }
+
+            >li {
+                margin-bottom: 35px;
+            }
+        }
+
+        &__text-big {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+            max-width: 63% !important;
+        }
+
+        &__img-circle {
+            .circle {
+                width: 90px;
+                height: 90px;
+
+                >img {
+                    max-height: 60%;
+                    width: auto;
+                }
+            }
+        }
+
+        &__manual {
+            .circle {
+                >img {
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+
+    .roletta-slider {
+        &__title {
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+        }
+    }
+
+    .slider-brands {
+        &__item {
+            height: 130px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .roletta-header {
+        padding: 10px 0 80px;
+
+        &::before {
+            bottom: 575px;
+        }
+
+        &__img {
+            position: static;
+            bottom: 0;
+            max-width: 100%;
+            width: 80%;
+            margin: 40px auto 0;
+            display: block;
+        }
+
+        &__card {
+            margin: -20px 0 40px;
+
+            >h4 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+    }
+
+    .function-roletta {
+        padding-bottom: 84px;
+
+        .title-section {
+            margin-bottom: 30px;
+        }
+
+        .mb-87 {
+            margin-bottom: 45px;
+        }
+
+        &__item {
+            font-size: $base-font-size - 2px;
+            line-height: $base-line-height - 2px;
+            flex-direction: column;
+            margin-bottom: 35px;
+            text-align: center;
+
+            >p {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+
+        &__form {
+            margin-top: 38px;
+
+            >p {
+                width: 100%;
+            }
+
+            >form {
+                flex-direction: column;
+                margin-top: 30px;
+
+                .btn-red {
+                    width: 100%;
+                    margin: 20px 0 0;
+                }
+            }
+        }
+    }
+
+    .circle {
+        &_big {
+            margin-right: 0;
+        }
+    }
+
+    .roletta-assortement {
+        &__card {
+            padding: 15px 30px;
+            margin: 0 auto 20px;
+            height: auto;
+            width: 80%;
+
+            >h4 {
+                height: auto;
+            }
+
+            >p {
+                height: auto;
+            }
+
+            >img {
+                right: -30px;
+            }
+
+            >small {
+                width: 100%;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__color {
+            flex-direction: column;
+            padding: 20px 40px 0 40px;
+
+            >img {
+                width: 80%;
+                margin: 20px auto 0;
+            }
+
+            .group-radio-input {
+                width: 80%;
+
+                .label-radio-input {
+                    margin: 50px 30px 0 0;
+                }
+            }
+        }
+    }
+
+    .roletta-download-catalog {
+        .download-catalog {
+            &__wrap {
+                padding: 26px 0 0;
+            }
+
+            &__img {
+                position: relative;
+                top: 20px;
+                right: 0;
+                max-width: 100%;
+                margin-bottom: -140px;
+            }
+        }
+    }
+
+    .roletta-control {
+        padding: 0;
+        background-size: 580px;
+        background-position: top 870px right;
+
+        &__header {
+            .image {
+                display: none;
+            }
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        &__auto {
+            padding: 37px 0 15px;
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        &__group-list {
+            display: block;
+            margin: 20px 0 36px;
+        }
+
+        &__list {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 28px;
+            margin-right: 0;
+
+            &:last-of-type {
+                max-width: 100%;
+            }
+
+            >li {
+                margin-bottom: 28px;
+            }
+        }
+
+        &__text-big {
+            max-width: 100% !important;
+            margin-bottom: 240px;
+        }
+
+        &__img-circle {
+            margin-bottom: 50px;
+        }
+
+        &__manual {
+            padding: 47px 0 0;
+        }
+    }
+
+    .roletta-calendar {
+        padding: 48px 0 69px;
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .roletta-header {
+        &::before {
+            bottom: 850px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__card {
+            margin: -20px 0 40px;
+            height: 180px;
+
+            >h4 {
+                bottom: auto;
+                top: 17px;
+                left: 26px;
+                right: 26px;
+            }
+        }
+    }
+
+    .function-roletta {
+        &__item {
+            font-size: $base-font-size - 4px;
+            line-height: $base-line-height - 5px;
+        }
+
+        &__form {
+            padding: 26px 20px 35px;
+        }
+    }
+
+    .roletta-assortement {
+        padding: 73px 0 39px;
+
+        &__card {
+            padding: 38px 14px;
+            width: 100%;
+
+            >img {
+                right: -14px;
+            }
+        }
+
+        &__color {
+            padding: 20px 20px 0 20px;
+
+            >img {
+                width: 100%;
+            }
+
+            .group-radio-input {
+                width: 210px;
+
+                >h3 {
+                    margin-left: -20px;
+                    font-size: $base-font-size;
+                    line-height: $base-line-height;
+                }
+
+                .label-radio-input {
+                    margin: 50px 30px 0 0;
+
+                    &:nth-of-type(6n) {
+                        margin-right: 30px;
+                    }
+
+                    &:nth-of-type(4n) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .roletta-download-catalog {
+        margin-bottom: 140px;
+
+        .download-catalog {
+            &__img {
+                max-width: 100%;
+                margin-bottom: -120px;
+            }
+        }
+    }
+
+    .roletta-control {
+        background: $base-bg;
+
+        &__auto {
+            p {
+                >b {
+                    max-width: 180px;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+
+        &__list {
+            >li {
+                .circle {
+                    width: 60px;
+                    min-width: 60px;
+                    height: 60px;
+                    margin-right: 20px;
+                }
+
+                p {
+                    >small {
+                        font-size: 12px;
+                        line-height: 14px;
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+
+        &__text-big {
+            position: relative;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+            margin-bottom: 180px;
+
+            >img {
+                display: block;
+                position: absolute;
+                right: -15px;
+                max-width: 350px;
+                width: 100%;
+            }
+        }
+    }
+
+    .roletta-slider {
+        padding: 50px 0 60px;
+
+        &__title {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+    }
+
+    .slider-brands {
+        &__item {
+            height: 100px;
+        }
+
+        .slick-arrow {
+            bottom: -26px;
+        }
+
+        .slick-next {
+            left: 50%;
+            right: auto;
+        }
+
+        .slick-prev {
+            right: 50%;
+
+            &:hover {
+                right: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .roletta-header {
+        &::before {
+            bottom: 600px;
+        }
+
+        &__card {
+            height: 110px;
         }
     }
 }
