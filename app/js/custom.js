@@ -151,7 +151,7 @@ $(document).ready(function () {
 			if (oldValue >= max) {
 				newVal = oldValue;
 			} else {
-				newVal = oldValue + 100;
+				newVal = oldValue + 1;
 			}
 			spinner.find("input").val(newVal);
 			spinner.find("input").trigger("change");
@@ -162,7 +162,7 @@ $(document).ready(function () {
 			if (oldValue <= min) {
 				newVal = oldValue;
 			} else {
-				newVal = oldValue - 100;
+				newVal = oldValue - 1;
 			}
 			spinner.find("input").val(newVal);
 			spinner.find("input").trigger("change");

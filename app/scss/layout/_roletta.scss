@@ -1195,8 +1195,8 @@
 
         .download-catalog {
             &__img {
-                max-width: 100%;
-                margin-bottom: -120px;
+                max-width: calc(100% + 30px);
+                margin: 0 -15px -120px -15px;
             }
         }
     }
@@ -1296,8 +1296,6 @@
         }
     }
 }
-
-
 
 @media only screen and (min-width: 2000px) {
     .roletta-control {

@@ -576,15 +576,15 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .promotions__timer .timer > li > small { opacity: 0.5; }
 
+.promotions__desc { -webkit-flex: 0 0 59.9%; -ms-flex: 0 0 59.9%; flex: 0 0 59.9%; padding: 48px 75px; }
+
+.promotions__image { height: 400px; -webkit-flex: 0 0 40.1%; -ms-flex: 0 0 40.1%; flex: 0 0 40.1%; }
+
+.promotions__image > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
 .slider-promotions { position: relative; width: 100%; padding: 0; margin-bottom: 167px; }
 
 .slider-promotions__item { padding: 0; }
-
-.slider-promotions__item .wrrap { -webkit-flex: 0 0 59.9%; -ms-flex: 0 0 59.9%; flex: 0 0 59.9%; padding: 48px 75px; }
-
-.slider-promotions__image { height: 400px; -webkit-flex: 0 0 40.1%; -ms-flex: 0 0 40.1%; flex: 0 0 40.1%; }
-
-.slider-promotions__image > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
 .reviews { position: relative; }
 
@@ -654,9 +654,9 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortement__desc > p { margin-top: 10px; width: 80%; }
   .assortement__hover { left: 30px; bottom: 28px; }
   .promotions__title { font-size: 30px; line-height: 37px; margin-bottom: 32px; }
+  .promotions__desc { padding: 48px 45px; }
+  .promotions__image { height: 360px; }
   .slider-promotions { margin-bottom: 110px; }
-  .slider-promotions__item .wrrap { padding: 48px 45px; }
-  .slider-promotions__image { height: 360px; }
   .slider-promotions .slider-dark__arrows { top: -70px; }
   .reviews__tab .tab-nav { width: 200px; }
   .reviews__header { margin-bottom: 25px; }
@@ -683,6 +683,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortement__desc_big { top: 24px; left: 30px; right: 30px; }
   .assortement__hover { left: 13px; bottom: 15px; }
   .promotions__title { font-size: 24px; line-height: 29px; margin-bottom: 32px; }
+  .slider-promotions { margin-bottom: 110px; }
+  .slider-promotions .slider-dark__arrows { top: -60px; }
   .reviews__tab .tab-nav { top: -16px; }
   .reviews__header .icon-social { left: 38px; top: 38px; width: 25px; }
   .reviews__title > h4 { font-size: 18px; line-height: 22px; }
@@ -715,9 +717,9 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .promotions__timer .timer > li { font-size: 12px; line-height: 14px; }
   .promotions__timer .timer > li > span { height: 35px; width: 50px; font-size: 24px; line-height: 29px; margin-bottom: 4px; }
   .promotions__timer .timer > li > span::after { content: ':'; padding-left: 4px; }
+  .promotions__desc { padding: 23px 20px 25px; }
+  .promotions__image { height: 240px; }
   .slider-promotions { margin-bottom: 125px; }
-  .slider-promotions__item .wrrap { padding: 23px 20px 25px; }
-  .slider-promotions__image { height: 240px; }
   .slider-promotions .slider-dark__arrows { top: auto; }
   .reviews__tab .title-text-border { margin-bottom: 20px; }
   .reviews__tab .tab-nav { width: 100%; position: static; top: 0; }
@@ -745,9 +747,9 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortement__card_big { height: 155px; }
   .assortement__hover { display: none; }
   .promotions__timer .timer > li > span { width: 50px; }
-  .slider-promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  .slider-promotions__item .wrrap { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
-  .slider-promotions__image { height: 166px; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; -webkit-order: -1; -ms-flex-order: -1; order: -1; } }
+  .promotions__desc { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+  .promotions__image { height: 166px; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; -webkit-order: -1; -ms-flex-order: -1; order: -1; }
+  .slider-promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 
 @media only screen and (max-width: 375px) { .our-account__text { text-align: left; }
   .our-account__text > span { max-width: 100%; display: block; margin: -6px 0 10px; } }
@@ -1126,7 +1128,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(6n) { margin-right: 30px; }
   .roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(4n) { margin-right: 0; }
   .roletta-download-catalog { margin-bottom: 140px; }
-  .roletta-download-catalog .download-catalog__img { max-width: 100%; margin-bottom: -120px; }
+  .roletta-download-catalog .download-catalog__img { max-width: calc(100% + 30px); margin: 0 -15px -120px -15px; }
   .roletta-control { background: #fff; }
   .roletta-control__auto p > b { max-width: 180px; }
   .roletta-control__subtitle { font-size: 18px; line-height: 22px; }
@@ -1149,7 +1151,11 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 @media only screen and (min-width: 3000px) { .roletta-control { background-size: 1050px; } }
 
-.promotions_cards .slider-promotions__item:not(:first-child) { margin-top: 50px; }
+.calculator { padding: 20px 0 90px; }
+
+.calculator__header { display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 47px 95px 73px; }
+
+.promotions_cards .promotions__item:not(:first-child) { margin-top: 50px; }
 
 .checkbox_section { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
