@@ -1,0 +1,44 @@
+.calculator {
+    padding: 20px 0 90px;
+
+    &__header {
+        display: flex;
+        padding: 47px 95px 73px;
+    }
+
+    &__resize,
+    &__recount {
+        flex: 0 0 50%;
+        position: relative;
+    }
+
+    &__resize {
+        .btn-red {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    &__recount {
+        text-align: right;
+
+        >p {
+            margin-bottom: 18px;
+        }
+
+        >span {
+            display: block;
+            font-size: 26px;
+            line-height: 31px;
+        }
+
+        .btn-red {
+            margin-top: 36px;
+        }
+    }
+
+    &__text {
+        max-width: 443px;
+        margin: 36px 0 20px 50px;
+    }
+}

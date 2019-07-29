@@ -749,6 +749,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .promotions__timer .timer > li > span { width: 50px; }
   .promotions__desc { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
   .promotions__image { height: 166px; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; -webkit-order: -1; -ms-flex-order: -1; order: -1; }
+  .promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .slider-promotions__item { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 
 @media only screen and (max-width: 375px) { .our-account__text { text-align: left; }
@@ -1154,6 +1155,20 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 .calculator { padding: 20px 0 90px; }
 
 .calculator__header { display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 47px 95px 73px; }
+
+.calculator__resize, .calculator__recount { -webkit-flex: 0 0 50%; -ms-flex: 0 0 50%; flex: 0 0 50%; position: relative; }
+
+.calculator__resize .btn-red { position: absolute; bottom: 0; }
+
+.calculator__recount { text-align: right; }
+
+.calculator__recount > p { margin-bottom: 18px; }
+
+.calculator__recount > span { display: block; font-size: 26px; line-height: 31px; }
+
+.calculator__recount .btn-red { margin-top: 36px; }
+
+.calculator__text { max-width: 443px; margin: 36px 0 20px 50px; }
 
 .promotions_cards .promotions__item:not(:first-child) { margin-top: 50px; }
 

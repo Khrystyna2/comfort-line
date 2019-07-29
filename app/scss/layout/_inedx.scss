@@ -1083,6 +1083,10 @@
             flex: 0 0 100%;
             order: -1;
         }
+
+        &__item {
+            flex-direction: column;
+        }
     }
 
     .slider-promotions {
