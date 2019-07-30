@@ -1,5 +1,5 @@
 .calculator {
-    padding: 20px 0 90px;
+    padding-top: 20px;
 
     &__header {
         display: flex;
@@ -16,6 +16,11 @@
         .btn-red {
             position: absolute;
             bottom: 0;
+        }
+
+        >h2 {
+            font-size: $font-size-h2;
+            line-height: $line-height-h2;
         }
     }
 
@@ -40,5 +45,195 @@
     &__text {
         max-width: 443px;
         margin: 36px 0 20px 50px;
+        color: $text-gray;
+    }
+
+    &__color {
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 91px;
+
+        >p {
+            width: 160px;
+            margin-right: 36px;
+            color: $text-gray;
+        }
+    }
+
+    &__color_list {
+        display: flex;
+        flex: 1 1 70%;
+        justify-content: space-between;
+        text-align: center;
+
+        >li {
+            span {
+                width: 50px;
+                height: 50px;
+                display: block;
+                margin: 0 auto 27px;
+                border: 1px solid #A4A4A4;
+                @include radius(50%);
+            }
+        }
+    }
+}
+
+.table {
+    &__wrap {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    &__title {
+        padding: 7px 32px 19px 39px;
+        font-size: $font-size-h3;
+        line-height: $line-height-h3;
+        font-weight: 500;
+
+        >small {
+            font-size: 14px;
+            line-height: 17px;
+            color: $gray;
+            font-weight: 300;
+        }
+    }
+
+    &__header {
+        background-color: $yellow;
+        color: $text-color-white;
+        text-align: center;
+
+        .table__col-4 {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            line-height: 17px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+            &:first-of-type {
+                border-left: none;
+            }
+        }
+
+        .table__col-12 {
+            min-height: 39px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &__body {
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__row {
+        border-bottom: 1px solid $table-row-border;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+
+    &__col-12 {
+        width: 100%;
+    }
+
+    &__col-6 {
+        width: 50%;
+    }
+
+    &__col-4 {
+        width: 33.3%;
+        text-align: left;
+
+        >img {
+            width: 22px;
+            margin: 0 12px 0 17px;
+        }
+    }
+
+    &__col-2 {
+        width: 16.7%;
+
+        >li {
+            min-height: 39px;
+            border-top: 1px solid $border-table;
+            border-left: 1px solid $border-table;
+            padding: 10px 0;
+
+            &:first-of-type {
+                border-top: none;
+            }
+
+            >a {
+                display: inline-block;
+                width: 100%;
+                color: $table-color-lick;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .calculator {
+
+        &__header {
+            padding: 47px 30px 38px;
+        }
+
+        &__resize {
+            >h2 {
+                font-size: $font-size-h2 - 6px;
+                line-height: $line-height-h2 - 6px;
+            }
+        }
+
+        &__recount {
+            >span {
+                display: block;
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            .btn-red {
+                margin-top: 26px;
+            }
+        }
+
+        &__text {
+            max-width: 400px;
+            margin: 42px 0 26px;
+        }
+
+        &__color {
+            padding: 23px 20px;
+            margin-bottom: 70px;
+
+            >p {
+                margin-right: 20px;
+            }
+        }
+
+        &__color_list {
+            display: flex;
+            flex: 1 1 70%;
+            justify-content: space-between;
+            text-align: center;
+
+            >li {
+                span {
+                    margin: 0 auto 18px;
+                }
+            }
+        }
     }
 }

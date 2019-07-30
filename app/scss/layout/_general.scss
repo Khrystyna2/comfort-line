@@ -354,9 +354,11 @@ body {
 
 /* form dowmload catalog start */
 .download-catalog {
+    padding: 276px 0 225px;
+
     &__wrap {
         position: relative;
-        padding: 68px 0 97px;
+        padding: 68px 0 100px;
 
         p {
             font-size: 14px;
@@ -389,8 +391,8 @@ body {
 
     &__img {
         position: absolute;
-        top: -131px;
-        right: -184px;
+        top: -140px;
+        right: -170px;
         max-width: 830px;
     }
 }
@@ -512,6 +514,15 @@ body {
     .order-takes {
         background-size: 52%;
     }
+
+    .download-catalog {
+        &__img {
+            position: absolute;
+            top: -90px;
+            right: -30px;
+            max-width: 730px;
+        }
+    }
 }
 
 
@@ -570,9 +581,10 @@ body {
     }
 
     .download-catalog {
+        padding: 142px 0 95px;
+
         &__wrap {
-            position: relative;
-            padding: 68px 0 97px;
+            padding: 48px 0 50px;
         }
 
         &__title {
@@ -581,7 +593,7 @@ body {
         }
 
         &__form {
-            margin-top: 42px;
+            margin-top: 30px;
 
             >input {
                 width: 270px;
@@ -594,9 +606,9 @@ body {
 
         &__img {
             position: absolute;
-            top: -131px;
-            right: -184px;
-            max-width: 450px;
+            top: -80px;
+            right: -30px;
+            max-width: 570px;
         }
     }
 
