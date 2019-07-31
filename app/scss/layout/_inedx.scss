@@ -1,3 +1,9 @@
+/*
+================================================================================
+|                                     INDEX PAGE                               |
+================================================================================
+*/
+
 .first-screen {
     margin-top: -2px;
     height: calc(100vh - 121px);
@@ -136,7 +142,7 @@
     }
 }
 
-.assortment {
+.assortement {
     background-color: $bg-dark;
     padding: 87px 0 124px;
     position: relative;
@@ -176,7 +182,7 @@
                 background-color: $black-opacity;
             }
 
-            .assortment__hover {
+            .assortement__hover {
                 opacity: 1;
             }
         }
@@ -330,7 +336,7 @@
 
     &__header {
         position: relative;
-        margin-bottom: 42px;
+        margin-bottom: 37px;
 
         .icon-social {
             position: absolute;
@@ -535,7 +541,7 @@
         }
     }
 
-    .assortment {
+    .assortement {
         padding: 37px 0 59px;
 
         &__card {
@@ -599,7 +605,7 @@
         }
 
         &__header {
-            margin-bottom: 32px;
+            margin-bottom: 25px;
 
             .icon-social {
                 left: 35px;
@@ -690,7 +696,7 @@
         }
     }
 
-    .assortment {
+    .assortement {
 
         .title-text-border {
             font-size: 96px;
@@ -832,7 +838,7 @@
         }
     }
 
-    .assortment {
+    .assortement {
         padding: 28px 0 0;
 
         .title-text-border {
@@ -1034,7 +1040,7 @@
         }
     }
 
-    .assortment {
+    .assortement {
         .title-text-border {
             font-size: 36px;
             line-height: 43px;

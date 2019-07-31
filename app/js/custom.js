@@ -346,5 +346,39 @@ $(document).ready(function () {
 
 
 
+	// slider brands
+
+	$('.slider-brands').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		// autoplay: true,
+		autoplaySpeed: 2000,
+		focusOnSelect: false,
+		slide: ".slider-brands__item",
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	})
+
+	// accordion
+	$('.accordion>li>div').click(function () {
+		$(this).find('span').toggleClass('rotate');
+		$(this).next('article').slideToggle();
+		$(this).closest('li').siblings('li').find('span').removeClass('rotate');
+		$(this).closest('li').siblings('li').find('article').slideUp();
+	});
 
 });
