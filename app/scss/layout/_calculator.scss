@@ -76,6 +76,10 @@
                 border: 1px solid #A4A4A4;
                 @include radius(50%);
             }
+
+            small {
+                font-weight: 300;
+            }
         }
     }
 }
@@ -84,6 +88,10 @@
     &__wrap {
         width: 100%;
         margin-top: 60px;
+    }
+
+    &__wrap-mob {
+        display: none;
     }
 
     &__title {
@@ -199,7 +207,6 @@
 
         &__recount {
             >span {
-                display: block;
                 font-size: 22px;
                 line-height: 28px;
             }
@@ -224,16 +231,313 @@
         }
 
         &__color_list {
-            display: flex;
-            flex: 1 1 70%;
-            justify-content: space-between;
-            text-align: center;
-
             >li {
                 span {
                     margin: 0 auto 18px;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 991.8px) {
+    .calculator {
+        &__resize {
+            >h2 {
+                font-size: $font-size-h3;
+                line-height: $line-height-h3;
+            }
+        }
+
+        &__recount {
+            >span {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+
+        &__text {
+            max-width: 100%;
+            padding-right: 30px;
+        }
+
+        &__color {
+            >p {
+                width: 120px;
+            }
+        }
+
+        &__color_list {
+            >li {
+                span {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .table {
+        &__wrap {
+            margin-top: 30px;
+        }
+
+        &__title {
+            padding: 5px 20px 11px 24px;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+
+            >small {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &__header {
+            .table__col-4 {
+                padding: 8px 0;
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            .table__col-12 {
+                min-height: 34px;
+            }
+        }
+
+        &__body {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        &__col-4 {
+            width: 33.3%;
+            text-align: left;
+
+            >img {
+                width: 20px;
+                margin: 0 20px;
+            }
+        }
+
+        &__col-2 {
+            >li {
+                min-height: 34px;
+                padding: 8px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .calculator {
+        padding-top: 34px;
+
+        .title-text-border {
+            margin-bottom: 10px;
+        }
+
+        &__header {
+            flex-direction: column;
+        }
+
+        &__resize {
+            .btn-red {
+                position: static;
+                margin: 22px 0 36px;
+                width: 100%;
+            }
+        }
+
+        &__recount {
+            text-align: left;
+
+            .btn-red {
+                width: 100%;
+            }
+        }
+
+        &__text {
+            margin: 28px 0 0;
+            padding-right: 0;
+        }
+
+        &__color {
+            padding: 15px 20px 30px;
+            margin-top: 28px;
+            display: block;
+
+            >p {
+                margin: 0 0 21px;
+                width: 100%;
+
+                >br {
+                    display: none;
+                }
+            }
+        }
+
+        &__color_list {
+            flex: 0 0 100%;
+
+            >li {
+                span {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .table {
+        &__wrap {
+            display: none;
+        }
+
+        &__title {
+
+            >small {
+                max-width: 60%;
+            }
+        }
+
+        &__wrap-mob {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        &__header {
+            .table__col-12 {
+                &:last-of-type {
+                    border-top: 1px solid rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+
+        &__col-1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 10%;
+
+            >img {
+                position: absolute;
+                top: 10px;
+                width: 20px;
+            }
+
+            >span {
+                text-orientation: mixed;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+            }
+        }
+
+        &__col-11 {
+            width: 90%;
+        }
+
+        &__col-5 {
+            width: 44.6%;
+        }
+
+        &__col-7 {
+            width: 55.4%;
+        }
+
+        &__col-6 {
+            &.title {
+                background-color: $yellow;
+                color: $text-color-white;
+                min-height: 34px;
+                padding: 8px 0;
+            }
+
+
+            &.empti {
+                background-color: $border-table;
+            }
+
+
+        }
+
+        &__row-mob {
+            width: 100%;
+
+            >ul {
+                li {
+                    min-height: 34px;
+                    border-top: 1px solid $border-table;
+                    border-left: 1px solid $border-table;
+                    padding: 8px 0;
+
+                    &:first-of-type {
+                        border-top: none;
+                    }
+
+                    >a {
+                        display: inline-block;
+                        width: 100%;
+                        color: $table-color-lick;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+
+                .title {
+                    background-color: $yellow;
+                    color: $text-color-white;
+                }
+
+                .empti {
+                    background-color: $border-table;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .calculator {
+        .title-text-border {
+            font-size: 36px;
+            line-height: 43px;
+            margin-bottom: 14px;
+        }
+
+        &__resize {
+            >h2 {
+                font-size: $base-font-size;
+                line-height: $base-line-height;
+            }
+        }
+
+        &__recount {
+            p {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &__color_list {
+            >li {
+                span {
+                    margin-bottom: 0;
+                }
+
+                small {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .table {
+        &__header {
+            font-size: 12px;
+            line-height: 14px;
         }
     }
 }

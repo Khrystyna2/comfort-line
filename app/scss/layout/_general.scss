@@ -605,7 +605,6 @@ body {
         }
 
         &__img {
-            position: absolute;
             top: -80px;
             right: -30px;
             max-width: 570px;
@@ -725,8 +724,7 @@ body {
 
     .download-catalog {
         &__wrap {
-            position: relative;
-            padding: 68px 0 97px;
+            padding: 48px 0 54px 30px;
 
             p {
                 font-size: 12px;
@@ -739,23 +737,10 @@ body {
             line-height: $line-height-h3;
         }
 
-        &__form {
-            margin-top: 42px;
-
-            >input {
-                width: 270px;
-            }
-
-            .btn-red {
-                margin-top: 20px;
-            }
-        }
-
         &__img {
-            position: absolute;
-            top: -131px;
-            right: -184px;
-            max-width: 450px;
+            top: -25px;
+            right: -70px;
+            max-width: 430px;
         }
     }
 
@@ -822,9 +807,10 @@ body {
     }
 
     .download-catalog {
+        padding: 82px 0 92px;
+
         &__wrap {
-            position: relative;
-            padding: 68px 0 97px;
+            padding: 18px 20px 0;
 
             p {
                 font-size: 12px;
@@ -832,13 +818,8 @@ body {
             }
         }
 
-        &__title {
-            font-size: $font-size-h3;
-            line-height: $line-height-h3;
-        }
-
         &__form {
-            margin-top: 42px;
+            margin-top: 22px;
 
             >input {
                 width: 100%;
@@ -850,10 +831,12 @@ body {
         }
 
         &__img {
-            position: absolute;
-            top: -131px;
-            right: -184px;
-            max-width: 450px;
+            position: relative;
+            top: 20px;
+            right: 0;
+            left: -30px;
+            max-width: calc(100% + 60px);
+            margin-bottom: -120px;
         }
     }
 
@@ -993,6 +976,17 @@ body {
 
         &__item {
             margin-bottom: 11px;
+        }
+    }
+
+    .download-catalog {
+        &__title {
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+
+        &__img {
+            margin-bottom: -80px;
         }
     }
 }

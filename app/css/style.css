@@ -311,7 +311,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .download-catalog__form { margin-top: 30px; }
   .download-catalog__form > input { width: 270px; }
   .download-catalog__form .btn-red { margin-top: 20px; }
-  .download-catalog__img { position: absolute; top: -80px; right: -30px; max-width: 570px; }
+  .download-catalog__img { top: -80px; right: -30px; max-width: 570px; }
   .order-takes { padding: 39px 0 33px; background-size: 54%; }
   .order-takes .title-section { padding-right: 20px; }
   .order-takes__subtitle { font-size: 30px; line-height: 37px; }
@@ -335,13 +335,10 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .title-text-border { font-size: 72px; line-height: 86px; margin-bottom: -17px; }
   .nav-pills .nav-link { height: 37px; padding-left: 26px; }
   .social-networks > li > a { width: 23px; }
-  .download-catalog__wrap { position: relative; padding: 68px 0 97px; }
+  .download-catalog__wrap { padding: 48px 0 54px 30px; }
   .download-catalog__wrap p { font-size: 12px; line-height: 14px; }
   .download-catalog__title { font-size: 24px; line-height: 29px; }
-  .download-catalog__form { margin-top: 42px; }
-  .download-catalog__form > input { width: 270px; }
-  .download-catalog__form .btn-red { margin-top: 20px; }
-  .download-catalog__img { position: absolute; top: -131px; right: -184px; max-width: 450px; }
+  .download-catalog__img { top: -25px; right: -70px; max-width: 430px; }
   .order-takes__subtitle { font-size: 24px; line-height: 29px; }
   .ready-order__form > form { min-width: 240px; }
   .ready-order__number { font-size: 48px; line-height: 58px; }
@@ -352,13 +349,13 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 @media only screen and (max-width: 767.8px) { .spinner { width: 48%; }
   .nav-pills { -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
   .nav-pills .nav-link { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: 26px; padding: 0; border-bottom: 3px solid transparent; border-left: none; margin-bottom: 46px; }
-  .download-catalog__wrap { position: relative; padding: 68px 0 97px; }
+  .download-catalog { padding: 82px 0 92px; }
+  .download-catalog__wrap { padding: 18px 20px 0; }
   .download-catalog__wrap p { font-size: 12px; line-height: 14px; }
-  .download-catalog__title { font-size: 24px; line-height: 29px; }
-  .download-catalog__form { margin-top: 42px; }
+  .download-catalog__form { margin-top: 22px; }
   .download-catalog__form > input { width: 100%; }
   .download-catalog__form .btn-red { width: 100%; }
-  .download-catalog__img { position: absolute; top: -131px; right: -184px; max-width: 450px; }
+  .download-catalog__img { position: relative; top: 20px; right: 0; left: -30px; max-width: calc(100% + 60px); margin-bottom: -120px; }
   .order-takes { padding: 30px 0 27px; background-position: bottom 27px right; background-size: 470px; }
   .order-takes__subtitle { margin-top: 20px; margin-left: auto; width: 60%; padding: 22px 0; }
   .ready-order { padding: 92px 0 0; }
@@ -384,7 +381,9 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .accordion article { padding: 16px 20px; }
   .accordion__title { padding-bottom: 18px; }
   .accordion__title > span { margin-right: 0; margin-left: 20px; }
-  .accordion__item { margin-bottom: 11px; } }
+  .accordion__item { margin-bottom: 11px; }
+  .download-catalog__title { font-size: 18px; line-height: 22px; }
+  .download-catalog__img { margin-bottom: -80px; } }
 
 /*
 ================================================================================
@@ -906,7 +905,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(6n) { margin-right: 0; }
 
-.roletta-download-catalog { margin-bottom: 212px; background-color: #25282a; }
+.roletta-download-catalog { padding: 0; margin-bottom: 212px; background-color: #25282a; }
 
 .roletta-download-catalog .download-catalog__wrap p { color: #fff; }
 
@@ -1018,7 +1017,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .roletta-assortement__color .group-radio-input > h3 { font-size: 30px; line-height: 37px; }
   .roletta-assortement__color .group-radio-input .label-radio-input { margin: 50px 50px 0 0; }
   .roletta-download-catalog { margin-bottom: 95px; }
-  .roletta-download-catalog .download-catalog__img { top: -36px; right: 20px; max-width: 510px; }
+  .roletta-download-catalog .download-catalog__img { top: -90px; right: 20px; max-width: 570px; }
   .roletta-control { padding: 0 0 76px; background-size: 44%; }
   .roletta-control__header { margin-bottom: 35px; }
   .roletta-control__header .title-section { margin-bottom: 12px; }
@@ -1184,7 +1183,11 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .calculator__color_list > li span { width: 50px; height: 50px; display: block; margin: 0 auto 27px; border: 1px solid #A4A4A4; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
 
+.calculator__color_list > li small { font-weight: 300; }
+
 .table__wrap { width: 100%; margin-top: 60px; }
+
+.table__wrap-mob { display: none; }
 
 .table__title { padding: 7px 32px 19px 39px; font-size: 24px; line-height: 29px; font-weight: 500; }
 
@@ -1222,13 +1225,65 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 @media only screen and (max-width: 1199.8px) { .calculator__header { padding: 47px 30px 38px; }
   .calculator__resize > h2 { font-size: 30px; line-height: 37px; }
-  .calculator__recount > span { display: block; font-size: 22px; line-height: 28px; }
+  .calculator__recount > span { font-size: 22px; line-height: 28px; }
   .calculator__recount .btn-red { margin-top: 26px; }
   .calculator__text { max-width: 400px; margin: 42px 0 26px; }
   .calculator__color { padding: 23px 20px; margin-bottom: 70px; }
   .calculator__color > p { margin-right: 20px; }
-  .calculator__color_list { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex: 1 1 70%; -ms-flex: 1 1 70%; flex: 1 1 70%; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; text-align: center; }
   .calculator__color_list > li span { margin: 0 auto 18px; } }
+
+@media only screen and (max-width: 991.8px) { .calculator__resize > h2 { font-size: 24px; line-height: 29px; }
+  .calculator__recount > span { font-size: 18px; line-height: 22px; }
+  .calculator__text { max-width: 100%; padding-right: 30px; }
+  .calculator__color > p { width: 120px; }
+  .calculator__color_list > li span { width: 30px; height: 30px; }
+  .table__wrap { margin-top: 30px; }
+  .table__title { padding: 5px 20px 11px 24px; font-size: 18px; line-height: 22px; }
+  .table__title > small { font-size: 12px; line-height: 14px; }
+  .table__header .table__col-4 { padding: 8px 0; font-size: 12px; line-height: 14px; }
+  .table__header .table__col-12 { min-height: 34px; }
+  .table__body { font-size: 12px; line-height: 14px; }
+  .table__col-4 { width: 33.3%; text-align: left; }
+  .table__col-4 > img { width: 20px; margin: 0 20px; }
+  .table__col-2 > li { min-height: 34px; padding: 8px 0; } }
+
+@media only screen and (max-width: 767.8px) { .calculator { padding-top: 34px; }
+  .calculator .title-text-border { margin-bottom: 10px; }
+  .calculator__header { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  .calculator__resize .btn-red { position: static; margin: 22px 0 36px; width: 100%; }
+  .calculator__recount { text-align: left; }
+  .calculator__recount .btn-red { width: 100%; }
+  .calculator__text { margin: 28px 0 0; padding-right: 0; }
+  .calculator__color { padding: 15px 20px 30px; margin-top: 28px; display: block; }
+  .calculator__color > p { margin: 0 0 21px; width: 100%; }
+  .calculator__color > p > br { display: none; }
+  .calculator__color_list { -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+  .calculator__color_list > li span { width: 30px; height: 30px; }
+  .table__wrap { display: none; }
+  .table__title > small { max-width: 60%; }
+  .table__wrap-mob { display: block; width: 100%; margin-top: 30px; }
+  .table__header .table__col-12:last-of-type { border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  .table__col-1 { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 10%; }
+  .table__col-1 > img { position: absolute; top: 10px; width: 20px; }
+  .table__col-1 > span { text-orientation: mixed; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+  .table__col-11 { width: 90%; }
+  .table__col-5 { width: 44.6%; }
+  .table__col-7 { width: 55.4%; }
+  .table__col-6.title { background-color: #FF9300; color: #fff; min-height: 34px; padding: 8px 0; }
+  .table__col-6.empti { background-color: #DADADA; }
+  .table__row-mob { width: 100%; }
+  .table__row-mob > ul li { min-height: 34px; border-top: 1px solid #DADADA; border-left: 1px solid #DADADA; padding: 8px 0; }
+  .table__row-mob > ul li:first-of-type { border-top: none; }
+  .table__row-mob > ul li > a { display: inline-block; width: 100%; color: #444444; text-decoration: underline; cursor: pointer; }
+  .table__row-mob > ul .title { background-color: #FF9300; color: #fff; }
+  .table__row-mob > ul .empti { background-color: #DADADA; } }
+
+@media only screen and (max-width: 575.8px) { .calculator .title-text-border { font-size: 36px; line-height: 43px; margin-bottom: 14px; }
+  .calculator__resize > h2 { font-size: 18px; line-height: 22px; }
+  .calculator__recount p { font-size: 14px; line-height: 17px; }
+  .calculator__color_list > li span { margin-bottom: 0; }
+  .calculator__color_list > li small { display: none; }
+  .table__header { font-size: 12px; line-height: 14px; } }
 
 .promotions_cards .promotions__item:not(:first-child) { margin-top: 50px; }
 

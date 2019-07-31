@@ -210,6 +210,7 @@
 }
 
 .roletta-download-catalog {
+    padding: 0;
     margin-bottom: 212px;
     background-color: $bg-dark;
 
@@ -607,9 +608,9 @@
 
         .download-catalog {
             &__img {
-                top: -36px;
+                top: -90px;
                 right: 20px;
-                max-width: 510px;
+                max-width: 570px;
             }
         }
     }
