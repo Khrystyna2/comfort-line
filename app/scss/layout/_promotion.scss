@@ -1,5 +1,5 @@
 .promotions_cards {
-    .slider-promotions__item:not(:first-child){
+    .cards-dark:not(:first-child){
         margin-top: 50px;
     }
 }
@@ -59,8 +59,35 @@
     .timer{
         color: #ffffff;
     }
+    .top_title{
+        margin-top: 50px;
+    }
+    .top_block{
+        background-image: url('../image/top_bg.png');
+        padding-bottom: 80px;
+        padding-top: 34px;
+    }
 }
-
+.top_promotion{
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+    padding-bottom: 92px;
+}
+.top_block{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top_title{
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+.text_promotion p {
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+}
 @media(max-width:1200px){
     .letter_form {
         padding: 78px 80px 41px 0;
