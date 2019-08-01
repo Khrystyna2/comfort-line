@@ -241,9 +241,13 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .bread-crumbs { padding: 34px 0 54px; font-weight: 100; font-size: 14px; line-height: 17px; color: #fff; }
 
+.bread-crumbs.color-darck { color: #000; }
+
 .bread-crumbs__item { display: inline-block; }
 
 .bread-crumbs__item::after { content: '/'; color: #FF9300; margin: 0 2px 0 6px; }
+
+.bread-crumbs__item:last-of-type::after { display: none; }
 
 .bread-crumbs__item > span { color: #979797; }
 
@@ -320,7 +324,6 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .input-bark, .input-light { height: 45px; }
   .title-text-border { font-size: 120px; line-height: 145px; margin-bottom: -32px; }
   .nav-pills .nav-link { height: 45px; padding-left: 42px; }
-  .bread-crumbs { display: none; }
   .download-catalog { padding: 142px 0 95px; }
   .download-catalog__wrap { padding: 48px 0 50px; }
   .download-catalog__title { font-size: 30px; line-height: 37px; }
@@ -343,7 +346,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .FAQ .title-text-border { margin-bottom: -98px; }
   .accordion { margin-top: 72px; }
   .accordion__title > span { font-size: 20px; }
-  .accordion article { padding: 26px 30px; } }
+  .accordion article { padding: 26px 30px; }
+  .bread-crumbs { padding: 29px 0 45px; } }
 
 @media only screen and (max-width: 991.8px) { body { line-height: 17px; font-size: 14px !important; }
   .title-section, .title-white { font-size: 36px; line-height: 36px; }
@@ -360,7 +364,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .ready-order__number { font-size: 48px; line-height: 58px; }
   .ready-order__text > h4 { font-size: 18px; line-height: 22px; }
   .FAQ .title-text-border { margin-bottom: -60px; }
-  .accordion__title > span { font-size: 18px; } }
+  .accordion__title > span { font-size: 18px; }
+  .bread-crumbs { font-size: 12px; line-height: 14px; } }
 
 @media only screen and (max-width: 767.8px) { .spinner { width: 48%; }
   .nav-pills { -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
@@ -380,7 +385,8 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .ready-order__card { margin-bottom: 30px; height: auto; }
   .FAQ { padding: 39px 0 78px; }
   .FAQ .title-text-border { margin-bottom: -58px; }
-  .accordion article { padding: 16px 20px; } }
+  .accordion article { padding: 16px 20px; }
+  .bread-crumbs { padding: 25px 0 34px; } }
 
 @media only screen and (max-width: 575.8px) { body { line-height: 14px; font-size: 12px !important; }
   .title-section, .title-white { font-size: 24px; line-height: 24px; }
@@ -1009,6 +1015,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .roletta-control__header .image { right: -50px; top: 15px; width: 46%; } }
 
 @media only screen and (max-width: 1199.8px) { .roletta-header { padding: 10px 0 55px; }
+  .roletta-header .bread-crumbs { display: none; }
   .roletta-header::before { bottom: 200px; }
   .roletta-header__img { bottom: 145px; right: 0; max-width: 38%; }
   .roletta-header p { width: 66%; }
@@ -1152,7 +1159,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(6n) { margin-right: 30px; }
   .roletta-assortement__color .group-radio-input .label-radio-input:nth-of-type(4n) { margin-right: 0; }
   .roletta-download-catalog { margin-bottom: 140px; }
-  .roletta-download-catalog .download-catalog__img { max-width: calc(100% + 30px); margin: 0 -15px -120px -15px; }
+  .roletta-download-catalog .download-catalog__img { max-width: calc(100% + 30px); margin: 0 -15px -120px -15px; left: 0; }
   .roletta-control { background: #fff; }
   .roletta-control__auto p > b { max-width: 180px; }
   .roletta-control__subtitle { font-size: 18px; line-height: 22px; }
@@ -1243,6 +1250,40 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .table__col-2 > li > a { display: inline-block; width: 100%; color: #444444; text-decoration: underline; cursor: pointer; }
 
+.calculator-goods { padding-bottom: 108px; position: relative; }
+
+.calculator-goods::before { content: url(../image/bg-vector-orange.svg); position: absolute; top: 296px; right: 0; width: 49%; }
+
+.calculator-goods__title { font-size: 36px; line-height: 43px; font-weight: 900; margin: 6px 0 27px; }
+
+.calculator-goods__img { width: 100%; padding: 3px 22px 39px; }
+
+.calculator-goods__info { padding: 70px 0 0 95px; }
+
+.calculator-goods__info > p { font-size: 26px; line-height: 31px; }
+
+.calculator-goods__subtitle { color: #fff; font-size: 60px; line-height: 72px; font-weight: 900; margin-bottom: 50px; }
+
+.calculator-goods__subtitle > p { font-size: 18px; line-height: 22px; font-weight: 300; margin-bottom: 6px; }
+
+.calculator-goods__list-info { margin: 28px 0 77px; }
+
+.calculator-goods__list-info li { display: -webkit-flex; display: -ms-flexbox; display: flex; margin-bottom: 14px; }
+
+.calculator-goods__list-info li:nth-of-type(2) { margin-bottom: 36px; }
+
+.calculator-goods__list-info li .line { -webkit-flex: auto; -ms-flex: auto; flex: auto; margin: 0 8px 4px; border-bottom: 1px solid #DADADA; }
+
+.calculator-goods__form .btn-red { width: 100%; margin: 20px 0 30px; }
+
+.calculator-goods__form .group-checkobox { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.calculator-goods__form .group-checkobox > p { font-size: 14px; line-height: 17px; color: #B1B1B1; }
+
+.calculator-goods__form .group-checkobox > p a { text-decoration: underline; }
+
+.calculator-goods__text { margin: 54px 0 32px; color: #6B6B6B; }
+
 @media only screen and (max-width: 1199.8px) { .calculator__header { padding: 47px 30px 38px; }
   .calculator__resize > h2 { font-size: 30px; line-height: 37px; }
   .calculator__recount > span { font-size: 22px; line-height: 28px; }
@@ -1250,7 +1291,16 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .calculator__text { max-width: 400px; margin: 42px 0 26px; }
   .calculator__color { padding: 23px 20px; margin-bottom: 70px; }
   .calculator__color > p { margin-right: 20px; }
-  .calculator__color_list > li span { margin: 0 auto 18px; } }
+  .calculator__color_list > li span { margin: 0 auto 18px; }
+  .calculator-goods { padding-bottom: 76px; }
+  .calculator-goods::before { top: 210px; width: 50%; }
+  .calculator-goods__title { font-size: 30px; line-height: 37px; margin: 4px 0 10px; }
+  .calculator-goods__img { padding: 0 14px 24px; }
+  .calculator-goods__info { padding: 50px 0 0; }
+  .calculator-goods__info > p { font-size: 22px; line-height: 28px; }
+  .calculator-goods__subtitle { padding-left: 60px; font-size: 36px; line-height: 43px; }
+  .calculator-goods__subtitle > p { font-size: 14px; line-height: 17px; }
+  .calculator-goods__text { margin: 24px 0 37px; } }
 
 @media only screen and (max-width: 991.8px) { .calculator__resize > h2 { font-size: 24px; line-height: 29px; }
   .calculator__recount > span { font-size: 18px; line-height: 22px; }
@@ -1265,7 +1315,24 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .table__body { font-size: 12px; line-height: 14px; }
   .table__col-4 { width: 33.3%; text-align: left; }
   .table__col-4 > img { width: 20px; margin: 0 20px; }
-  .table__col-2 > li { min-height: 34px; padding: 8px 0; } }
+  .table__col-2 > li { min-height: 34px; padding: 8px 0; }
+  .calculator-goods::before { top: 210px; width: 50%; }
+  .calculator-goods__title { font-size: 24px; line-height: 29px; }
+  .calculator-goods__info { padding: 60px 0 0; }
+  .calculator-goods__info > p { font-size: 18px; line-height: 18px; }
+  .calculator-goods__subtitle > p { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  .calculator-goods__subtitle > p span { margin-left: 40px; }
+  .calculator-goods__list-info { margin: 20px 0 0; }
+  .calculator-goods__list-info li { margin-bottom: 19px; }
+  .calculator-goods__list-info li:nth-of-type(2) { margin-bottom: 41px; }
+  .calculator-goods__wrap { position: relative; padding-bottom: 180px; }
+  .calculator-goods__wrap .col-12 { position: static; }
+  .calculator-goods__form { position: absolute; bottom: 0; left: 15px; right: 15px; background-color: #fff; box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); padding: 28px 30px 25px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  .calculator-goods__form .btn-red { width: 210px; margin: 0; }
+  .calculator-goods__form .input-light { width: 180px; margin: 0 30px 0 0; }
+  .calculator-goods__form .group-checkobox { margin-top: 16px; }
+  .calculator-goods__form .group-checkobox > p { font-size: 12px; line-height: 14px; }
+  .calculator-goods__text P { padding-right: 32px; } }
 
 @media only screen and (max-width: 767.8px) { .calculator { padding-top: 34px; }
   .calculator .title-text-border { margin-bottom: 10px; }
@@ -1296,14 +1363,36 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .table__row-mob > ul li:first-of-type { border-top: none; }
   .table__row-mob > ul li > a { display: inline-block; width: 100%; color: #444444; text-decoration: underline; cursor: pointer; }
   .table__row-mob > ul .title { background-color: #FF9300; color: #fff; }
-  .table__row-mob > ul .empti { background-color: #DADADA; } }
+  .table__row-mob > ul .empti { background-color: #DADADA; }
+  .calculator-goods::before { top: 170px; width: 90%; }
+  .calculator-goods__title { font-size: 20px; margin: 0 0 20px; }
+  .calculator-goods__info { padding: 32px 0 0; }
+  .calculator-goods__subtitle { position: absolute; top: 30px; padding-left: 90px; }
+  .calculator-goods__subtitle > p { display: block; }
+  .calculator-goods__subtitle > p span { margin-left: 0; }
+  .calculator-goods__wrap { position: relative; padding-bottom: 0; padding-top: 140px; }
+  .calculator-goods__form { position: static; left: 0; right: 0; padding: 28px 30px 17px; display: block; margin-top: 61px; }
+  .calculator-goods__form .btn-red { width: 100%; margin-top: 10px; }
+  .calculator-goods__form .input-light { width: 100%; margin: 0 0 10px 0; }
+  .calculator-goods__form .group-checkobox { -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; margin-top: 20px; }
+  .calculator-goods__text { margin: 26px 0 28px; }
+  .calculator-goods__text P { padding-right: 0; margin-bottom: 15px; }
+  .calculator-goods .table__title { padding-top: 10px; }
+  .calculator-goods .table__col-1 { padding-top: 36px; }
+  .calculator-goods .table__row-mob > ul li { min-height: 42px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; } }
 
 @media only screen and (max-width: 575.8px) { .calculator .title-text-border { font-size: 36px; line-height: 43px; margin-bottom: 14px; }
   .calculator__resize > h2 { font-size: 18px; line-height: 22px; }
   .calculator__recount p { font-size: 14px; line-height: 17px; }
   .calculator__color_list > li span { margin-bottom: 0; }
   .calculator__color_list > li small { display: none; }
-  .table__header { font-size: 12px; line-height: 14px; } }
+  .table__header { font-size: 12px; line-height: 14px; }
+  .calculator-goods::before { display: none; }
+  .calculator-goods__title { font-size: 18px; line-height: 22px; }
+  .calculator-goods__subtitle { position: absolute; top: 30px; padding-left: 40px; }
+  .calculator-goods__subtitle > p { display: block; }
+  .calculator-goods__subtitle > p span { display: block; }
+  .calculator-goods__subtitle::before { content: url(../image/bg-vector-orange.svg); width: 105%; position: absolute; top: -24px; right: -15px; z-index: -1; } }
 
 .promotions_cards .promotions__item:not(:first-child) { margin-top: 50px; }
 
