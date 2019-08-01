@@ -485,6 +485,10 @@
     .roletta-header {
         padding: 10px 0 55px;
 
+        .bread-crumbs {
+            display: none;
+        }
+
         &::before {
             bottom: 200px;
         }
@@ -1211,6 +1215,7 @@
             &__img {
                 max-width: calc(100% + 30px);
                 margin: 0 -15px -120px -15px;
+                left: 0;
             }
         }
     }
