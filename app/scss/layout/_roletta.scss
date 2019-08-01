@@ -111,6 +111,7 @@
 
             .btn-red {
                 margin-left: 30px;
+                min-width: 350px;
             }
         }
     }
@@ -437,7 +438,7 @@
         align-items: center;
         padding: 0 48px;
         background-color: $base-bg;
-        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid #CFCFCF;
     }
 }
 
@@ -528,6 +529,12 @@
             >h3 {
                 font-size: $font-size-h2 - 6px;
                 line-height: $line-height-h2 - 6px;
+            }
+
+            >form {
+                .btn-red {
+                    min-width: 300px;
+                }
             }
         }
     }
@@ -759,6 +766,12 @@
 
             >p {
                 width: 67%;
+            }
+
+            >form {
+                .btn-red {
+                    min-width: 270px;
+                }
             }
         }
     }
@@ -1054,7 +1067,7 @@
 
     .roletta-control {
         padding: 0;
-        background-size: 580px;
+        background-size: 550px;
         background-position: top 870px right;
 
         &__header {
