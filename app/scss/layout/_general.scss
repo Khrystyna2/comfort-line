@@ -122,10 +122,20 @@ body {
     background-color: $bg-color-input;
     color: $text-color-white;
 
+    &.error {
+        border: 1px solid $error-color;
+    }
+
     &::placeholder {
-        color: $white;
+        color: $text-color-white;
         opacity: 0.5;
         font-weight: 100;
+    }
+
+    &:hover {
+        &::placeholder {
+            opacity: 1;
+        }
     }
 }
 
@@ -133,10 +143,21 @@ body {
     @extend %input-style;
     background-color: $bg-color-input-light;
     margin-bottom: 10px;
+    @include transition(color 0.3s);
+
+    &.error {
+        border: 1px solid $error-color;
+    }
 
     &::placeholder {
         color: $color-placeholder;
         font-weight: 100;
+    }
+
+    &:hover {
+        &::placeholder {
+            color: $text-color;
+        }
     }
 }
 

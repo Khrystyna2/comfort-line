@@ -230,6 +230,10 @@
         color: $text-color-white;
     }
 
+    &__item {
+        justify-content: space-between;
+    }
+
     &__timer {
         >span {
             font-weight: 700;
@@ -296,6 +300,7 @@
     &__image {
         height: 400px;
         flex: 0 0 40.1%;
+        max-width: 445px;
 
         >img {
             width: 100%;
