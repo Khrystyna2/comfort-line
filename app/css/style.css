@@ -312,6 +312,16 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .accordion article { padding: 26px 62px 27px 32px; background-color: #F5F5F5; display: none; }
 
+.top-baner { height: 280px; width: 100%; background-color: #25282a; position: relative; z-index: 1; color: #fff; }
+
+.top-baner__img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; z-index: -1; }
+
+.top-baner .bread-crumbs { padding-bottom: 44px; }
+
+.top-baner .title-white { margin-bottom: 10px; }
+
+.top-baner p { width: 95%; }
+
 @media only screen and (max-width: 1440px) { .order-takes { background-size: 52%; }
   .download-catalog__img { position: absolute; top: -90px; right: -30px; max-width: 730px; } }
 
@@ -1377,6 +1387,24 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 .assortment-page { padding-top: 20px; }
 
 .assortment-page .download-catalog { padding: 120px 0 218px; }
+
+.assortement-headeing { padding-top: 60px; }
+
+.assortement-headeing__title { font-size: 36px; line-height: 43px; margin-bottom: 40px; font-weight: 900; }
+
+.assortement-headeing__card { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; height: 357px; background-color: #25282a; position: relative; margin-bottom: 30px; color: #fff; }
+
+.assortement-headeing__card > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.assortement-headeing__card > h4 { position: absolute; bottom: 22px; left: 35px; right: 35px; font-weight: 900; font-size: 24px; line-height: 29px; min-height: 60px; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -ms-transition: 0.4s; -o-transition: 0.4s; }
+
+.assortement-headeing__card:hover { color: #fff; box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4); }
+
+.assortement-headeing__card:hover > h4 { bottom: 60px; }
+
+.assortement-headeing__card:hover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.4); }
+
+.assortement-headeing__card:hover .assortement__hover { opacity: 1; }
 
 @media only screen and (max-width: 1199.8px) { .assortement { padding: 37px 0 59px; }
   .assortement__card { height: 200px; }

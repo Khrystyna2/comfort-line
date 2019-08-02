@@ -85,6 +85,70 @@
     }
 }
 
+.assortement-headeing {
+    padding-top: 60px;
+
+    &__title {
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+        margin-bottom: 40px;
+        font-weight: 900;
+    }
+
+    &__card {
+        display: flex;
+        width: 100%;
+        height: 357px;
+        background-color: $bg-dark;
+        position: relative;
+        margin-bottom: 30px;
+        color: $text-color-white;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        >h4 {
+            position: absolute;
+            bottom: 22px;
+            left: 35px;
+            right: 35px;
+            font-weight: 900;
+            font-size: $font-size-h3;
+            line-height: $line-height-h3;
+            min-height: 60px;
+            @include transition(0.4s);
+        }
+
+        &:hover {
+            color: $text-color-white;
+            box-shadow: 0px 20px 50px $black-opacity;
+
+            >h4 {
+                bottom: 60px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $black-opacity;
+            }
+
+            .assortement__hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
 @media only screen and (max-width: 1199.8px) {
     .assortement {
         padding: 37px 0 59px;
