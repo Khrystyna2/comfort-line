@@ -67,13 +67,9 @@
     .timer {
         color: #ffffff;
     }
-    .top_title{
-        margin-top: 50px;
-    }
     .top_block{
         background-image: url('../image/top_bg.png');
         padding-bottom: 80px;
-        padding-top: 34px;
     }
 }
 .top_promotion{
@@ -84,17 +80,15 @@
 .top_block{
     background-size: cover;
     background-repeat: no-repeat;
+    .row{
+        flex-direction: column;
+    }
 }
 .top_title{
-    font-size: 36px;
+    font-size: $font-size-h2;
     line-height: 43px;
     color: #FFFFFF;
     font-weight: 900;
-}
-.text_promotion p {
-    font-size: 18px;
-    line-height: 22px;
-    color: $text-color;
 }
 
 @media(max-width:1199.8px) {

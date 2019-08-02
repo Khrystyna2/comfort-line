@@ -762,9 +762,6 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .calendar > ul > li { width: 30px; height: 30px; margin-left: 5px; }
   .calendar > ul > li:nth-child(7n) { margin-right: 0; } }
 
-<<<<<<< HEAD
-.promotions_cards .cards-dark:not(:first-child) { margin-top: 50px; }
-=======
 /*
 ================================================================================
 |                                   ROLETTA PAGE                               |
@@ -933,8 +930,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 @media only screen and (min-width: 3000px) { .roletta-control { background-size: 1050px; } }
 
-.promotions_cards .slider-promotions__item:not(:first-child) { margin-top: 50px; }
->>>>>>> 492e94b691e45893ef8daabb0f92d6ccc1825333
+.promotions_cards .cards-dark:not(:first-child) { margin-top: 50px; }
 
 .checkbox_section { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
@@ -954,23 +950,17 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .promotions_open .timer { color: #ffffff; }
 
-<<<<<<< HEAD
-.promotions_open .top_title { margin-top: 50px; }
-
-.promotions_open .top_block { background-image: url("../image/top_bg.png"); padding-bottom: 80px; padding-top: 34px; }
+.promotions_open .top_block { background-image: url("../image/top_bg.png"); padding-bottom: 80px; }
 
 .top_promotion { border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-top: 70px; padding-bottom: 92px; }
 
 .top_block { background-size: cover; background-repeat: no-repeat; }
 
+.top_block .row { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
 .top_title { font-size: 36px; line-height: 43px; color: #FFFFFF; font-weight: 900; }
 
-.text_promotion p { font-size: 18px; line-height: 22px; color: #000; }
-
-@media (max-width: 1200px) { .letter_form { padding: 78px 80px 41px 0; width: 450px; }
-=======
 @media (max-width: 1199.8px) { .letter_form { padding: 78px 80px 41px 0; width: 450px; }
->>>>>>> 492e94b691e45893ef8daabb0f92d6ccc1825333
   .img_letter_wraper { left: -199px; bottom: -295px; width: 790px; }
   .letter_form_wrap:before { width: 144px; height: 60px; top: -20px; } }
 
