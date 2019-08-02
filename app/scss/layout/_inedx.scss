@@ -142,85 +142,6 @@
     }
 }
 
-.assortement {
-    background-color: $bg-dark;
-    padding: 87px 0 124px;
-    position: relative;
-    z-index: 0;
-
-    .title-text-border {
-        color: $dark;
-        text-shadow: -1px -1px 0 $shadow-dark-text, 1px -1px 0 $shadow-dark-text, -1px 1px 0 $shadow-dark-text,
-            1px 1px 0 $shadow-dark-text;
-    }
-
-    &__card {
-        position: relative;
-        display: flex;
-        height: 260px;
-        width: 100%;
-        color: $text-color-white;
-        margin-bottom: 30px;
-
-        >img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        &:hover {
-            color: $text-color-white;
-            box-shadow: 0px 20px 50px $black-opacity;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: $black-opacity;
-            }
-
-            .assortement__hover {
-                opacity: 1;
-            }
-        }
-    }
-
-    &__desc {
-        position: absolute;
-        top: 38px;
-        left: 39px;
-        right: 39px;
-
-        >h4 {
-            font-size: $font-size-h3;
-            line-height: $line-height-h3;
-        }
-
-        >p {
-            margin-top: 16px;
-            width: 60%;
-        }
-    }
-
-    &__hover {
-        opacity: 0;
-        position: absolute;
-        left: 39px;
-        bottom: 36px;
-        font-weight: 100;
-        font-size: 14px;
-        line-height: 17px;
-        @include transition(opacity 0.4s);
-
-        img {
-            margin-left: 10px;
-        }
-    }
-}
-
 .promotions {
     &__title {
         font-weight: 900;
@@ -559,36 +480,6 @@
         }
     }
 
-    .assortement {
-        padding: 37px 0 59px;
-
-        &__card {
-            height: 200px;
-        }
-
-        &__desc {
-            position: absolute;
-            top: 24px;
-            left: 30px;
-            right: 30px;
-
-            >h4 {
-                font-size: $base-font-size;
-                line-height: $base-line-height;
-            }
-
-            >p {
-                margin-top: 10px;
-                width: 80%;
-            }
-        }
-
-        &__hover {
-            left: 30px;
-            bottom: 28px;
-        }
-    }
-
     .promotions {
         &__title {
             font-size: $font-size-h2 - 6px;
@@ -712,37 +603,6 @@
         }
     }
 
-    .assortement {
-
-        .title-text-border {
-            font-size: 96px;
-            line-height: 115px;
-            margin-bottom: -26px;
-        }
-
-        &__card {
-            height: 150px;
-        }
-
-        &__desc {
-            position: absolute;
-            top: 13px;
-            left: 13px;
-            right: 13px;
-
-            &_big {
-                top: 24px;
-                left: 30px;
-                right: 30px;
-            }
-        }
-
-        &__hover {
-            left: 13px;
-            bottom: 15px;
-        }
-    }
-
     .promotions {
         &__title {
             font-size: $font-size-h3;
@@ -862,44 +722,6 @@
                 width: 100%;
                 margin-top: 40px;
             }
-        }
-    }
-
-    .assortement {
-        padding: 28px 0 0;
-
-        .title-text-border {
-            font-size: 56px;
-            line-height: 65px;
-            margin-bottom: 20px;
-        }
-
-        &__card {
-            height: 150px;
-
-            &_big {
-                height: 180px;
-            }
-        }
-
-        &__desc {
-            position: absolute;
-            top: 16px;
-            left: 20px;
-            right: 20px;
-
-            >p {
-                width: 100%;
-            }
-
-            >h4 {
-                max-width: 110px;
-            }
-        }
-
-        &__hover {
-            left: 16px;
-            bottom: 20px;
         }
     }
 
@@ -1062,25 +884,6 @@
             .btn-red {
                 margin-top: 29px;
             }
-        }
-    }
-
-    .assortement {
-        .title-text-border {
-            font-size: 36px;
-            line-height: 43px;
-        }
-
-        &__card {
-            height: 110px;
-
-            &_big {
-                height: 155px;
-            }
-        }
-
-        &__hover {
-            display: none;
         }
     }
 

@@ -541,6 +541,39 @@ body {
     }
 }
 
+.top-baner {
+    height: 280px;
+    width: 100%;
+    background-color: $bg-dark;
+    position: relative;
+    z-index: 1;
+    color: $text-color-white;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .bread-crumbs {
+        padding-bottom: 44px;
+    }
+
+    .title-white {
+        margin-bottom: 10px;
+    }
+
+    p {
+        width: 95%;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     .order-takes {
         background-size: 52%;
