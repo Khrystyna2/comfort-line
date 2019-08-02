@@ -611,7 +611,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .slider-promotions { position: relative; width: 100%; padding: 0; margin-bottom: 167px; }
 
-.slider-promotions__item { padding: 0; }
+.slider-promotions__item { padding: 0; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
 .reviews { position: relative; }
 
