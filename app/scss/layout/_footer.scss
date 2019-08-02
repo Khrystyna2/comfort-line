@@ -44,6 +44,15 @@
         li {
             >a {
                 color: $text-color-white;
+
+                &:hover {
+                    color: $yellow;
+                }
+
+                &:active,
+                &.active {
+                    color: $red-active;
+                }
             }
         }
 

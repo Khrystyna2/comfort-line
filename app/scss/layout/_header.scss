@@ -403,6 +403,11 @@
 
     .phone {
         margin: 12px 0 0 auto;
+        padding: 7px 10px 0 10px;
+
+        &__list {
+            padding: 7px 10px 15px;
+        }
     }
 
     .menu {

@@ -155,11 +155,11 @@
 					<form class="price__form">
 						<div class="spinner">
 							<span>Ширина, мм.</span>
-							<input type="number" min="100" max="10000" step="100" value="1500">
+							<input type="number" min="400" max="10000" step="1" value="1500">
 						</div>
 						<div class="spinner">
 							<span>Высота, мм.</span>
-							<input type="number" min="100" max="10000" step="100" value="2500">
+							<input type="number" min="400" max="10000" step="1" value="2500">
 						</div>
 						<a href="#" class="btn btn-red">Расчитать стоимость</a>
 					</form>
@@ -301,7 +301,7 @@
 				<h2 class="title-text-border">Акции</h2>
 				<div class="slider-promotions cards-dark">
 					<div class="slider-promotions__item d-flex">
-						<div class="wrrap">
+						<div class="promotions__desc">
 							<h3 class="promotions__title">Описание акции. Коротко
 								и по сути. Остальное внутри!
 								Открываешь и смотришь</h3>
@@ -315,12 +315,12 @@
 								</ul>
 							</div>
 						</div>
-						<div class="slider-promotions__image">
+						<div class="promotions__image">
 							<img src="image/promotions/image-1.png" alt="">
 						</div>
 					</div>
 					<div class="slider-promotions__item d-flex">
-						<div class="wrrap">
+						<div class="promotions__desc">
 							<h3 class="promotions__title">Описание акции. Коротко
 								и по сути. Остальное внутри!
 								Открываешь и смотришь</h3>
@@ -334,12 +334,12 @@
 								</ul>
 							</div>
 						</div>
-						<div class="slider-promotions__image">
+						<div class="promotions__image">
 							<img src="image/promotions/image-2.png" alt="">
 						</div>
 					</div>
 					<div class="slider-promotions__item d-flex">
-						<div class="wrrap">
+						<div class="promotions__desc">
 							<h3 class="promotions__title">Описание акции. Коротко
 								и по сути. Остальное внутри!
 								Открываешь и смотришь</h3>
@@ -353,12 +353,12 @@
 								</ul>
 							</div>
 						</div>
-						<div class="slider-promotions__image">
+						<div class="promotions__image">
 							<img src="image/promotions/image-3.png" alt="">
 						</div>
 					</div>
 					<div class="slider-promotions__item d-flex">
-						<div class="wrrap">
+						<div class="promotions__desc">
 							<h3 class="promotions__title">Описание акции. Коротко
 								и по сути. Остальное внутри!
 								Открываешь и смотришь</h3>
@@ -372,7 +372,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="slider-promotions__image">
+						<div class="promotions__image">
 							<img src="image/promotions/image-4.png" alt="">
 						</div>
 					</div>
@@ -406,7 +406,7 @@
 					<div class="tab-content" id="pills-tabContent">
 						<div class="tab-pane fade show active" id="pills-client" role="tabpanel"
 							aria-labelledby="pills-client-tab">
-							<div class="slider-reviews">
+							<div class="slider-reviews slider-client">
 								<div class="slider-reviews__item">
 									<div class="reviews__header d-flex">
 										<div class="reviews__avatar">
@@ -486,20 +486,183 @@
 									</div>
 								</div>
 								<div class="container slider-dark__arrows">
-									<button class="slider-dark__prev slider-reviews-prev"></button>
+									<button class="slider-dark__prev client-prev"></button>
 									<div class="slick-counter"><span class="current"></span><span class="total"></span>
 									</div>
-									<button class="slider-dark__next slider-reviews-next "></button>
+									<button class="slider-dark__next client-next "></button>
 								</div>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-partners" role="tabpanel"
 							aria-labelledby="pills-partners-tab">
-							Клиентов
+							<div class="slider-reviews slider-partners">
+
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="video">
+											<iframe src="https://www.youtube.com/embed/NE6pANWJGuU" frameborder="0"
+												allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+											vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
+											ac blandit elit tinci</p>
+									</div>
+								</div>
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+											vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
+											ac blandit elit tinci</p>
+									</div>
+								</div>
+								<div class="container slider-dark__arrows">
+									<button class="slider-dark__prev partners-prev"></button>
+									<div class="slick-counter"><span class="current"></span><span class="total"></span>
+									</div>
+									<button class="slider-dark__next partners-next "></button>
+								</div>
+							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-emloees" role="tabpanel"
 							aria-labelledby="pills-emloees-tab">
-							Партнеров
+							<div class="slider-reviews slider-emloees">
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+											vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
+											ac blandit elit tinci</p>
+									</div>
+								</div>
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="video">
+											<iframe src="https://www.youtube.com/embed/NE6pANWJGuU" frameborder="0"
+												allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+											vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
+											ac blandit elit tinci</p>
+									</div>
+								</div>
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+											vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
+											ac blandit elit tinci</p>
+									</div>
+								</div>
+								<div class="slider-reviews__item">
+									<div class="reviews__header d-flex">
+										<div class="reviews__avatar">
+											<img src="image/image-1.png" alt="">
+										</div>
+										<span class="icon-social"><img src="image/icons/facebook.svg" alt=""></span>
+										<div class="reviews__title">
+											<h4>Диана Шорохова</h4>
+											<p>Владелец магазина “Туфелька”
+												в торговом центре</p>
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
+											vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
+											ac blandit elit tinci</p>
+									</div>
+								</div>
+								<div class="container slider-dark__arrows">
+									<button class="slider-dark__prev emloees-prev"></button>
+									<div class="slick-counter"><span class="current"></span><span class="total"></span>
+									</div>
+									<button class="slider-dark__next emloees-next "></button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
