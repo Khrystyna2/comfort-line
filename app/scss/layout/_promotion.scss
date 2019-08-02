@@ -68,8 +68,19 @@
         color: #ffffff;
     }
     .top_block{
-        background-image: url('../image/top_bg.png');
-        padding-bottom: 80px;
+        position: relative;
+        padding-bottom: 89px;
+        overflow: hidden;
+        height: 100%;
+        min-height: 100%;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
     }
 }
 .top_promotion{
@@ -137,6 +148,14 @@
         font-size: $font-size-h3;
         line-height: 29px;
 }
+.top_promotion{
+    padding-bottom: 0;
+    border: none;
+}
+.letter_form_block{
+    margin-top: 105px;
+}
+}
 
 @media(max-width:767.9px) {
     .letter_form_block {
@@ -182,6 +201,19 @@
 
     .promotions {
         overflow-x: hidden;
+    }
+    .top_title{
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+    }
+    .text_promotion{
+        margin-bottom: 22px;
+    }
+    .promotions_open .top_block{
+        padding-bottom: 31px;
+    }
+    .top_promotion{
+        margin-top: 22px;
     }
 }
 
