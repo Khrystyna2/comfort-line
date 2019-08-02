@@ -327,6 +327,8 @@
 
     &__tab {
         position: relative;
+        max-height: 670px;
+        overflow: hidden;
 
         .title-text-border {
             margin-bottom: 60px;
@@ -337,6 +339,12 @@
             position: absolute;
             top: 10px;
             left: 0;
+        }
+
+        .tab-pane {
+            &.open {
+                opacity: 0;
+            }
         }
     }
 
@@ -405,6 +413,7 @@
     &__item {
         max-width: 33.3%;
         margin: 0 15px;
+        display: inline-block !important;
     }
 
     .slider-dark__arrows {

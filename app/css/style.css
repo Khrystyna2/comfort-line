@@ -615,11 +615,13 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .reviews { position: relative; }
 
-.reviews__tab { position: relative; }
+.reviews__tab { position: relative; max-height: 670px; overflow: hidden; }
 
 .reviews__tab .title-text-border { margin-bottom: 60px; }
 
 .reviews__tab .tab-nav { width: 300px; position: absolute; top: 10px; left: 0; }
+
+.reviews__tab .tab-pane.open { opacity: 0; }
 
 .reviews__header { position: relative; margin-bottom: 37px; }
 
@@ -643,7 +645,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .slider-reviews.slick-slider .slick-track { padding-bottom: 183px; }
 
-.slider-reviews__item { max-width: 33.3%; margin: 0 15px; }
+.slider-reviews__item { max-width: 33.3%; margin: 0 15px; display: inline-block !important; }
 
 .slider-reviews .slider-dark__arrows { top: -130px; }
 
