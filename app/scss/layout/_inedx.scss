@@ -408,12 +408,15 @@
 
     &.slick-slider .slick-track {
         padding-bottom: 183px;
+        min-width: 100%;
+        display: flex;
     }
 
     &__item {
+        min-width: 250px;
         max-width: 33.3%;
         margin: 0 15px;
-        display: inline-block !important;
+        flex: auto;
     }
 
     .slider-dark__arrows {
@@ -757,9 +760,12 @@
     }
 
     .reviews {
+
         &__tab {
+            padding-top: 16px;
+
             .tab-nav {
-                top: -16px;
+                top: 0;
             }
         }
 
