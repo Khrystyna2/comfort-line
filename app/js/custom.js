@@ -505,4 +505,11 @@ $(document).ready(function () {
 			.find("article")
 			.slideUp();
 	});
+
+	// change color roletta
+	$('.label-radio-input').click(function () {
+		let datdSrc = $(this).attr("data-src");
+		$('#colorRoletta').attr('src', datdSrc)
+	});
+	
 });

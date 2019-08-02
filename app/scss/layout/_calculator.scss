@@ -194,6 +194,7 @@
 .calculator-goods {
     padding-bottom: 108px;
     position: relative;
+    overflow-x: hidden;
 
     &::before {
         content: url(../image/bg-vector-orange.svg);

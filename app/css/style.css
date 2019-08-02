@@ -1252,7 +1252,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .table__col-2 > li > a { display: inline-block; width: 100%; color: #444444; text-decoration: underline; cursor: pointer; }
 
-.calculator-goods { padding-bottom: 108px; position: relative; }
+.calculator-goods { padding-bottom: 108px; position: relative; overflow-x: hidden; }
 
 .calculator-goods::before { content: url(../image/bg-vector-orange.svg); position: absolute; top: 296px; right: 0; width: 49%; }
 
