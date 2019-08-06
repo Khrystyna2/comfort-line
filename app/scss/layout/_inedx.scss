@@ -488,11 +488,11 @@
         }
 
         &__desc {
-            padding: 48px 45px;
+            padding: 30px 30px 35px;
         }
 
         &__image {
-            height: 360px;
+            height: 340px;
         }
     }
 
@@ -607,7 +607,37 @@
         &__title {
             font-size: $font-size-h3;
             line-height: $line-height-h3;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
+        }
+        &__image{
+            height: 260px;
+        }
+        &__timer {
+            >span {
+                margin-bottom: 8px;
+            }
+
+            .timer {
+                width: 230px;
+
+                >li {
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    >span {
+                        height: 40px;
+                        width: 56px;
+                        font-size: $font-size-h3;
+                        line-height: $line-height-h3;
+                        margin-bottom: 4px;
+
+                        &::after {
+                            content: ':';
+                            padding-left: 6px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -733,28 +763,12 @@
         }
 
         &__timer {
-            >span {
-                margin-bottom: 8px;
-            }
-
             .timer {
                 width: 190px;
-
                 >li {
-                    font-size: 12px;
-                    line-height: 14px;
-
                     >span {
                         height: 35px;
                         width: 50px;
-                        font-size: $font-size-h3;
-                        line-height: $line-height-h3;
-                        margin-bottom: 4px;
-
-                        &::after {
-                            content: ':';
-                            padding-left: 4px;
-                        }
                     }
                 }
             }
@@ -765,7 +779,7 @@
         }
 
         &__image {
-            height: 240px;
+            height: 230px;
         }
     }
 
