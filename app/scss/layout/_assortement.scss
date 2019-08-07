@@ -186,6 +186,15 @@
 			bottom: 28px;
 		}
 	}
+	.assortment-heading{
+		.assortement__card {
+			height: 285px;
+			> h4{
+				font-size: $base-font-size	;
+				line-height: $base-line-height;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -222,6 +231,45 @@
 	.assortment-page {
 		.download-catalog {
 			padding: 30px 0 102px;
+		}
+	}
+	.assortment-heading{
+		padding-top: 50px;
+		&__title{
+			font-size: $font-size-h3;
+			line-height: $line-height-h3;
+		}
+		.assortement__card {
+			height: 210px;
+		
+			.assortement__hover{
+				left:32px;
+				font-size: 12px;
+				line-height: 14px;
+				> img{
+					margin-left: 7px;
+					width: 13px;
+				}
+			}
+		}
+		&__desc {
+			padding: 59px 28px 35px;
+			h3{
+				font-size: $base-font-size	;
+				line-height: $base-line-height;
+			}
+		}
+	}
+	.assortment-heading__page{
+	 	.download-catalog{
+			padding: 90px 0 100px;
+		 }
+		.ready-order{
+			padding: 0 0 85px;
+		}
+	
+		.assortement__card:hover > h4 {
+			bottom: 40px;
 		}
 	}
 }
@@ -295,6 +343,52 @@
 
 		.download-catalog {
 			padding: 20px 0 117px;
+		}
+	}
+	.assortment-heading__page{
+		.bread-crumbs{
+			padding-bottom: 15px;
+		}
+		.assortment-heading{
+			padding-top: 20px;
+			.assortement__card{
+				height: 110px;
+				margin-bottom: 20px;
+			}
+			&__title{
+				font-size: $base-font-size;
+				line-height: $base-line-height;
+			}
+			.top-baner p{
+				font-size: 12px;
+				line-height: 14px;	
+			}
+			&__desc {
+				padding: 37px 16px 35px;
+				h3{
+					font-size: 14px;
+				}
+				> img{
+					height: 160px;
+				}
+			}
+		}
+		.title-section, .title-white{
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+		.download-catalog__img{
+			max-width: calc(100% + 35px);
+			left: -15px;
+		}
+		.calendar-section {
+			padding: 71px 0 76px;
+		}
+		.ready-order {
+			padding: 0 0 25px;
+		}
+		.assortement__card:hover > h4{
+			bottom: 22px;
 		}
 	}
 }

@@ -1425,14 +1425,26 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortement__desc { position: absolute; top: 24px; left: 30px; right: 30px; }
   .assortement__desc > h4 { font-size: 18px; line-height: 22px; }
   .assortement__desc > p { margin-top: 10px; width: 80%; }
-  .assortement__hover { left: 30px; bottom: 28px; } }
+  .assortement__hover { left: 30px; bottom: 28px; }
+  .assortment-heading .assortement__card { height: 285px; }
+  .assortment-heading .assortement__card > h4 { font-size: 18px; line-height: 22px; } }
 
 @media only screen and (max-width: 991.8px) { .assortement .title-text-border { font-size: 96px; line-height: 115px; margin-bottom: -26px; }
   .assortement__card { height: 150px; }
   .assortement__desc { position: absolute; top: 13px; left: 13px; right: 13px; }
   .assortement__desc_big { top: 24px; left: 30px; right: 30px; }
   .assortement__hover { left: 13px; bottom: 15px; }
-  .assortment-page .download-catalog { padding: 30px 0 102px; } }
+  .assortment-page .download-catalog { padding: 30px 0 102px; }
+  .assortment-heading { padding-top: 50px; }
+  .assortment-heading__title { font-size: 24px; line-height: 29px; }
+  .assortment-heading .assortement__card { height: 210px; }
+  .assortment-heading .assortement__card .assortement__hover { left: 32px; font-size: 12px; line-height: 14px; }
+  .assortment-heading .assortement__card .assortement__hover > img { margin-left: 7px; width: 13px; }
+  .assortment-heading__desc { padding: 59px 28px 35px; }
+  .assortment-heading__desc h3 { font-size: 18px; line-height: 22px; }
+  .assortment-heading__page .download-catalog { padding: 90px 0 100px; }
+  .assortment-heading__page .ready-order { padding: 0 0 85px; }
+  .assortment-heading__page .assortement__card:hover > h4 { bottom: 40px; } }
 
 @media only screen and (max-width: 767.8px) { .assortement { padding: 28px 0 0; }
   .assortement .title-text-border { font-size: 56px; line-height: 65px; margin-bottom: 20px; }
@@ -1448,7 +1460,20 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortement__card_big { height: 155px; }
   .assortement__hover { display: none; }
   .assortment-page .title-text-border { font-size: 36px; line-height: 43px; margin-bottom: -9px; }
-  .assortment-page .download-catalog { padding: 20px 0 117px; } }
+  .assortment-page .download-catalog { padding: 20px 0 117px; }
+  .assortment-heading__page .bread-crumbs { padding-bottom: 15px; }
+  .assortment-heading__page .assortment-heading { padding-top: 20px; }
+  .assortment-heading__page .assortment-heading .assortement__card { height: 110px; margin-bottom: 20px; }
+  .assortment-heading__page .assortment-heading__title { font-size: 18px; line-height: 22px; }
+  .assortment-heading__page .assortment-heading .top-baner p { font-size: 12px; line-height: 14px; }
+  .assortment-heading__page .assortment-heading__desc { padding: 37px 16px 35px; }
+  .assortment-heading__page .assortment-heading__desc h3 { font-size: 14px; }
+  .assortment-heading__page .assortment-heading__desc > img { height: 160px; }
+  .assortment-heading__page .title-section, .assortment-heading__page .title-white { font-size: 18px; line-height: 22px; }
+  .assortment-heading__page .download-catalog__img { max-width: calc(100% + 35px); left: -15px; }
+  .assortment-heading__page .calendar-section { padding: 71px 0 76px; }
+  .assortment-heading__page .ready-order { padding: 0 0 25px; }
+  .assortment-heading__page .assortement__card:hover > h4 { bottom: 22px; } }
 
 .promotions_cards .cards-dark:not(:first-child) { margin-top: 50px; }
 
