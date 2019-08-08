@@ -306,11 +306,11 @@
                 }
 
                 &::after {
-                    @include transform(translateY(-7px));
+                    @include transform(translateY(-6px));
                 }
 
                 &::before {
-                    @include transform(translateY(7px));
+                    @include transform(translateY(8px));
                 }
             }
 
