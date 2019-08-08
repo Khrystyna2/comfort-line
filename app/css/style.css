@@ -859,7 +859,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .roletta-header__card > img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
-.roletta-header__card > h4 { position: absolute; left: 31px; bottom: 18px; font-size: 24px; line-height: 29px; }
+.roletta-header__card > h4 { position: absolute; left: 31px; right: 30px; bottom: 18px; font-size: 24px; line-height: 29px; font-weight: 900; }
 
 .function-roletta { padding-bottom: 143px; }
 
@@ -998,7 +998,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .roletta-header__img { bottom: 145px; right: 0; max-width: 38%; }
   .roletta-header p { width: 66%; }
   .roletta-header__card { margin-top: 42px; }
-  .roletta-header__card > h4 { font-size: 20px; line-height: 25px; }
+  .roletta-header__card > h4 { font-size: 20px; line-height: 25px; left: 18px; right: 16px; }
   .function-roletta { padding-bottom: 121px; }
   .function-roletta__item { margin-bottom: 38px; font-size: 20px; line-height: 25px; }
   .function-roletta .mb-87 { margin-bottom: 55px; }
@@ -1466,7 +1466,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .assortment-heading { padding: 18px 0 0; }
   .assortment-heading__title { font-size: 20px; line-height: 24px; }
   .assortment-heading .assortement__card { height: 150px; }
-  .assortment-heading .assortement__card > h4 { right: 14px; bottom: auto; top: 14px; max-width: 45%; }
+  .assortment-heading .assortement__card > h4 { right: 14px; bottom: auto; top: 14px; max-width: 220px; }
   .assortment-heading__desc { padding: 29px 20px; margin-top: 0; }
   .assortment-heading__page .download-catalog { padding: 35px 0 152px; }
   .assortment-heading__page .ready-order { padding: 0 0 30px; }
