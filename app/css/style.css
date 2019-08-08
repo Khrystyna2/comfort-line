@@ -1532,6 +1532,74 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .promotions_open .bread-crumbs { padding-bottom: 30px; }
   .top-baner__img { -o-object-position: 50% 0; object-position: 50% 0; } }
 
+.goods_page .top-baner__img { -o-object-position: 50% 19%; object-position: 50% 19%; }
+
+.goods_page .top-baner .container { height: 100%; }
+
+.goods_page .top-baner .row { height: 100%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.goods_page .card_goods { margin-top: 30px; background-color: #FFFFFF; box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); }
+
+.goods_page .card_goods_dscr .btn-red { width: 255px; }
+
+.goods_page .card_goods_dscr h3 { margin-top: 47px; line-height: 29px; font-size: 24px; margin-bottom: 10px; }
+
+.goods_page .card_goods_dscr h2 { line-height: 43px; font-size: 36px; font-weight: 700; }
+
+.goods_page .card_goods_dscr a { display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.goods_page .card_goods_dscr_bottom { display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; vertical-align: bottom; }
+
+.goods_page .card_goods_price { margin-left: 58px; margin-right: 50px; padding-top: 25px; }
+
+.goods_page .card_goods_contens { font-weight: 500; margin-bottom: 28px; margin-top: 20px; }
+
+.goods_page .card_goods_pluses span { font-size: 14px; line-height: 17px; margin-left: 10px; max-width: 37px; display: inline-block; width: 40px; }
+
+.goods_page .card_goods_pluses > div { vertical-align: top; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.goods_page .card_goods_pluses > div:last-child { margin-left: 10px; margin-top: 15px; }
+
+.goods_page .download-catalog { padding: 150px 0 225px; }
+
+@media (max-width: 1199.8px) { .goods_page .top-baner__img { -o-object-position: 46% 0%; object-position: 46% 0%; }
+  .goods_page .card_goods { padding-right: 5px; }
+  .goods_page .card_goods_dscr .btn-red { width: 225px; }
+  .goods_page .card_goods_dscr h2 { font-size: 30px; line-height: 37px; }
+  .goods_page .card_goods_price { margin-left: 35px; margin-right: 30px; } }
+
+@media (max-width: 991.8px) { .goods_page .card_goods { padding-bottom: 0px; }
+  .goods_page .card_goods_dscr h3 { margin-top: 5px; font-size: 17px; line-height: 22px; }
+  .goods_page .card_goods_dscr .btn-red { width: 180px; }
+  .goods_page .card_goods_dscr_bottom { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-top: -100px; margin-left: 20px; }
+  .goods_page .card_goods_contens { width: 180px; }
+  .goods_page .card_goods_price { margin: 0; padding: 0; margin-top: 40px; margin-bottom: 20px; }
+  .goods_page .card_goods_price * { display: inline; }
+  .goods_page .card_goods_price h2 { margin-left: 20px; font-size: 24px; line-height: 29px; }
+  .goods_page .card_goods_pluses span { font-size: 12px; line-height: 14px; }
+  .goods_page .card_goods_pluses > div:last-child { margin-left: 0; }
+  .goods_page .card_goods_pluses > div:first-child img { width: 30px; }
+  .goods_page .download-catalog { padding: 96px 0 35px; }
+  .goods_page .calendar-section { padding: 81px 0 100px; } }
+
+@media (max-width: 767.8px) { .goods_page .card_goods_img { text-align: center; }
+  .goods_page .card_goods .col-md-7 { -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+  .goods_page .card_goods .col-md-5 { -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+  .goods_page .card_goods .btn-red { -webkit-order: 2; -ms-flex-order: 2; order: 2; width: 100%; margin-top: 20px; }
+  .goods_page .card_goods_dscr { margin-bottom: 15px; padding: 0 20px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  .goods_page .card_goods_dscr h3 { font-size: 14px; line-height: 17px; }
+  .goods_page .card_goods_dscr_bottom { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; margin-top: -58px; margin-left: 0; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+  .goods_page .card_goods_pluses { margin-left: 50px; }
+  .goods_page .card_goods_pluses > div:last-child { margin-top: 25px; }
+  .goods_page .card_goods_price { margin-top: 60px; } }
+
+@media (max-width: 575.8px) { .goods_page .top-baner { display: none; }
+  .goods_page .card_goods_price h2 { font-size: 18px; line-height: 22px; margin-top: 52px; }
+  .goods_page .card_goods_contens { width: 110px; }
+  .goods_page .card_goods_pluses { margin-top: -11px; margin-left: 46px; }
+  .goods_page .card_goods .btn-red { margin-top: 15px; }
+  .goods_page .download-catalog { padding-top: 50px; } }
+
 /*
 ================================================================================
 |                                     FOOTER                                   |
