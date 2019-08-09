@@ -1,5 +1,5 @@
-$(document).ready(function () {
-	$(".phone .arrow-down").click(function () {
+$(document).ready(function() {
+	$(".phone .arrow-down").click(function() {
 		$(this)
 			.parent()
 			.toggleClass("open");
@@ -9,9 +9,9 @@ $(document).ready(function () {
 	});
 
 	// slider first screen
-	$(function () {
+	$(function() {
 		$(".slider")
-			.on("init", function (event, slick) {
+			.on("init", function(event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
 				findCurrentBlock.text("0" + (slick.currentSlide + 1));
@@ -33,7 +33,7 @@ $(document).ready(function () {
 				prevArrow: ".slider__prev",
 				speed: 1000
 			})
-			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+			.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
 				let findCurrentBlock = $(this).find(".current");
 				if (indexNextSlider <= 9) {
@@ -45,9 +45,9 @@ $(document).ready(function () {
 	});
 
 	// slider promotions
-	$(function () {
+	$(function() {
 		$(".slider-promotions")
-			.on("init", function (event, slick) {
+			.on("init", function(event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
 				findCurrentBlock.text("0" + (slick.currentSlide + 1));
@@ -67,7 +67,7 @@ $(document).ready(function () {
 				nextArrow: ".slider-promotions-next",
 				prevArrow: ".slider-promotions-prev"
 			})
-			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+			.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
 				let findCurrentBlock = $(this).find(".current");
 				if (indexNextSlider <= 9) {
@@ -79,9 +79,9 @@ $(document).ready(function () {
 	});
 
 	// slider reviews
-	$(function () {
+	$(function() {
 		$(".slider-client")
-			.on("init", function (event, slick) {
+			.on("init", function(event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
 				findCurrentBlock.text("0" + (slick.currentSlide + 1));
@@ -114,7 +114,7 @@ $(document).ready(function () {
 					}
 				]
 			})
-			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+			.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
 				let findCurrentBlock = $(this).find(".current");
 				if (indexNextSlider <= 9) {
@@ -125,9 +125,9 @@ $(document).ready(function () {
 			});
 	});
 
-	$(function () {
+	$(function() {
 		$(".slider-partners")
-			.on("init", function (event, slick) {
+			.on("init", function(event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
 				findCurrentBlock.text("0" + (slick.currentSlide + 1));
@@ -160,7 +160,7 @@ $(document).ready(function () {
 					}
 				]
 			})
-			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+			.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
 				let findCurrentBlock = $(this).find(".current");
 				if (indexNextSlider <= 9) {
@@ -171,9 +171,9 @@ $(document).ready(function () {
 			});
 	});
 
-	$(function () {
+	$(function() {
 		$(".slider-emloees")
-			.on("init", function (event, slick) {
+			.on("init", function(event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
 				findCurrentBlock.text("0" + (slick.currentSlide + 1));
@@ -208,7 +208,7 @@ $(document).ready(function () {
 				]
 			})
 
-			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+			.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
 				let findCurrentBlock = $(this).find(".current");
 				if (indexNextSlider <= 9) {
@@ -219,9 +219,9 @@ $(document).ready(function () {
 			});
 	});
 
-	$(".nav-link").click(function () {
+	$(".nav-link").click(function() {
 		let findHref = $(this).attr("href");
-		let findBlock = $('.tab-content').find(findHref);
+		let findBlock = $(".tab-content").find(findHref);
 		if (findHref === "#pills-client") {
 			$(".slider-client").slick("refresh");
 		}
@@ -231,15 +231,15 @@ $(document).ready(function () {
 		if (findHref === "#pills-emloees") {
 			$(".slider-emloees").slick("refresh");
 		}
-		findBlock.addClass('open');
-		setTimeout(function () {
-			$('.tab-pane').removeClass('open')
+		findBlock.addClass("open");
+		setTimeout(function() {
+			$(".tab-pane").removeClass("open");
 		}, 600);
 	});
 	$(
 		'<div class="spinner__nav"><div class="spinner__btn spinner-up">+</div><div class="spinner__btn spinner-down">-</div></div>'
 	).insertAfter(".spinner>input");
-	$(".spinner").each(function () {
+	$(".spinner").each(function() {
 		let spinner = $(this),
 			input = spinner.find('input[type="number"]'),
 			btnUp = spinner.find(".spinner-up"),
@@ -247,23 +247,23 @@ $(document).ready(function () {
 			min = input.attr("min"),
 			max = input.attr("max");
 
-		btnUp.click(function () {
+		btnUp.click(function() {
 			let oldValue = parseFloat(input.val());
 			if (oldValue >= max) {
 				newVal = oldValue;
 			} else {
-				newVal = oldValue + 1;
+				newVal = oldValue + 10;
 			}
 			spinner.find("input").val(newVal);
 			spinner.find("input").trigger("change");
 		});
 
-		btnDown.click(function () {
+		btnDown.click(function() {
 			let oldValue = parseFloat(input.val());
 			if (oldValue <= min) {
 				newVal = oldValue;
 			} else {
-				newVal = oldValue - 1;
+				newVal = oldValue - 10;
 			}
 			spinner.find("input").val(newVal);
 			spinner.find("input").trigger("change");
@@ -294,7 +294,7 @@ $(document).ready(function () {
 			"December"
 		],
 
-		init: function () {
+		init: function() {
 			this.selectedDate = this.today;
 			// Populate the list of years in the month/year pulldown
 			var year = this.theyear;
@@ -306,9 +306,9 @@ $(document).ready(function () {
 			this.render();
 		},
 
-		bindUIActions: function () {
+		bindUIActions: function() {
 			// Move calander to today
-			$(".today").click(function () {
+			$(".today").click(function() {
 				Calendar.themonth = d.getMonth();
 				Calendar.theyear = d.getFullYear();
 				Calendar.selectMonth();
@@ -319,14 +319,14 @@ $(document).ready(function () {
 
 			// Move the calendar pages
 			$(".calendar p.minusmonth").text(this.months[this.themonth]);
-			$(".minusmonth").click(function () {
+			$(".minusmonth").click(function() {
 				Calendar.themonth += -1;
 				Calendar.changeMonth();
 				$(this).addClass("active");
 				$(".addmonth").removeClass("active");
 			});
 			$(".calendar p.addmonth").text(this.months[this.themonth + 1]);
-			$(".addmonth").click(function () {
+			$(".addmonth").click(function() {
 				Calendar.themonth += 1;
 				Calendar.changeMonth();
 				$(this).addClass("active");
@@ -335,7 +335,7 @@ $(document).ready(function () {
 		},
 
 		// Makes sure that month rolls over years correctly
-		changeMonth: function () {
+		changeMonth: function() {
 			if (this.themonth == 12) {
 				this.themonth = 0;
 				this.theyear++;
@@ -349,17 +349,17 @@ $(document).ready(function () {
 
 		// Helper functions for time calculations
 		TimeCalc: {
-			firstDay: function (month, year) {
+			firstDay: function(month, year) {
 				var fday = new Date(year, month, 1).getDay(); // Mon 1 ... Sat 6, Sun 0
 				if (fday === 0) fday = 7;
 				return fday - 1; // Mon 0 ... Sat 5, Sun 6
 			},
-			numDays: function (month, year) {
+			numDays: function(month, year) {
 				return new Date(year, month + 1, 0).getDate(); // Day 0 is the last day in the previous month
 			}
 		},
 
-		render: function () {
+		render: function() {
 			var days = this.TimeCalc.numDays(this.themonth, this.theyear), // get number of days in the month
 				fDay = this.TimeCalc.firstDay(this.themonth, this.theyear), // find what day of the week the 1st lands on
 				daysHTML = "",
@@ -395,7 +395,7 @@ $(document).ready(function () {
 			}
 
 			// Adds active class to date when clicked
-			$(".calendar-body li").click(function () {
+			$(".calendar-body li").click(function() {
 				// toggle selected dates
 				if (!$(this).hasClass("noclick")) {
 					$(".calendar-body li").removeClass("active");
@@ -415,7 +415,7 @@ $(document).ready(function () {
 		hour = minute * 60,
 		day = hour * 24;
 
-	$(".timer").each(function () {
+	$(".timer").each(function() {
 		let curentDate = $(this).data("time");
 		let currentDay = $(this).find(".days");
 		let currentHour = $(this).find(".hours");
@@ -424,7 +424,7 @@ $(document).ready(function () {
 
 		let countDownStart = new Date(curentDate).getTime();
 
-		let startDate = setInterval(function () {
+		let startDate = setInterval(function() {
 			let now = new Date().getTime();
 			let distance = countDownStart - now;
 			function timer(distance) {
@@ -445,14 +445,14 @@ $(document).ready(function () {
 	});
 
 	// menu on screen 1200
-	$(".menu__btn").on("click", function () {
+	$(".menu__btn").on("click", function() {
 		$(this).toggleClass("active");
 		$(".menu")
 			.slideToggle()
 			.toggleClass("open");
 	});
 
-	$(window).resize(function () {
+	$(window).resize(function() {
 		if ($(window).width() >= 1200) {
 			$(".menu").css("display", "block");
 		} else if ($(window).width() <= 1999) {
@@ -487,7 +487,7 @@ $(document).ready(function () {
 	});
 
 	// accordion
-	$(".accordion>li>div").click(function () {
+	$(".accordion>li>div").click(function() {
 		$(this)
 			.find("span")
 			.toggleClass("rotate");
@@ -507,15 +507,15 @@ $(document).ready(function () {
 	});
 
 	// change color roletta
-	$('.label-radio-input').click(function () {
+	$(".label-radio-input").click(function() {
 		let datdSrc = $(this).attr("data-src");
-		$('#colorRoletta').attr('src', datdSrc)
+		$("#colorRoletta").attr("src", datdSrc);
 	});
 
 	// who we are page - team slider
-	$(function () {
+	$(function() {
 		$(".slider-ww")
-			.on("init", function (event, slick) {
+			.on("init", function(event, slick) {
 				let findBlock = $(this).find(".total");
 				let findCurrentBlock = $(this).find(".current");
 				findCurrentBlock.text("0" + (slick.currentSlide + 1));
@@ -548,7 +548,7 @@ $(document).ready(function () {
 					}
 				]
 			})
-			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+			.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
 				let indexNextSlider = nextSlide + 1;
 				let findCurrentBlock = $(this).find(".current");
 				if (indexNextSlider <= 9) {
@@ -558,5 +558,4 @@ $(document).ready(function () {
 				}
 			});
 	});
-
 });
