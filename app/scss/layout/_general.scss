@@ -62,7 +62,7 @@ body {
 .social-networks {
     display: flex;
 
-    >li {
+    li {
         &:first-child {
             margin-right: 17px;
         }
@@ -252,7 +252,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 
-    >input {
+    input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -301,7 +301,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 
-    >input {
+    input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -410,7 +410,7 @@ body {
     &__form {
         margin-top: 42px;
 
-        >input {
+        input {
             width: 350px;
             margin-bottom: 10px;
         }
@@ -451,7 +451,7 @@ body {
         display: flex;
         align-items: center;
 
-        >form {
+        form {
             max-width: 350px;
 
             .input-light {
@@ -657,7 +657,7 @@ body {
         &__form {
             margin-top: 30px;
 
-            >input {
+            input {
                 width: 270px;
             }
 
@@ -694,7 +694,7 @@ body {
             margin-bottom: 49px;
             padding: 33px 30px 43px;
 
-            >form {
+            form {
                 max-width: 270px;
 
                 .input-light {
@@ -787,7 +787,7 @@ body {
     }
 
     .social-networks {
-        >li {
+        li {
             >a {
                 width: 23px;
             }
@@ -825,7 +825,7 @@ body {
 
     .ready-order {
         &__form {
-            >form {
+            form {
                 min-width: 240px;
             }
         }
@@ -911,7 +911,7 @@ body {
         &__form {
             margin-top: 22px;
 
-            >input {
+            input {
                 width: 100%;
             }
 
@@ -947,7 +947,7 @@ body {
             padding: 28px 40px;
             flex-direction: column;
 
-            >form {
+            form {
                 max-width: 100%;
                 width: 100%;
                 margin-top: 22px;
