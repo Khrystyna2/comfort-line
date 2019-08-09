@@ -511,5 +511,52 @@ $(document).ready(function () {
 		let datdSrc = $(this).attr("data-src");
 		$('#colorRoletta').attr('src', datdSrc)
 	});
-	
+
+	// who we are page - team slider
+	$(function () {
+		$(".slider-ww")
+			.on("init", function (event, slick) {
+				let findBlock = $(this).find(".total");
+				let findCurrentBlock = $(this).find(".current");
+				findCurrentBlock.text("0" + (slick.currentSlide + 1));
+				if (slick.slideCount < 10) {
+					findBlock.text("0" + slick.slideCount);
+				} else {
+					findBlock.text(slick.slideCount);
+				}
+			})
+			.slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				slide: ".slider-reviews__item",
+				nextArrow: ".slider-dark__next",
+				prevArrow: ".slider-dark__prev",
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 576,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			})
+			.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+				let indexNextSlider = nextSlide + 1;
+				let findCurrentBlock = $(this).find(".current");
+				if (indexNextSlider <= 9) {
+					findCurrentBlock.text("0" + (nextSlide + 1));
+				} else {
+					findCurrentBlock.text(nextSlide + 1);
+				}
+			});
+	});
+
 });
