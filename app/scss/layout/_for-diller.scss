@@ -282,8 +282,8 @@ main {
 
                 img {
                     object-fit: cover;
-                    width: 100%;
-                    height: 100%;
+                    max-width: 100%;
+                    max-height: 100%;
                     object-position: 50% 50%;
                 }
             }
@@ -355,6 +355,9 @@ main {
 }
 
 .fd-ninesect {
+    padding-bottom: 135px;
+    border-bottom: 1px solid #DBDBDB;
+
     .assortment-heading__title {
         margin-bottom: 0;
     }
@@ -386,9 +389,129 @@ main {
         line-height: 22px;
     }
 
+    .fd-circles {
+        margin-bottom: 0;
+    }
+
     .diller-box__circle {
         span {
-            // і
+            color: #000000;
+            font-weight: 800;
+            font-size: 100px;
+            line-height: 120px;
+            opacity: 0.2;
         }
+    }
+}
+
+.fd.download-catalog {
+    padding: 130px 0 225px;
+
+    .btn-red {
+        display: inline-block;
+        text-align: center;
+        background-image: url(../../image/icons/orion_download-document.svg);
+        background-position: center right 20px;
+        background-repeat: no-repeat;
+        padding: 22px 0;
+    }
+}
+
+
+// adaptive
+@media only screen and (max-width: 1770.8px) {
+    .fd-topsect img.main-pic {
+        width: 68%;
+    }
+
+    .fd-eightsect {
+        padding: 250px 0 250px 0;
+    }
+
+    .fd-eightsect img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1440.8px) {
+    .fd-eightsect {
+        padding: 200px 0 200px 0;
+    }
+
+    .fd-eightsect img {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1300.8px) {
+    .fd-eightsect {
+        padding: 150px 0 150px 0;
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .fd-topsect {
+        height: 370px;
+    }
+
+    .diller-box .diller-box__circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .diller-box .diller-box__circle img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+    .diller-box .title {
+        font-size: 20px;
+    }
+
+    .fd-aftcircle .title-text-border.bigtext {
+        font-size: 190px;
+    }
+
+    .fd-aftcircle .title-text-border.bigtext span {
+        font-size: 56px;
+    }
+
+    .fd-secondsect {
+        padding: 72px 0 100px 0;
+    }
+
+    .fd-foursect,
+    .fd-fivesect,
+    .fd-eightsect {
+        padding: 100px 0;
+    }
+
+    .fd-sixsect .slider {
+        padding: 100px 0 30px 0;
+    }
+
+    .fd-foursect .orange-bg-text {
+        height: 150px;
+    }
+
+    .fd-foursect .orange-bg-text p {
+        font-size: 30px;
+    }
+
+    .fd-sixsect .fd-slide .right .pic-box {
+        height: 215px;
+    }
+
+    .fd-sixsect .fd-slide {
+        padding-bottom: 0;
+    }
+
+    .fd-sevensect {
+        height: 370px;
+        padding-top: 100px;
+    }
+
+    .fd-eightsect img {
+        top: 15px;
     }
 }
