@@ -475,6 +475,11 @@ main {
 }
 
 @media only screen and (max-width: 1199.8px) {
+    .fd-sixsect .right .pic-box {
+        height: 215px;
+    }
+
+
     .fd-topsect {
         height: 370px;
     }
@@ -774,6 +779,10 @@ main {
     .fd.download-catalog {
         padding: 80px 0 141px;
     }
+
+    .fd-sixsect .right .pic-box {
+        height: 155px;
+    }
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -825,6 +834,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 50px;
+        align-items: flex-start;
     }
 
     .fd-eightsect>img {
