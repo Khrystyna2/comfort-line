@@ -73,6 +73,26 @@
         padding: 150px 0 225px;
     }
 }
+// goods page open
+
+.goods_page_open{
+    .top-baner{
+        display: none;
+    }
+    .card_goods{
+        padding-top: 40px
+    }
+    .assortment-heading__desc {
+        margin-top: 65px;
+        margin-bottom: 150px;
+        > p{
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
 @media(max-width:1199.8px){
     .goods_page{
         
@@ -155,7 +175,26 @@
             padding: 81px 0 100px;
         }
     }
+
+// goods open
+    .goods_page_open{
+        .top-baner{
+            display: none;
+        }
+        .card_goods{
+            padding-top: 40px
+        }
+        .assortment-heading__desc {
+            margin-top: 50px;
+            margin-bottom: 100px;
+            padding: 39px 30px 20px;
+            > p{
+                margin-top: 20px;
+            }
+        }
+    }
 }
+
 @media(max-width:767.8px){
     .goods_page{
         .card_goods{
@@ -199,6 +238,24 @@
         &_price{
             margin-top: 60px;
         }
+        }
+    }
+    // goods open
+    .goods_page_open{
+        .top-baner{
+            display: none;
+        }
+        .card_goods{
+            padding-top: 40px;
+            margin-top: 0;
+        }
+        .assortment-heading__desc {
+            margin-top: 23px;
+            margin-bottom: 33px;
+            padding: 20px 30px 20px;
+            > p{
+                margin-top: 20px;
+            }
         }
     }
 }
