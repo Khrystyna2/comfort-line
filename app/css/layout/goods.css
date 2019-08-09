@@ -1,0 +1,11 @@
+.goods_page .top-baner .container { height: 100%; }
+
+.goods_page .top-baner .row { height: 100%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.goods_page .card_goods_dscr a { display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.goods_page .card_goods_dscr > div { display: inline-block; }
+
+.goods_page .card_goods_contens { font-weight: 500; margin-bottom: 28px; margin-top: 20px; }
+
+/*# sourceMappingURL=goods.css.map */
