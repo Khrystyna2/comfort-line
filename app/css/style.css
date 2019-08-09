@@ -1636,7 +1636,8 @@ main { min-height: 400px; }
 
 @media only screen and (max-width: 1300.8px) { .fd-eightsect { padding: 150px 0 150px 0; } }
 
-@media only screen and (max-width: 1199.8px) { .fd-topsect { height: 370px; }
+@media only screen and (max-width: 1199.8px) { .fd-sixsect .right .pic-box { height: 215px; }
+  .fd-topsect { height: 370px; }
   .diller-box .diller-box__circle { width: 200px; height: 200px; }
   .diller-box .diller-box__circle img { max-width: 75px; max-height: 75px; }
   .diller-box .title { font-size: 20px; }
@@ -1699,7 +1700,8 @@ main { min-height: 400px; }
   .fd-ninesect .diller-box__circle span { font-size: 48px; line-height: 58px; }
   .fd-ninesect .diller-box .title { font-size: 14px; line-height: 17px; max-width: 210px; }
   .fd-ninesect { padding-bottom: 62px; }
-  .fd.download-catalog { padding: 80px 0 141px; } }
+  .fd.download-catalog { padding: 80px 0 141px; }
+  .fd-sixsect .right .pic-box { height: 155px; } }
 
 @media only screen and (max-width: 767.8px) { .fd-topsect .title-white { max-width: 300px; }
   .fd-foursect .title-section { margin-bottom: 13px; }
@@ -1710,7 +1712,7 @@ main { min-height: 400px; }
   .fd-sixsect .slider__arrows { right: initial; position: relative; }
   .fd-sixsect .slider .slider__arrows { bottom: 0; left: initial; display: block; text-align: center; }
   .slider__arrows .slick-counter { display: inline-block; vertical-align: middle; }
-  .fd-eightsect { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 50px; }
+  .fd-eightsect { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 50px; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
   .fd-eightsect > img { position: relative; -webkit-order: 2; -ms-flex-order: 2; order: 2; width: 100%; top: 0; }
   .fd-eightsect > .container { -webkit-order: 1; -ms-flex-order: 1; order: 1; } }
 
@@ -1815,6 +1817,10 @@ main { min-height: 400px; }
 .ww-team .slider-reviews .slider-dark__arrows { top: -80px; }
 
 .ww-team .slider-reviews.slick-slider .slick-track { padding-bottom: 100px; }
+
+.ww-history .reviews__tab .tab-nav { position: relative; display: inline-block; vertical-align: top; }
+
+.ww-history .reviews__tab .title-text-border { margin-bottom: 43px; }
 
 .promotions_cards .cards-dark:not(:first-child) { margin-top: 50px; }
 
