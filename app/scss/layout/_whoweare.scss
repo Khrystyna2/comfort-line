@@ -170,13 +170,42 @@
 }
 
 .ww-history {
+    padding: 63px 0 130px 0;
+    border-bottom: 1px solid #DBDBDB;
+
+    .reviews__tab {
+        overflow: initial;
+    }
+
     .reviews__tab .tab-nav {
         position: relative;
         display: inline-block;
         vertical-align: top;
+        width: 268px;
     }
 
     .reviews__tab .title-text-border {
         margin-bottom: 43px;
     }
+
+    .nav-pills .nav-link {
+        display: block;
+    }
+
+    .tab-content {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 276px);
+        padding: 0 95px 70px 0;
+
+        .tab-text {
+            border-left: 1px solid #DBDBDB;
+            padding: 17px 0 0 80px;
+        }
+    }
+
+}
+
+.ww-reviews {
+    padding: 81px 0 0 0;
 }
