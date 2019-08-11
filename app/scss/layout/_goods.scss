@@ -239,6 +239,7 @@
             margin-top: 60px;
         }
         }
+
     }
     // goods open
     .goods_page_open{
@@ -258,6 +259,14 @@
             }
         }
     }
+    .goods_page .card_goods {
+        padding-right: 0px;
+    }
+    .goods_page{
+    .download-catalog__wrap{
+        padding-bottom: 130px;
+    }
+}
 }
 @media(max-width:575.8px){
     .goods_page{
@@ -286,5 +295,6 @@
             padding-top: 50px;
         }
     }
+
 
 }

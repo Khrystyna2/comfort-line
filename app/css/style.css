@@ -1954,7 +1954,9 @@ main { min-height: 400px; }
   .goods_page_open .top-baner { display: none; }
   .goods_page_open .card_goods { padding-top: 40px; margin-top: 0; }
   .goods_page_open .assortment-heading__desc { margin-top: 23px; margin-bottom: 33px; padding: 20px 30px 20px; }
-  .goods_page_open .assortment-heading__desc > p { margin-top: 20px; } }
+  .goods_page_open .assortment-heading__desc > p { margin-top: 20px; }
+  .goods_page .card_goods { padding-right: 0px; }
+  .goods_page .download-catalog__wrap { padding-bottom: 130px; } }
 
 @media (max-width: 575.8px) { .goods_page .top-baner { display: none; }
   .goods_page .card_goods_price h2 { font-size: 18px; line-height: 22px; margin-top: 52px; }
