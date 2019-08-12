@@ -209,3 +209,752 @@
 .ww-reviews {
     padding: 81px 0 0 0;
 }
+
+.ww-vacancy {
+    padding: 72px 0 171px 0;
+    border-top: 1px solid #DBDBDB;
+
+    .cards-dark {
+        margin-bottom: 30px;
+
+        .left-sect {
+            padding: 48px 70px 46px 65px;
+
+            .title {
+                color: $text-color-white;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 43px;
+                margin-bottom: 15px;
+            }
+
+            .descr {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 25px;
+            }
+
+            a {
+                font-weight: 250;
+                font-size: 14px;
+                line-height: 17px;
+
+                img {
+                    margin-left: 20px;
+                    @include transition(.5s)
+                }
+
+                &:hover {
+                    img {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .pic-box {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+}
+
+.ww-map {
+    border-top: 1px solid #DBDBDB;
+    padding: 48px 0 0 0;
+
+    .map-box {
+        position: relative;
+
+        >img {
+            margin-top: -30px;
+        }
+
+        .map-link {
+            width: 316px;
+            height: 67px;
+            position: absolute;
+            right: 24.5%;
+            bottom: 32%;
+
+            >div {
+                background: #FFFFFF;
+                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+
+
+            }
+
+        }
+
+        .change-mark-map {
+            width: 350px;
+            position: absolute;
+            top: 50%;
+            margin-top: -150px;
+            background: #FFFFFF;
+            box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08);
+        }
+
+        .mark-box {
+            padding: 42px 20px 45px 42px;
+            cursor: pointer;
+
+            &:first-child {
+                border-bottom: 1px solid #DBDBDB;
+            }
+        }
+
+        .mark-box.active {
+            border-left: 3px solid $yellow;
+
+            .title,
+            .descr,
+            a {
+                color: #020202;
+            }
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #777777;
+            margin-bottom: 10px;
+        }
+
+        .descr {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #777777;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #777777;
+
+        }
+    }
+
+    .map-link {
+
+        >div {
+            color: #020202;
+            padding: 16px 0;
+            position: relative;
+            z-index: 3;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -38px;
+                border: 20px solid transparent;
+                right: 0;
+                left: 0;
+                width: 40px;
+                display: block;
+                margin: 0 auto;
+                border-top: 21px solid $base-bg;
+            }
+
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+
+        img {
+            width: 62px;
+            height: 62px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            display: block;
+            margin: 0 auto;
+            bottom: -50px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+        }
+
+        a {
+            color: #A2A2A2;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+.ww-map .map-box>img.tablet-mappic,
+.ww-map .map-box>img.phone-mappic {
+    display: none;
+}
+
+@media only screen and (max-width: 1770.8px) {
+    .ww-topsect {
+        background-position: bottom right -100px;
+    }
+
+    .ww-thirdsect {
+        background-position: bottom 25px left -140px, bottom 25px right -150px;
+    }
+
+    .ww-map .map-box .map-link {
+        right: 23%;
+        bottom: 31%;
+    }
+}
+
+@media only screen and (max-width: 1500.8px) {
+
+    .ww-topsect {
+        background-position: bottom right -255px;
+    }
+
+    .ww-thirdsect {
+        background-position: bottom 25px left -200px, bottom 25px right -200px;
+    }
+
+    .ww-map .map-box .map-link {
+        right: 22%;
+        bottom: 30%;
+    }
+
+    .ww-map .map-box .change-mark-map {
+        margin-top: -180px;
+    }
+}
+
+@media only screen and (max-width: 1400.8px) {
+    .ww-thirdsect {
+        background-position: bottom 25px left -340px, bottom 25px right -300px;
+    }
+
+    .ww-map .map-box .map-link {
+        right: 20%;
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .ww-topsect {
+        padding-top: 5px;
+        height: 271px;
+        background-image: url(../image/who-we-are/wwa-tablet1.png);
+        background-position: bottom right 0;
+
+        .bread-crumbs {
+            display: none;
+        }
+    }
+
+    .ww-topsect .suubtitle {
+        margin-bottom: 20px;
+    }
+
+    .ww-topsect .award img {
+        width: 60px;
+    }
+
+    .ww-topsect .award p span {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 5px;
+    }
+
+    .ww-topsect .award p {
+        width: calc(100% - 64px);
+        padding-left: 5px;
+    }
+
+    .ww-secondsect {
+        padding: 38px 0 62px 0;
+    }
+
+    .ww-secondsect .reckoning-box .title-text-border {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .ww-secondsect .reckoning-box p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    .ww-thirdsect .info {
+        max-width: 330px;
+    }
+
+    .assortment-heading__title {
+        margin-bottom: 13px;
+    }
+
+    .ww-thirdsect .info .dedcr {
+        margin-bottom: 35px;
+    }
+
+    .ww-team {
+        padding: 109px 0 0 0;
+    }
+
+    .ww-team .slider-reviews__item {
+        min-width: 150px;
+    }
+
+    .ww-team .title-section {
+        max-width: 328px;
+    }
+
+    .ww-team .slider-reviews .slider-dark__arrows {
+        top: -90px;
+    }
+
+    .ww-team .photo-box {
+        height: 155px;
+    }
+
+    .ww-team .text-box .title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ww-team .text-box {
+        padding: 12px;
+        height: 103px;
+    }
+
+    .ww-team .text-box .title span {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .ww-history {
+        padding: 33px 0 94px 0;
+    }
+
+    .ww-history .reviews__tab .tab-nav {
+        width: 149px;
+    }
+
+    .ww-history .tab-content {
+        width: calc(100% - 153px);
+        padding: 0 30px 30px 0;
+    }
+
+    .ww-history .tab-content .tab-text {
+        padding-left: 32px;
+    }
+
+    .ww-history .reviews__tab .title-text-border {
+        margin-bottom: 21px;
+    }
+
+    .ww-reviews .slider-reviews.slick-slider .slick-track {
+        padding-bottom: 94px;
+    }
+
+    .ww-vacancy {
+        padding: 53px 0 64px 0;
+    }
+
+    .ww-vacancy .cards-dark .left-sect {
+        padding: 30px 15px 30px 30px;
+    }
+
+    .ww-vacancy .cards-dark .left-sect .title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+
+    .ww-vacancy .cards-dark .left-sect .descr {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+
+    .ww-vacancy .cards-dark .left-sect a img {
+        margin-left: 10px;
+    }
+
+    .ww-vacancy .cards-dark .pic-box {
+        height: 100%;
+    }
+
+    .ww-map {
+        padding: 60px 0 0 0;
+    }
+
+    .ww-map .map-box>img {
+        display: none;
+    }
+
+    .ww-map .map-box>img.tablet-mappic {
+        display: block;
+        margin-top: -140px;
+    }
+
+    .ww-map .map-box .title {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+    }
+
+    .ww-map .map-box .mark-box .descr,
+    .ww-map .map-box .mark-box a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .ww-map .map-box .mark-box {
+        padding: 25px 16px 25px 48px;
+    }
+
+    .ww-map .map-box .change-mark-map {
+        margin-top: -85px;
+    }
+
+    .ww-map .map-box .map-link {
+        width: 260px;
+    }
+
+    .ww-map .map-box .map-link {
+        right: 5%;
+    }
+
+    .ww-thirdsect {
+        padding: 68px 0 107px 0;
+    }
+
+    .ww-map .map-box>img.tablet-mappic {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100.8px) {
+    .ww-thirdsect {
+        background: url(../image/who-we-are/wwa-tablet2.png) no-repeat bottom 20px right;
+        background-size: 71%;
+    }
+}
+
+@media only screen and (max-width: 1100.8px) {
+    .ww-thirdsect {
+        background: url(../image/who-we-are/wwa-tablet2.png) no-repeat center right;
+        background-size: 61%;
+    }
+}
+
+@media only screen and (max-width: 800.8px) {
+    .ww-thirdsect {
+        padding: 68px 0 107px 0;
+        background-image: none;
+        background: url(../image/who-we-are/wwa-tablet2.png) no-repeat bottom 20px right;
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .ww-history .tab-content .tab-text {
+        border-left: none;
+    }
+
+    .ww-secondsect .row .col-md-3:nth-child(4),
+    .ww-secondsect .row .col-md-3:nth-child(3),
+    .ww-secondsect .row .col-md-3:nth-child(2),
+    .ww-secondsect .row .col-md-3:nth-child(1) {
+        padding-left: 15px;
+    }
+
+    .ww-thirdsect {
+        background: url(../image/who-we-are/wwa-tablet2.png) no-repeat bottom 20px right -150px;
+    }
+
+    .ww-history .reviews__tab .tab-nav {
+        width: 100%;
+    }
+
+    .ww-history .tab-content {
+        width: 100%;
+    }
+
+    .ww-history .reviews__tab .tab-nav {
+        display: flex;
+        position: static;
+        justify-content: space-around;
+    }
+
+    .cards-dark .col-md-7 {
+        order: 2;
+    }
+
+    .ww-map .map-box .change-mark-map {
+        position: relative;
+        top: initial;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 700.8px) {
+    .ww-topsect {
+        background-position: bottom right -100px;
+    }
+
+}
+
+@media only screen and (max-width: 575.8px) {
+    .ww-topsect {
+        padding: 34px 0 160px 0;
+        height: auto;
+        background-image: url(../image/who-we-are/wwa-phone1.png);
+        background-position: center bottom;
+    }
+
+    .ww-topsect .title-white {
+        margin-bottom: 5px;
+    }
+
+    .ww-topsect .suubtitle {
+        margin: 0 0 10px 0;
+        max-width: 225px;
+    }
+
+    .ww-topsect .award p {
+        width: 100%;
+    }
+
+    .ww-topsect .award p span {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 0;
+    }
+
+
+
+    .ww-secondsect {
+        padding: 21px 0 15px 0;
+        border-bottom: none;
+    }
+
+    .ww-secondsect .reckoning-box .title-text-border {
+        font-size: 72px;
+        line-height: 86px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-weight: bold;
+    }
+
+    .ww-secondsect .reckoning-box p br {
+        display: none;
+    }
+
+    .ww-secondsect .reckoning-box {
+        margin-bottom: 30px;
+    }
+
+    .ww-thirdsect {
+        padding: 45px 0 50px 0;
+        background-image: none;
+        overflow: hidden;
+    }
+
+    .assortment-heading__title {
+        margin-bottom: 8px;
+    }
+
+    .ww-thirdsect .info {
+        max-width: 100%;
+    }
+
+    .ww-thirdsect .info img {
+        position: relative;
+        display: block;
+        right: initial;
+        left: -10px;
+        top: -30px;
+        width: calc(100% + 30px);
+        max-width: initial;
+    }
+
+    .ww-thirdsect .info .dedcr {
+        max-width: 236px;
+        margin-bottom: 0;
+    }
+
+    .ww-thirdsect .info a {
+        margin-top: -30px;
+    }
+
+    .ww-team {
+        padding: 36px 0 0 0;
+    }
+
+    .ww-team .title-section {
+        margin-bottom: 20px;
+    }
+
+    .ww-team .slider-reviews .slider-dark__arrows {
+        top: initial;
+    }
+
+    .ww-team .slider-reviews__item {
+        min-width: 130px;
+    }
+
+    .ww-team .photo-box {
+        height: 135px;
+    }
+
+    .ww-team .text-box {
+        padding: 10px 5px 8px 20px;
+        height: 90px;
+    }
+
+    .ww-team .text-box .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .ww-history {
+        padding: 38px 0 53px 0;
+    }
+
+    .ww-history .title-text-border {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .ww-history .reviews__tab {
+        padding-top: 0;
+    }
+
+    .ww-history .reviews__tab .title-text-border {
+        margin-bottom: 30px;
+    }
+
+    .ww-history .reviews__tab .tab-nav {
+        justify-content: space-between;
+    }
+
+    .ww-history .reviews__tab .tab-nav li {
+        width: 50%;
+        text-align: center;
+
+
+        &:first-child {
+            padding: 0 15px 0 0;
+        }
+
+        &::nth-child(2) {
+            padding: 0 0 0 15px;
+        }
+    }
+
+    .ww-history .nav-pills .nav-link {
+        margin-bottom: 30px;
+    }
+
+    .ww-reviews {
+        padding: 40px 0 0 0;
+    }
+
+    .ww-vacancy .title-text-border {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: -9px;
+    }
+
+    .ww-vacancy .cards-dark .pic-box {
+        height: 105px;
+    }
+
+    .ww-vacancy .cards-dark .left-sect {
+        padding: 30px 20px 25px 20px;
+    }
+
+    .ww-vacancy .cards-dark .left-sect .title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 3px;
+    }
+
+    .ww-vacancy .cards-dark .left-sect .descr {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 20px;
+    }
+
+    .ww-map .title-text-border {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 16px;
+    }
+
+    .ww-map .map-box .mark-box {
+        padding: 20px;
+    }
+
+    .ww-map .map-box .title,
+    .ww-map .map-box .mark-box .descr,
+    .ww-map .map-box .mark-box a {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .ww-map .map-box .descr {
+        margin-bottom: 15px;
+    }
+
+    .ww-map .map-box>img.tablet-mappic {
+        margin-top: 0;
+
+    }
+
+    .ww-map .map-box>img.tablet-mappic {
+        display: none;
+    }
+
+    .ww-map .map-box>img.phone-mappic {
+        display: block;
+        width: 100%;
+    }
+
+    .ww-map .map-box .map-link {
+        width: calc(100% - 30px);
+        right: 0;
+        left: 0;
+        display: block;
+        margin: 0 auto;
+        bottom: 25%;
+    }
+
+    .ww-topsect .title-white,
+    .ww-team .title-section {
+        line-height: 29px;
+    }
+}
