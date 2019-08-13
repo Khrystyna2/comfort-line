@@ -594,7 +594,16 @@ $(document).ready(function () {
 		$('.base-filter').toggle();
 	});
 
+	// payment tab
 
+	$('.payment-tab1').click(function () {
+		$('.payment-tab').show();
+		$('.delivery-tab').hide();
+	});
+	$('.payment-tab2').click(function () {
+		$('.payment-tab').hide();
+		$('.delivery-tab').show();
+	});
 
 
 });

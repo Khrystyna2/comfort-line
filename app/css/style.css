@@ -2435,7 +2435,7 @@ main { min-height: 400px; }
   .goods_page .card_goods .btn-red { margin-top: 15px; }
   .goods_page .download-catalog { padding-top: 50px; } }
 
-.delivery_and_payment h1 { font-size: 115px; line-height: 138px; margin-bottom: 70px; margin-top: 30px; }
+.delivery_and_payment h1 { font-size: 105px; line-height: 138px; margin-bottom: 70px; margin-top: 30px; }
 
 .delivery_and_payment h2 { font-size: 36px; line-height: 43px; font-weight: 900; }
 
@@ -2473,8 +2473,15 @@ main { min-height: 400px; }
 
 .payment .details_left::before { right: 120px; }
 
+.delivery-tab { display: none; }
+
+.choose_block span { cursor: pointer; }
+
+.delivery_and_payment_main.new { margin-bottom: 189px; }
+
 @media (max-width: 1199.9px) { .delivery_and_payment h1 { font-size: 98px; margin-bottom: 50px; }
-  .delivery_and_payment .details_left::before { right: 80px; } }
+  .delivery_and_payment .details_left::before { right: 80px; }
+  .delivery_and_payment_main.new { margin-bottom: 86px; } }
 
 @media (max-width: 991.8px) { .delivery_and_payment h1 { font-size: 72px; line-height: 86px; }
   .delivery_and_payment h2 { font-size: 24px; line-height: 29px; }
@@ -2482,9 +2489,13 @@ main { min-height: 400px; }
   .delivery_and_payment h3 p, .delivery_and_payment li p { font-size: 14px; line-height: 17px; }
   .delivery_and_payment .details_left::before { right: 50px; }
   .choose_block div { padding-left: 29px; }
-  .choose_block .choose_active { padding-left: 23px; } }
+  .choose_block .choose_active { padding-left: 23px; }
+  .choose_block .payment-tab1, .choose_block .payment-tab2 { border-left: 3px solid transparent; }
+  .choose_block .payment-tab1.choose_active, .choose_block .payment-tab2.choose_active { border-left: 3px solid #ff9300; }
+  .choose_block div, .choose_block .choose_active { padding-left: 29px; } }
 
-@media (max-width: 767.9px) { .bid_img { display: none; }
+@media (max-width: 767.9px) { .choose_block .payment-tab1, .choose_block .payment-tab2 { border-left: none; border-bottom: 3px solid transparent; }
+  .bid_img { display: none; }
   .delivery_and_payment .fd-sevensect { display: none; }
   .delivery_and_payment_main { margin-bottom: 100px; }
   .delivery_and_payment .details_left::before { display: none; }
@@ -2496,7 +2507,8 @@ main { min-height: 400px; }
   .delivery_and_payment .choose_block div:first-child { margin-bottom: 0; }
   .delivery_and_payment .choose_block .choose_active { border-left: none; border-bottom: 3px solid #ff9300; }
   .payment .details_right > div { margin-bottom: 30px; }
-  .payment .details_right > div:first-child:before { display: none; } }
+  .payment .details_right > div:first-child:before { display: none; }
+  .delivery_and_payment .details_left { padding-left: 15px; } }
 
 @media (max-width: 575.7px) { .delivery_and_payment_main { margin-bottom: 50px; }
   .delivery_and_payment h1 { font-size: 36px; line-height: 43px; margin-top: 20px; margin-bottom: 30px; }
