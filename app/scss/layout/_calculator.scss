@@ -268,14 +268,13 @@
         .group-checkobox {
             justify-content: center;
 
-            >p {
+            p {
                 font-size: 14px;
                 line-height: 17px;
                 color: $light-gray;
-
-                a {
-                    text-decoration: underline;
-                }
+            }
+            a {
+                text-decoration: underline;
             }
         }
     }
@@ -545,7 +544,7 @@
             .group-checkobox {
                 margin-top: 16px;
 
-                >p {
+                p {
                     font-size: 12px;
                     line-height: 14px;
                 }

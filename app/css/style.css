@@ -774,9 +774,9 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .calendar-section__form .group-checkobox { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
-.calendar-section__form .group-checkobox > p { margin: 0; font-weight: 300; font-size: 14px; line-height: 17px; color: #B1B1B1; }
+.calendar-section__form .group-checkobox p { margin: 0; font-weight: 300; font-size: 14px; line-height: 17px; color: #B1B1B1; }
 
-.calendar-section__form .group-checkobox > p > a { color: #B1B1B1; position: relative; text-decoration: underline; }
+.calendar-section__form .group-checkobox a { color: #B1B1B1; position: relative; text-decoration: underline; }
 
 .calendar-section__img { -webkit-flex: 0 0 48.8%; -ms-flex: 0 0 48.8%; flex: 0 0 48.8%; }
 
@@ -790,7 +790,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .calendar__header > p.active { color: #000; }
 
-.calendar__header > p.active::after { content: ''; display: block; border-top: 3px solid #FF9300; position: absolute; bottom: -6px; left: 0; right: 0; }
+.calendar__header > p.active::after { content: ""; display: block; border-top: 3px solid #FF9300; position: absolute; bottom: -6px; left: 0; right: 0; }
 
 .calendar > ul { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -1256,9 +1256,9 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .calculator-goods__form .group-checkobox { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
-.calculator-goods__form .group-checkobox > p { font-size: 14px; line-height: 17px; color: #B1B1B1; }
+.calculator-goods__form .group-checkobox p { font-size: 14px; line-height: 17px; color: #B1B1B1; }
 
-.calculator-goods__form .group-checkobox > p a { text-decoration: underline; }
+.calculator-goods__form .group-checkobox a { text-decoration: underline; }
 
 .calculator-goods__text { margin: 54px 0 32px; color: #6B6B6B; }
 
@@ -1309,7 +1309,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
   .calculator-goods__form .btn-red { width: 210px; margin: 0; }
   .calculator-goods__form .input-light { width: 180px; margin: 0 30px 0 0; }
   .calculator-goods__form .group-checkobox { margin-top: 16px; }
-  .calculator-goods__form .group-checkobox > p { font-size: 12px; line-height: 14px; }
+  .calculator-goods__form .group-checkobox p { font-size: 12px; line-height: 14px; }
   .calculator-goods__text P { padding-right: 32px; } }
 
 @media only screen and (max-width: 767.8px) { .calculator { padding-top: 34px; }
@@ -1418,7 +1418,7 @@ body { font-family: "Museo Sans Cyrl", sans-serif; background-color: #fff; heigh
 
 .assortment-heading__desc h3 { font-size: 24px; line-height: 29px; font-weight: 500; margin-bottom: 20px; }
 
-.assortment-heading__desc > img { width: 100%; margin: 35px 0; }
+.assortment-heading__desc img { width: 100%; margin: 35px 0; }
 
 .assortment-heading__desc > p { margin-bottom: 20px; }
 
@@ -2242,11 +2242,7 @@ main { min-height: 400px; }
   .goods_page_open .assortment-heading__desc { margin-top: 23px; margin-bottom: 33px; padding: 20px 30px 20px; }
   .goods_page_open .assortment-heading__desc > p { margin-top: 20px; }
   .goods_page .card_goods { padding-right: 0px; }
-<<<<<<< HEAD
-  .goods_page .download-catalog__wrap { padding-bottom: 130px; } }
-=======
   .goods_page .download-catalog { padding-bottom: 70px; } }
->>>>>>> 95b7a4bbb5b0815308d2051a10430d9013b1f712
 
 @media (max-width: 575.8px) { .goods_page .top-baner { display: none; }
   .goods_page .card_goods_price h2 { font-size: 18px; line-height: 22px; margin-top: 52px; }
