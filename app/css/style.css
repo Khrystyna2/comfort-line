@@ -1762,7 +1762,7 @@ main { min-height: 400px; }
   .fd-eightsect p { font-size: 12px; line-height: 14px; }
   .fd-foursect .title-section, .fd-fivesect .title-section, .fd-eightsect .title-section { line-height: 29px; } }
 
-.ww-topsect { height: 464px; background-color: #25282A; background-image: url(../../image/who-we-are/wwa-pic1.png); background-repeat: no-repeat; background-position: bottom right; }
+.ww-topsect { height: 464px; background-color: #25282A; background-image: url(../image/who-we-are/wwa-pic1.png); background-repeat: no-repeat; background-position: bottom right; }
 
 .ww-topsect .suubtitle { color: #fff; margin: 14px 0 45px 0; }
 
@@ -1786,7 +1786,7 @@ main { min-height: 400px; }
 
 .reckoning-box .title-text-border { font-size: 70px; line-height: 84px; margin-bottom: 0; text-align: left; }
 
-.ww-thirdsect { border-bottom: 1px solid #DBDBDB; padding: 174px 0 157px 0; background-image: url(../../image/who-we-are/wwa-pic4.png), url(../../image/who-we-are/wwa-pic5.png); background-repeat: no-repeat; background-position: bottom 25px left, bottom 25px right; }
+.ww-thirdsect { border-bottom: 1px solid #DBDBDB; padding: 174px 0 157px 0; background-image: url(../image/who-we-are/wwa-pic4.png), url(../image/who-we-are/wwa-pic5.png); background-repeat: no-repeat; background-position: bottom 25px left, bottom 25px right; }
 
 .ww-thirdsect .info { max-width: 495px; }
 
@@ -2107,6 +2107,20 @@ main { min-height: 400px; }
 .base-table .date-block p { font-weight: 300; font-size: 14px; line-height: 17px; color: #747474; text-align: center; width: 100%; }
 
 .base-table .date-block p span { display: block; }
+
+.base-filter { margin-top: -106px; }
+
+.base-filter .base-filter__list { background: #FFFFFF; box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.08); }
+
+.base-filter .base-filter__list > li { border-bottom: 1px solid #DBDBDB; }
+
+.base-filter .base-filter__list > li p { font-size: 18px; line-height: 22px; color: #777777; padding: 15px 35px 15px 27px; position: relative; }
+
+.base-filter .base-filter__list > li p:after { content: ""; width: 8px; height: 13px; display: inline-block; background-image: url(../image/knowledge-base/filter-arrow.svg); background-size: 100% 100%; position: absolute; right: 26px; top: 50%; margin-top: -6.5px; }
+
+.base-filter .base-filter__list > li:last-child { border-bottom: none; }
+
+.delivery_and_payment_main { box-shadow: none; }
 
 .promotions_cards .cards-dark:not(:first-child) { margin-top: 50px; }
 
