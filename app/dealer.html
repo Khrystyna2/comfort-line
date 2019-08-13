@@ -71,7 +71,8 @@
                             <span class="counter">10</span>
                         </a>
                     </li>
-                    <li><a href="dealer.html">Стать диллером</a></li>
+                    <li><a href="dealer.html" data-toggle="modal" data-target="#be-dealer">Стать диллером</a>
+                    </li>
                     <li><a href="calculator.html">Калькулятор стоимости</a></li>
                     <li>
                         <a href="promotions.html">Акции
@@ -147,7 +148,7 @@
                 </h2>
                 <p class="left-arrow text-center">Сможете повысить доход</p>
                 <p class="right-arrow text-center">Не придётся краснеть перед клиентом за качество</p>
-                <a href="#" class="btn btn-red">Стать диллером</a>
+                <a href="#" class="btn btn-red" data-toggle="modal" data-target="#bedealer">Стать диллером</a>
                 <img src="image/fd-image-phone-2.png" alt="image" class="phone-show">
             </div>
         </section>
@@ -342,6 +343,31 @@
         </section>
 
     </main>
+
+    <!-- popup -->
+    <div class="modal fade" id="bedealer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="title">Оставьте
+                        свои контакты</p>
+                    <p>Чтобы стать диллером</p>
+                    <form action="" id="bedealer-form">
+                        <input type="text" placeholder="Введите ваше имя">
+                        <input type="email" placeholder="Введите ваш телефон">
+                        <input class="subm-btn" type="submit" value="Жду звонка">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer">
         <div class="container">
