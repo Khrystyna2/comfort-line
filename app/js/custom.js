@@ -568,5 +568,33 @@ $(document).ready(function () {
 			});
 	});
 
+	// knowladge base filter
+
+	$('.base-filter__list > li > p').click(function () {
+		$('.base-filter__list > li p').not($(this)).removeClass('rotatearrow');
+		$(this).toggleClass('rotatearrow');
+
+		$('.base-filter__list > li > p').not($(this)).next().slideUp();
+		$(this).next().slideToggle();
+
+		$('.base-filter__list > li > p').not($(this)).parent().removeClass('border-line');
+		$(this).parent().toggleClass('border-line');
+	});
+
+	$('.base-filter__sublist > li > p').click(function () {
+		$('.base-filter__sublist > li > p').not($(this)).removeClass('sub-rotatearrow');
+		$(this).toggleClass('sub-rotatearrow');
+
+		$('.base-filter__sublist > li > p').not($(this)).next().slideUp();
+		$(this).next().slideToggle();
+	});
+
+	// phone show filter
+	$('.phone-filter-btn button').click(function () {
+		$('.base-filter').toggle();
+	});
+
+
+
 
 });

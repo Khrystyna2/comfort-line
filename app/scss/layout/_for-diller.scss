@@ -443,6 +443,118 @@ main {
     display: none;
 }
 
+#bedealer {
+    .modal-content {
+        @include radius(0);
+        border: none;
+        padding: 48px 95px 50px 95px;
+    }
+
+    .modal-dialog {
+        max-width: 540px;
+
+    }
+
+    .modal-header {
+        padding: 0;
+        border-bottom: none;
+
+        .close {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        margin-bottom: 17px;
+        color: #2E2E2E;
+    }
+
+    p {
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #020202;
+
+    }
+
+    .modal-body {
+        padding: 0px;
+    }
+
+    #bedealer-form {
+        margin-top: 32px;
+
+
+
+        input {
+            width: 100%;
+            height: 55px;
+            background: #F1F1F1;
+            padding-left: 21px;
+            border: none;
+            color: #000;
+            font-weight: 250;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #797979;
+            font-weight: 250;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        ::-moz-placeholder {
+            color: #797979;
+            font-weight: 250;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        :-ms-input-placeholder {
+            color: #797979;
+            font-weight: 250;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        :-moz-placeholder {
+            color: #797979;
+            font-weight: 250;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .subm-btn {
+            margin-bottom: 0;
+            margin-top: 20px;
+            padding: 0;
+            background-color: #fa4616;
+            box-shadow: 0px 10px 35px rgba(250, 70, 22, 0.3);
+            color: $white;
+            font-size: 24px;
+            line-height: 29px;
+            cursor: pointer;
+
+            &:hover {
+                background: #DA2E00;
+                box-shadow: 0px 10px 35px rgba(216, 48, 3, 0.4);
+            }
+        }
+    }
+}
+
 // adaptive
 @media only screen and (max-width: 1770.8px) {
     .fd-topsect img.main-pic {
@@ -551,6 +663,35 @@ main {
 
     .fd-ninesect {
         padding-bottom: 100px;
+    }
+
+    #bedealer .modal-dialog {
+        max-width: 330px;
+    }
+
+    #bedealer .modal-content {
+        padding: 24px 30px 40px 30px;
+    }
+
+    #bedealer .title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 11px;
+    }
+
+    #bedealer #bedealer-form {
+        margin-top: 25px;
+    }
+
+    #bedealer #bedealer-form input {
+        height: 45px;
+    }
+
+    #bedealer #bedealer-form .subm-btn {
+        height: 55px;
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 
@@ -1052,9 +1193,15 @@ main {
         margin: 0 auto;
     }
 
+    #bedealer .modal-dialog {
+        max-width: 400px;
+        width: 100%;
+        padding: 0 15px;
+    }
 
-
-
+    #bedealer .modal-dialog-centered {
+        margin: 1.75rem auto;
+    }
 
 
 
