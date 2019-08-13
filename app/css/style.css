@@ -1621,9 +1621,9 @@ main { min-height: 400px; }
 
 .fd-ninesect .diller-box__circle span { color: #000000; font-weight: 800; font-size: 100px; line-height: 120px; opacity: 0.2; }
 
-.fd.download-catalog { padding: 130px 0 225px; }
+.fdd.download-catalog { padding: 130px 0 225px; }
 
-.fd.download-catalog .btn-red { display: inline-block; text-align: center; background-image: url(../image/icons/orion_download-document.svg); background-position: center right 20px; background-repeat: no-repeat; padding: 22px 0; }
+.fdd.download-catalog .btn-red { display: inline-block; text-align: center; background-image: url(../image/icons/orion_download-document.svg); background-position: center right 20px; background-repeat: no-repeat; padding: 22px 0; }
 
 .phone-show { display: none; }
 
