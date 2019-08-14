@@ -1,0 +1,309 @@
+.thx-content {
+    position: fixed;
+    height: calc(100vh - 123.8px);
+    width: 100%;
+    left: 0;
+    top: 123.8px;
+    background-color: #25282A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thx-content__info {
+    text-align: center;
+    margin-top: -123px;
+
+    p {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+        color: #FFFFFF;
+
+        span {
+            display: block;
+            margin: 9px 0 110px 0;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    a {
+        display: inline-flex;
+        height: 75px;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// 404
+.error-box {
+    max-width: 754px;
+    margin: 0 auto;
+    position: relative;
+
+    p {
+        font-weight: 800;
+        font-size: 288px;
+        line-height: 346px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+
+        span {
+            width: 626px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            height: 44px;
+            background-color: #FF9300;
+            box-shadow: 0px 10px 35px rgba(255, 147, 0, 0.2);
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+.bg-darkp {
+    background-color: #25282A;
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .thx-content__info p {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .thx-content__info p span {
+        margin-bottom: 70px;
+    }
+
+    .thx-content__info a {
+        height: 55px;
+        width: 300px;
+    }
+
+    .thx-content__info .error-box p {
+        font-size: 250px;
+        line-height: 320px;
+    }
+
+    .thx-content__info p span {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .thx-content {
+        height: calc(100vh - 135px);
+        top: 135px;
+    }
+
+    main {
+        min-height: auto;
+    }
+
+    .thx-content__info p {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .thx-content__info p span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .thx-content__info a {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .thx-content__info p span {
+        margin-bottom: 40px;
+    }
+
+    .thx-content__info .error-box p {
+        font-size: 150px;
+        line-height: 110px;
+
+        span {
+            margin-bottom: 0;
+            height: 36px;
+            margin-top: -17px;
+        }
+    }
+
+    .thx-content__info p span {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .thx-content__info {
+        margin-top: -70px;
+    }
+
+}
+
+@media only screen and (max-width: 429.8px) {
+    .thx-content {
+        height: calc(100vh - 94px);
+        top: 94px;
+    }
+}
+
+@media only screen and (max-height: 450.8px) {
+    .thx-content__info p span {
+        margin: 10px 0 20px 0;
+    }
+
+    .thx-content__info {
+        margin-top: -30px;
+    }
+
+    .thx-content {
+        height: auto;
+        top: 0;
+        position: relative;
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-height: 560.8px) and (min-width:500px) {
+    .thx-content {
+        position: relative;
+        height: auto;
+    }
+
+    .thx-content__info .error-box p {
+        margin-bottom: 10px;
+    }
+}
+
+// preloader
+.relative-sect {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.preloader-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #25282A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+    .preloader-section__content {
+        img {
+            margin-bottom: 55px;
+            max-width: 100%;
+        }
+
+        >p {
+            max-width: 350px;
+            margin: 0 auto 30px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .download-text {
+        p {
+            font-weight: 250;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+
+            span {
+
+                &:first-child {
+                    animation-duration: 2s;
+                    animation-name: dots;
+                    animation-iteration-count: infinite;
+                    animation-delay: 0s;
+                }
+
+                &:nth-child(2) {
+                    animation-duration: 2s;
+                    animation-name: dots;
+                    animation-iteration-count: infinite;
+                    animation-delay: 200ms;
+                }
+
+                &:nth-child(3) {
+                    animation-duration: 2s;
+                    animation-name: dots;
+                    animation-iteration-count: infinite;
+                    animation-delay: 400ms;
+                }
+            }
+        }
+    }
+}
+
+@keyframes dots {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .preloader-section .preloader-section__content img {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .preloader-section .preloader-section__content img {
+        max-width: 200px;
+    }
+
+    .preloader-section .preloader-section__content>p {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 230px;
+    }
+
+    .preloader-section .download-text p {
+        font-size: 12px;
+    }
+
+    .preloader-section .preloader-section__content img {
+        margin-bottom: 30px;
+    }
+}

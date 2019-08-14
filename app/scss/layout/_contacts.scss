@@ -1,0 +1,35 @@
+.contacts-content {
+    padding: 48px 0 0 0;
+}
+
+.map-sect.ww-map {
+    margin-top: -80px;
+    border-top: none;
+}
+
+
+@media only screen and (max-width: 1199.8px) {
+    .contacts-content .title-text-border {
+        font-size: 72px;
+        line-height: 86px;
+    }
+
+    .contacts-content {
+        padding-top: 17px;
+    }
+
+    .map-sect.ww-map {
+        margin-top: -40px;
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .contacts-content .title-text-border {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .map-sect.ww-map {
+        padding-top: 40px;
+    }
+}
