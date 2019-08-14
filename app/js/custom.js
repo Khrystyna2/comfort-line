@@ -605,5 +605,10 @@ $(document).ready(function () {
 		$('.delivery-tab').show();
 	});
 
+	// preloader
+	setTimeout(function () {
+		$('.relative-sect').fadeOut('fast');
+	}, 2000);
+
 
 });

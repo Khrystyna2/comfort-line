@@ -42,7 +42,7 @@
 }
 
 .post-box {
-    padding: 39px 65px 6px 65px;
+    padding: 39px 65px 5px 65px;
     margin-bottom: 84px;
 
     .post-box__title {
@@ -159,5 +159,224 @@
             line-height: 22px;
             color: $black;
         }
+    }
+}
+
+.post-sidebar .no-time-to-read {
+    padding: 16px 0;
+
+    img {
+        margin-top: -2px;
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    .post-topsect .post-topsect__category {
+        margin-bottom: 4px;
+    }
+
+    .post-topsect {
+        height: 204px;
+    }
+
+    .post-topsect .post-topsect__info div {
+        margin-right: 32px;
+    }
+
+    .post-content {
+        padding: 38px 0 40px 0;
+    }
+
+    .post-box {
+        padding: 23px 30px 5px 30px;
+    }
+
+    .post-box p {
+        margin-bottom: 15px;
+    }
+
+    .post-box img {
+        margin: 10px 0 20px 0;
+    }
+
+    .post-box .error-view {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+        height: auto;
+        padding: 13px 25px 13px 25px;
+        text-align: center;
+    }
+
+    .recomendation-posts .title:after {
+        width: calc(100% - 240px);
+    }
+
+    .post-sidebar .no-time-to-read {
+        height: 45px;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 12px 0;
+    }
+
+    .post-sidebar .no-time-to-read img {
+        width: 21px;
+        margin-right: 9px;
+    }
+
+    .promotion .pic-box {
+        height: 160px;
+    }
+
+    .promotion .text-box {
+        padding: 13px 20px 20px 20px;
+    }
+
+    .post-sidebar .base-subscribe {
+        display: block;
+        padding: 21px 30px 15px 30px;
+    }
+
+    .post-sidebar .base-subscribe .title {
+        margin-bottom: 12px;
+    }
+
+    .base-subscribe #base-subscribe input.fieldinp {
+        height: 35px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .base-subscribe #base-subscribe input.btn-red {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .base-subscribe #base-subscribe p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .post-box .post-box__title,
+    .recomendation-posts .title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .post-topsect .post-topsect__category,
+    .post-topsect .post-topsect__info div,
+    .post-box p,
+    .post-box .error-view p,
+    .promotion .text-box p,
+    .base-subscribe .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .post-topsect .post-topsect__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .post-content>.container>.row>.col-xl-3.col-lg-4.col-md-4 {
+        order: 1;
+    }
+
+    .post-content>.container>.row>.col-xl-9.col-lg-8.col-md-8 {
+        order: 2;
+    }
+
+    .post-sidebar .promotion,
+    .post-sidebar .base-subscribe {
+        display: none;
+    }
+
+    .post-sidebar .no-time-to-read {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .post-topsect .post-topsect__category {
+        margin-bottom: 0;
+    }
+
+    .post-topsect .post-topsect__info div {
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+            margin-top: -2px;
+        }
+    }
+
+    .post-topsect .post-topsect__info div img {
+        margin-right: 5px;
+    }
+
+    .post-topsect .post-topsect__info div.view img {
+        height: 10px;
+    }
+
+    .post-topsect .post-topsect__info div.messages img {
+        height: 12px;
+    }
+
+    .post-topsect .post-topsect__info div.time img {
+        height: 13px;
+    }
+
+    .post-content {
+        padding: 11px 0 40px 0;
+    }
+
+    .post-sidebar .no-time-to-read {
+        position: relative;
+    }
+
+    .post-sidebar .no-time-to-read img {
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        margin-top: -10.5px;
+    }
+
+    .post-box {
+        padding: 20px;
+    }
+
+    .post-box .error-view {
+        display: none;
+    }
+
+    .post-box {
+        margin-bottom: 40px;
+    }
+
+    .recomendation-posts .title:after {
+        width: calc(100% - 190px);
+    }
+
+
+
+
+
+    .post-box .post-box__title,
+    .recomendation-posts .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .post-topsect .post-topsect__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .post-topsect .post-topsect__category,
+    .post-topsect .post-topsect__info div,
+    .post-box p {
+        font-size: 12px;
+        line-height: 14px;
     }
 }
