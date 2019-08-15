@@ -170,6 +170,12 @@
     }
 }
 
+.base-tabs .base-tab-category .base-tabs__info .title {
+    &:after {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1199.8px) {
     .post-topsect .post-topsect__category {
         margin-bottom: 4px;
